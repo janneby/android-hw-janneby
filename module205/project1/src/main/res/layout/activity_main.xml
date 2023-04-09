@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/please_enter_the_name_of_the_cocktail"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+
+    <EditText
+        android:id="@+id/nameOfCocktail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="@string/name_of_cocktail"
+        android:textColorHint="@color/white"
+        android:layout_margin="40dp"
+        android:textColor="@color/white"
+
+        />
+
+
+    <Button
+        android:id="@+id/Namesearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/search_by_name"
+        android:textColor="@color/black" />
+
+
+
+
+</LinearLayout>

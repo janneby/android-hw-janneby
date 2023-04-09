@@ -1,0 +1,16 @@
+name: Android Heartbeat
+
+on:
+  workflow_run:
+    workflows: [Project Initialization]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: linero-tech/linero-tech/.github/workflows/autograding-android.yml@v2.3.0
+    with:
+      module_id: a200
+    secrets: inherit

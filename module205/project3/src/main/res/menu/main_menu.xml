@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_language_english"
+            android:title="@string/menu_language_english"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/menu_language_swedish"
+            android:title="@string/menu_language_swedish"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/menu_language_spanish"
+            android:title="@string/menu_language_spanish"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/menu_language_arabic"
+            android:title="@string/menu_language_arabic"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

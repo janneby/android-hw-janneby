@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/newsb"
+    android:id="@+id/search_activity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_height="136dp"
+        android:layout_marginTop="56dp"
+        android:layout_width="85dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:autofillHints=""
+        android:backgroundTint="@color/white"
+        android:hint="@string/search_hint"
+        android:id="@+id/search_edit_text"
+        android:inputType="text"
+        android:layout_below="@id/imageView_logo"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="48sp" />
+
+    <Button
+        android:backgroundTint="#033E05"
+        android:id="@+id/search_button"
+        android:layout_below="@id/search_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:text="@string/search_button_text"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_below="@id/search_button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content" />
+
+</RelativeLayout>

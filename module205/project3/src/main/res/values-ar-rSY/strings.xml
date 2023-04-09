@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيقي</string>
+    <string name="search_hint">ابحث عن الأخبار</string>
+    <string name="search_button">ابحث</string>
+    <string name="menu_language_english">الإنجليزية</string>
+    <string name="menu_language_swedish">السويدية</string>
+    <string name="menu_language_arabic">العربية</string>
+    <string name="menu_language_spanish">الإسبانية</string>
+</resources>

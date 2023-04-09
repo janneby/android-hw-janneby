@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="search_hint">Search news</string>
+    <string name="search_button">Search</string>
+    <string name="menu_language_english">English</string>
+    <string name="menu_language_swedish">Swedish</string>
+    <string name="menu_language_arabic">Arabic</string>
+    <string name="menu_language_spanish">Spanish</string>
+</resources>

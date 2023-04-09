@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Min Applikation</string>
+    <string name="search_hint">Sök nyheter</string>
+    <string name="search_button">Sök</string>
+    <string name="menu_language_english">Engelska</string>
+    <string name="menu_language_swedish">Svenska</string>
+    <string name="menu_language_arabic">Arabiska</string>
+    <string name="menu_language_spanish">Spanska</string>
+</resources>

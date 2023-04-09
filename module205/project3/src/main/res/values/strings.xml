@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="search_hint">Search news</string>
+    <string name="search_button">Search</string>
+    <string name="menu_language_english">English</string>
+    <string name="menu_language_swedish">Swedish</string>
+    <string name="menu_language_arabic">Arabic</string>
+    <string name="menu_language_spanish">Spanish</string>
+    <string name="search_button_text" translatable="false">Search</string>
+    <string name="no_articles_found" translatable="false">No Articles Found</string>
+    <string name="api_key" translatable="false">8a28435e1e6b425d94bf81a0d73e8c6c</string>
+    <string name="language" translatable="false">en</string>
+</resources>
