@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
+    <color name="alabaster">#FAFAFC</color>
+    <color name="monsoon">#898989</color>
+    <color name="purple_light">#6750A4</color>
+    <color name="purple_100">#2E245B</color>
 </resources>
