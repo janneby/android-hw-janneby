@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -47,19 +48,19 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setClickListeners() {
         buttonTwitter?.setOnClickListener {
-            sendMessage("Twitter Login")
+            sendMessage(message = R.string.twitter_login)
         }
 
         buttonGoogle?.setOnClickListener {
-            sendMessage("Google Login")
+            sendMessage(message = R.string.google_login)
         }
 
         buttonFacebook?.setOnClickListener {
-            sendMessage("Facebook Login")
+            sendMessage(message = R.string.facebook_login)
         }
 
         textViewForgotPassword?.setOnClickListener {
-            sendMessage("Forgot password")
+            sendMessage(message = R.string.forgot_password)
         }
 
         buttonLogin?.setOnClickListener {
@@ -77,16 +78,16 @@ class LoginActivity : AppCompatActivity() {
         }
 
         if (isEmailValid() && isPasswordValid()) {
-            sendMessage("Successful login")
+            sendMessage(message = R.string.successful_login)
         }
     }
 
     private fun notifyInvalidEmail() {
-        editTextEmail?.error = "Invalid email"
+        editTextEmail?.error = getString(R.string.invalid_email)
     }
 
     private fun notifyInvalidPassword() {
-        editTextPassword?.error = "Password field cannot be - Empty"
+        editTextPassword?.error = getString(R.string.password_cannot_be_empty)
     }
 
     private fun isEmailValid(): Boolean {
@@ -99,7 +100,7 @@ class LoginActivity : AppCompatActivity() {
         return password.isNotEmpty()
     }
 
-    private fun sendMessage(message: String) {
+    private fun sendMessage(@StringRes message: Int) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
