@@ -48,6 +48,7 @@
         android:textColor="@color/white" />
 
     <Button
+        android:id="@+id/buttonCreateAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_light"
