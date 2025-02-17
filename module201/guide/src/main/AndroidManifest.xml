@@ -8,6 +8,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomeworkNoActionBar">
         <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidHomework"/>
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.AndroidHomework" />
