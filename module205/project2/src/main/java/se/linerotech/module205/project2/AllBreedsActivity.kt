@@ -1,8 +1,8 @@
 package se.linerotech.module205.project2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
+import androidx.appcompat.app.AppCompatActivity
 import se.linerotech.module205.project2.databinding.ActivityAllBreedsBinding
 
 class AllBreedsActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class AllBreedsActivity : AppCompatActivity() {
         // Getting the breed list
         val breedList = intent?.getParcelableArrayListExtra<Parcelable>(KEY_REPOSITORY_DATA3)
         breedList.let {
-            //val allBreeds =
+            // val allBreeds =
         }
     }
 

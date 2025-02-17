@@ -11,12 +11,11 @@ import com.bumptech.glide.Glide
 import se.linerotech.module205.project3.model.Article
 
 class ArticleAdapter(
-    //private val context: Context,
+    // private val context: Context,
     private val articlesList: List<Article>,
     private val articalClickListener: (Article) -> Unit,
     // private val onClickListener: OnClickListener
 ) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.create(parent)
@@ -45,7 +44,6 @@ class ArticleAdapter(
             articlePublishedBy.text = article.publishedAt
             articleSource.text = article.source.toString()
 
-
             // Load the image using Glide
             Glide.with(itemView)
                 .load(article.urlToImage)
@@ -62,5 +60,4 @@ class ArticleAdapter(
             }
         }
     }
-
 }

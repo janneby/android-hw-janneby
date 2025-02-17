@@ -1,6 +1,5 @@
 package se.linerotech.module205.project1
 
-
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
@@ -109,4 +108,4 @@ data class Drink(
     val strTags: String? = String(),
     @SerializedName("strVideo")
     val strVideo: String? = String()
-):Parcelable
+) : Parcelable

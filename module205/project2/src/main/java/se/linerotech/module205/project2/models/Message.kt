@@ -1,6 +1,5 @@
 package se.linerotech.module205.project2.models
 
-
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
@@ -199,4 +198,4 @@ data class Message(
     val whippet: List<String>? = null,
     @SerializedName("wolfhound")
     val wolfhound: List<String>? = null
-): Parcelable
+) : Parcelable

@@ -1,7 +1,7 @@
 package se.linerotech.module205.project1
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class NameSearch : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

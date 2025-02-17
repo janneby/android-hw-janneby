@@ -19,19 +19,17 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        binding.Namesearch.setOnClickListener(){
+        binding.Namesearch.setOnClickListener() {
             getCocktail()
         }
-
     }
 
-    private fun getCocktail(){
-        //Get cocktail name from edittext
+    private fun getCocktail() {
+        // Get cocktail name from edittext
         val cocktailName = binding.nameOfCocktail.text.trim().toString().lowercase()
-        if (cocktailName.isEmpty()){
+        if (cocktailName.isEmpty()) {
             Toast.makeText(this, "Name cant be empty", Toast.LENGTH_SHORT).show()
-
-        }else{
+        } else {
             RetrofitClient
                 .instance
                 .getDrinkInfo(cocktailName)
@@ -50,12 +48,9 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this@MainActivity, "Failed To retrieve data", Toast.LENGTH_SHORT).show()
                     }
                 })
-
         }
     }
-
 }
-
 
 /*
 

@@ -15,5 +15,4 @@ object NewsApiClient {
     val newsApiService: NewsApiService by lazy {
         retrofit.create(NewsApiService::class.java)
     }
-
 }

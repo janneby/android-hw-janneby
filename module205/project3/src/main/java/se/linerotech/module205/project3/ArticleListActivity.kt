@@ -28,8 +28,6 @@ class ArticleListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
-
         binding = ActivityArticleListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -87,7 +85,7 @@ class ArticleListActivity : AppCompatActivity() {
         // Set the visibility of the progress bar to GONE
         binding.progressBar.visibility = View.GONE
         val recyclerView: RecyclerView = binding.recyclerView
-        adapter = ArticleAdapter(listOfArticle){
+        adapter = ArticleAdapter(listOfArticle) {
             val intent = Intent(this, ArticleDetailsActivity::class.java)
             intent.putExtra(ArticleDetailsActivity.EXTRA_ARTICLE, it)
             startActivity(intent)
@@ -96,7 +94,6 @@ class ArticleListActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
-
 
     private fun fetchNews(query: String?) {
         if (query == null) {
@@ -142,4 +139,3 @@ class ArticleListActivity : AppCompatActivity() {
         const val EXTRA_SEARCH_QUERY = "extra_search_query"
     }
 }
-

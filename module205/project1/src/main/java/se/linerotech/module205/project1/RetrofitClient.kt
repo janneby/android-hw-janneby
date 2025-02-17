@@ -1,6 +1,5 @@
 package se.linerotech.module205.project1
 
-
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

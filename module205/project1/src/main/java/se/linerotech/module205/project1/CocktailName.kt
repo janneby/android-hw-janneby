@@ -1,6 +1,5 @@
 package se.linerotech.module205.project1
 
-
 import com.google.gson.annotations.SerializedName
 
 data class CocktailName(

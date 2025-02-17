@@ -34,4 +34,3 @@ class ArticleDetailsActivity : AppCompatActivity() {
         const val EXTRA_ARTICLE = "extra_article"
     }
 }
-

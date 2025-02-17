@@ -1,6 +1,5 @@
 package se.linerotech.module205.project3.model
 
-
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
@@ -13,4 +12,4 @@ data class NewsData(
     val status: String = "",
     @SerializedName("totalResults")
     val totalResults: Int = 0
-): Parcelable
+) : Parcelable
