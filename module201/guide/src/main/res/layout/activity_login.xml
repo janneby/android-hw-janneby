@@ -78,6 +78,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/buttonTwitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -86,6 +87,7 @@
             android:src="@drawable/twitter" />
 
         <ImageButton
+            android:id="@+id/buttonGoogle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -94,6 +96,7 @@
             android:src="@drawable/google" />
 
         <ImageButton
+            android:id="@+id/buttonFacebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
