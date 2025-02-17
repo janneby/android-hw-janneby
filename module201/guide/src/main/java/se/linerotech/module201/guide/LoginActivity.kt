@@ -22,13 +22,20 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        configureToolbar()
+        initializeViews()
+        setClickListeners()
+    }
+
+    private fun configureToolbar() {
+        supportActionBar?.title = ""
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         // My actionbar was black, no matter what I did so I changed background to white until I solve it
         // At least a litle better looking, but I lost the onclick effect
         // supportActionBar?.setBackgroundDrawable(getDrawable(R.color.white))
+    }
 
-        supportActionBar?.title = ""
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
+    private fun initializeViews() {
         buttonTwitter = findViewById(R.id.buttonTwitter)
         buttonGoogle = findViewById(R.id.buttonGoogle)
         buttonFacebook = findViewById(R.id.buttonFacebook)
@@ -36,53 +43,64 @@ class LoginActivity : AppCompatActivity() {
         editTextEmail = findViewById(R.id.editTextEmail)
         editTextPassword = findViewById(R.id.editTextPassword)
         buttonLogin = findViewById(R.id.buttonLogin)
+    }
 
+    private fun setClickListeners() {
         buttonTwitter?.setOnClickListener {
-            Toast.makeText(this, "Twitter Login", Toast.LENGTH_SHORT).show()
+            sendMessage("Twitter Login")
         }
 
         buttonGoogle?.setOnClickListener {
-            Toast.makeText(this, "Google Login", Toast.LENGTH_LONG).show()
+            sendMessage("Google Login")
         }
 
         buttonFacebook?.setOnClickListener {
-            Toast.makeText(this, "Facebook Login", Toast.LENGTH_SHORT).show()
+            sendMessage("Facebook Login")
         }
 
         textViewForgotPassword?.setOnClickListener {
-            Toast.makeText(this, "Forgot password", Toast.LENGTH_SHORT).show()
+            sendMessage("Forgot password")
         }
 
         buttonLogin?.setOnClickListener {
-            val email = editTextEmail?.text.toString().trim()
-            val password = editTextPassword?.text.toString().trim()
-
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                editTextEmail?.error = "Invalid email"
-                // Toast.makeText(this, "Invalid email", Toast.LENGTH_SHORT).show()
-            }
-            if (password.isEmpty()) {
-                editTextPassword?.error = "Password field cannot be - Empty"
-                // Toast.makeText(this, "Password field cannot be - Empty", Toast.LENGTH_SHORT).show()
-            }
-
-            if (Patterns.EMAIL_ADDRESS.matcher(email).matches() && password.isNotEmpty()) {
-                Toast.makeText(this, "Successful login", Toast.LENGTH_SHORT).show()
-            }
-
-            /*
-            Get inputted email
-            Get imputted password
-
-            if (email is invalid) {
-                Show error message
-            } else if (password is invalid) {
-                Show error message
-            } else {
-                Show the success message
-            }
-            */
+            validateCredentials()
         }
+    }
+
+    private fun validateCredentials() {
+        if (!isEmailValid()) {
+            notifyInvalidEmail()
+        }
+
+        if (!isPasswordValid()) {
+            notifyInvalidPassword()
+        }
+
+        if (isEmailValid() && isPasswordValid()) {
+            sendMessage("Successful login")
+        }
+    }
+
+    private fun notifyInvalidEmail() {
+        editTextEmail?.error = "Invalid email"
+    }
+
+    private fun notifyInvalidPassword() {
+        editTextPassword?.error = "Password field cannot be - Empty"
+    }
+
+    private fun isEmailValid(): Boolean {
+        val email = editTextEmail?.text.toString().trim()
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
+
+    private fun isPasswordValid(): Boolean {
+        val password = editTextPassword?.text.toString().trim()
+        return password.isNotEmpty()
+    }
+
+    private fun sendMessage(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
     // This code below is closing the login-window(LoginActivity)
