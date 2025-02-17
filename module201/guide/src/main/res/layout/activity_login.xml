@@ -30,9 +30,9 @@
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/montserrat"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
         android:inputType="textEmailAddress"
-        android:text="@string/email"
-
         android:textColor="@color/black" />
 
     <EditText
@@ -43,8 +43,9 @@
         android:layout_marginBottom="60dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/montserrat"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
         android:inputType="textPassword"
-        android:text="@string/password"
         android:textColor="@color/black" />
 
     <Button
