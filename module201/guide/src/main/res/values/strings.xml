@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">Module 201 - Guide</string>
-    <string name="linero_tech_ab">Linero Tech AB</string>
+    <string name="linero_tech_ab" translatable="false">Linero Tech AB</string>
     <string name="teaching_android_development">Teaching Android Development</string>
     <string name="login">Login</string>
     <string name="create_account">Create Account</string>
