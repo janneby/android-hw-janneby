@@ -10,13 +10,16 @@
         <activity
             android:name=".CreateAccountActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AndroidHomework"/>
         <activity
             android:name=".LoginActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AndroidHomework" />
         <activity
             android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
