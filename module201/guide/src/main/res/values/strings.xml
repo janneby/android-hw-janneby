@@ -14,4 +14,6 @@
     <string name="invalid_email">Invalid Email</string>
     <string name="password_cannot_be_empty">Password cannot be empty</string>
     <string name="username">Username</string>
+    <string name="username_cannot_by_empty">Username cannot be empty</string>
+    <string name="account_created">Account Created</string>
 </resources>
