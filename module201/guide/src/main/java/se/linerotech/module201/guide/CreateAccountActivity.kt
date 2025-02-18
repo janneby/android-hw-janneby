@@ -2,24 +2,21 @@ package se.linerotech.module201.guide
 
 import android.os.Bundle
 import android.util.Patterns
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import se.linerotech.module201.guide.databinding.ActivityCreateAccountBinding
 
 class CreateAccountActivity : AppCompatActivity() {
-    private var buttonCreateAccount: Button? = null
-    private var editTextUsername: EditText? = null
-    private var editTextEmail: EditText? = null
-    private var editTextPassword: EditText? = null
+    private lateinit var binding: ActivityCreateAccountBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_account)
+
+        binding = ActivityCreateAccountBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         configureToolbar()
-        initializeViews()
         setClickListeners()
     }
 
@@ -28,20 +25,15 @@ class CreateAccountActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-    private fun initializeViews() {
-        buttonCreateAccount = findViewById(R.id.buttonCreateAccount)
-        editTextUsername = findViewById(R.id.editTextUserName)
-        editTextEmail = findViewById(R.id.editTextEmail)
-        editTextPassword = findViewById(R.id.editTextPassword)
-    }
-
     private fun setClickListeners() {
-        buttonCreateAccount?.setOnClickListener {
+        binding.buttonCreateAccount.setOnClickListener {
             validateCredentials()
         }
     }
 
     private fun validateCredentials() {
+        val username = binding.editTextUsername.text.toString()
+
         if (!isUsernameValid()) {
             notifyInvalidUsername()
         }
@@ -60,29 +52,29 @@ class CreateAccountActivity : AppCompatActivity() {
     }
 
     private fun notifyInvalidUsername() {
-        editTextUsername?.error = getString(R.string.username_cannot_by_empty)
+        binding.editTextUsername.error = getString(R.string.username_cannot_by_empty)
     }
 
     private fun notifyInvalidEmail() {
-        editTextEmail?.error = getString(R.string.invalid_email)
+        binding.editTextEmail.error = getString(R.string.invalid_email)
     }
 
     private fun notifyInvalidPassword() {
-        editTextPassword?.error = getString(R.string.password_cannot_be_empty)
+        binding.editTextPassword.error = getString(R.string.password_cannot_be_empty)
     }
 
     private fun isUsernameValid(): Boolean {
-        val username = editTextUsername?.text.toString().trim()
+        val username = binding.editTextUsername.text.toString().trim()
         return username.isNotEmpty()
     }
 
     private fun isEmailValid(): Boolean {
-        val email = editTextEmail?.text.toString().trim()
+        val email = binding.editTextEmail.text.toString().trim()
         return Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
 
     private fun isPasswordValid(): Boolean {
-        val password = editTextPassword?.text.toString().trim()
+        val password = binding.editTextPassword.text.toString().trim()
         return password.isNotEmpty()
     }
 
