@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@android:color/transparent</item>
     </style>
 
     <style name="Theme.AndroidHomework" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -20,6 +21,7 @@
         <item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
         <item name="colorPrimary">@android:color/transparent</item>
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="actionBarStyle">@android:color/transparent</item>
     </style>
 
 </resources>
