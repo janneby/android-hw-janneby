@@ -27,6 +27,7 @@ class CreateAccountActivity : AppCompatActivity() {
         supportActionBar?.title = ""
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
+
     private fun initializeViews() {
         buttonCreateAccount = findViewById(R.id.buttonCreateAccount)
         editTextUsername = findViewById(R.id.editTextUserName)
