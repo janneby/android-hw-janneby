@@ -13,9 +13,16 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
+        initializeViews()
+        setClickListeners()
+    }
+
+    private fun initializeViews() {
         buttonLogin = findViewById(R.id.buttonLogin)
         buttonCreateAccount = findViewById(R.id.buttonCreateAccount)
+    }
 
+    private fun setClickListeners() {
         buttonLogin?.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
