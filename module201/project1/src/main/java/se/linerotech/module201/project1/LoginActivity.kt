@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -57,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         if (isEmailValid() && isPasswordValid()) {
-            sendMessage(message = getString(R.string.successful_login))
+            sendMessage(message = R.string.successful_login)
         }
     }
 
@@ -79,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
         return password.isNotEmpty()
     }
 
-    private fun sendMessage(message: String) {
+    private fun sendMessage(@StringRes message: Int) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 

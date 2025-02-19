@@ -2,8 +2,9 @@ package se.linerotech.module201.project1
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
+import android.widget.Toast
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +36,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         facebookButton?.setOnClickListener {
-            Log.d("FacebookButton", "FacebookButton - I am clicked")
+            sendMessage(message = R.string.connect_with_facebook)
         }
+    }
+
+    private fun sendMessage(@StringRes message: Int) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
