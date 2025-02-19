@@ -5,9 +5,9 @@
     android:id="@+id/register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="21dp"
     android:layout_gravity="center"
     android:background="@drawable/background"
+    android:paddingHorizontal="21dp"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -82,8 +82,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        android:textAlignment="center"
         android:text="@string/dont_have_an_account"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,9 +94,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textColor="@color/darksalmon"
-        android:textAlignment="center"
         android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/darksalmon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
