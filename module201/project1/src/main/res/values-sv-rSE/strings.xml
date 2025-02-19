@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Module 201 - Project 1</string>
+    <string name="coffee_first_coding_later">Koda först, kaffe senare!</string>
+    <string name="login">Logga in</string>
+    <string name="register">Registrera</string>
+    <string name="connect_with_facebook">Logga in med Facebook</string>
+    <string name="welcome_back">Välkommen tillbaka!</string>
+    <string name="email">E-post</string>
+    <string name="password">Lösenord</string>
+    <string name="dont_have_an_account">Saknar du konto ?</string>
+    <string name="its_coffee_time">Kaffe dags!</string>
+    <string name="username">Användarnamn</string>
+    <string name="already_a_member">Redan medlem?</string>
+    <string name="successful_login">Lyckad inloggning</string>
+    <string name="invalid_email">Felaktig E-post</string>
+    <string name="password_field_cannot_be_empty">Lösenord kan inte vara tomt</string>
+    <string name="username_field_cannot_be_empty">Användarnamn kan inte vara tomt</string>
+    <string name="successful_register_account">Lyckad konto registrering</string>
+</resources>
