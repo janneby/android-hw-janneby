@@ -11,7 +11,7 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/itsCoffeeTime"
+        android:id="@+id/textViewItsCoffeeTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/editTextUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -34,7 +34,7 @@
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/itsCoffeeTime" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewItsCoffeeTime" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -47,7 +47,7 @@
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/userName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -78,11 +78,11 @@
         app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
 
     <TextView
-        android:id="@+id/alreadyAMember"
+        android:id="@+id/textViewAlreadyAMember"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        android:text="@string/dont_have_an_account"
+        android:text="@string/already_a_member"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -90,16 +90,16 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/textViewLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/register"
+        android:text="@string/login"
         android:textAlignment="center"
         android:textColor="@color/darksalmon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alreadyAMember" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlreadyAMember" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
