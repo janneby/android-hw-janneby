@@ -11,7 +11,7 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/welcomeBack"
+        android:id="@+id/textViewWelcomeBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
@@ -34,7 +34,7 @@
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeBack" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcomeBack" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
 
     <TextView
-        android:id="@+id/dontHaveAnAccount"
+        android:id="@+id/textViewDontHaveAnAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/textViewRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -87,6 +87,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dontHaveAnAccount" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDontHaveAnAccount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

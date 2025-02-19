@@ -11,4 +11,8 @@
     <string name="its_coffee_time">It´s coffee time!</string>
     <string name="username">Username</string>
     <string name="already_a_member">Already a member?</string>
+    <string name="successful_login">Successful Login</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="password_field_cannot_be_empty">Password field cannot be empty</string>
+    <string name="username_field_cannot_be_empty">Username field cannot be empty</string>
 </resources>
