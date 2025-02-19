@@ -15,10 +15,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        initializeViews()
+        setClickListeners()
+    }
+
+    private fun initializeViews() {
         buttonLogin = findViewById(R.id.buttonLogin)
         registerButton = findViewById(R.id.buttonRegister)
         facebookButton = findViewById(R.id.buttonFacebook)
+    }
 
+    private fun setClickListeners() {
         buttonLogin?.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }

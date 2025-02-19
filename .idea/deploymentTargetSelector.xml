@@ -29,6 +29,9 @@
       <SelectionState runConfigName="Module 201 - Guide">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="Module 201 - Project 1">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
