@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             binding.textViewTotalKr.text = "$doubleTotal kr"
             binding.textViewBillKr.text = "$doubleBill kr"
             binding.textViewTipKr.text = "$doubleTip kr"
-        } else if (intPercentValue == PERCENT_VALUE) {
+        } else if (intPercentValue == ZERO_VALUE) {
             sendMessage(R.string.tip_amount_cant_be_less_then_0)
         } else {
             sendMessage(R.string.bill_amount_cant_be_empty)
