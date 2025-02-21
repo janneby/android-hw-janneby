@@ -1,18 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/darkslategray"
+    android:paddingHorizontal="25dp"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewTipsy"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/tipsy"
+        android:textAlignment="center"
+        android:textColor="@color/crimsonRed"
+        android:textSize="65dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textViewEnterBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Enter bill amount"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_below="@+id/textViewTipsy"/>
+
+    <EditText
+        android:id="@+id/editTextBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:hint="Bill amount"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/textViewEnterBillAmount"/>
+
+    <TextView
+        android:id="@+id/textViewChooseTipAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Choose tip amount"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_below="@+id/editTextBillAmount"/>
+
+    <LinearLayout
+        android:id="@+id/linearVerticalGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:layout_below="@+id/textViewChooseTipAmount"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/mediumseagreen"
+            android:text="@string/minus"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textViewTipPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:layout_marginHorizontal="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/mediumseagreen"
+            android:text="@string/plus"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTotalKr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="0.00 kr"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:layout_below="@+id/linearVerticalGroup1"/>
+    <TextView
+        android:id="@+id/textViewSumTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="total"
+        android:textAlignment="center"
+        android:textColor="@color/crimsonRed"
+        android:textSize="40dp"
+        android:layout_below="@+id/textViewTotalKr"/>
+
+    <LinearLayout
+        android:id="@+id/linearVerticalGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/textViewSumTotal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearHorizontalGroupLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewBillKr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="0.00 kr"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/textViewBillText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="bill"
+                android:textAlignment="center"
+                android:textColor="@color/crimsonRed"
+                android:textSize="25dp"
+                android:layout_below="@+id/textViewBillKr"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearHorizontalGroupRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewTipKr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="0.00 kr"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+            <TextView
+                android:id="@+id/textViewTipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="tip"
+                android:textAlignment="center"
+                android:textColor="@color/crimsonRed"
+                android:textSize="25dp"
+                android:layout_below="@+id/textViewTipKr"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
