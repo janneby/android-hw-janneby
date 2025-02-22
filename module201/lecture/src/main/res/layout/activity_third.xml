@@ -31,10 +31,11 @@
 
     <EditText
         android:id="@+id/editTextEnterAmount"
+        tools:text="Enter amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="58dp"
-        android:hint="@string/enter_amount"
+
         android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -88,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="US Dollar"
+                android:text="@string/us_dollar"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 

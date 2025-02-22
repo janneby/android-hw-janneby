@@ -14,5 +14,11 @@
     <string name="the_logo_for_yen">The logo for Yen</string>
     <string name="swedish_krona">Swedish Krona</string>
     <string name="enter_amount">Enter amount</string>
-    <string name="euro">Euro</string>
+    <string name="euro_defaultValue">0.00</string>
+    <string name="dollar_defaultValue">0.00</string>
+    <string name="euro">(€)Euro</string>
+    <string name="us_dollar">($)US Dollar</string>
+    <string name="swedish_krona_to_high_set_a_lower_value">Swedish Krona to high, set a lower value!</string>
+    <string name="euro_value">%1$s €</string>
+    <string name="dollar_value">%1$s $</string>
 </resources>
