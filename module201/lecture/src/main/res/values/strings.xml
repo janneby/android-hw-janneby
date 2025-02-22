@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Module 201 - Lecture</string>
+    <string name="the_app_logo_x_changer">the app logo X Changer</string>
+    <string name="find_the_best_cash_n_exchange_rates">Find the best cash \n exchange rates</string>
+    <string name="continue_">Continue</string>
+    <string name="x_changer">X-Changer</string>
+    <string name="we_accept_all_major_currencies">We accept all major  \n currencies</string>
+    <string name="get_started">Get Started</string>
+    <string name="the_logo_for_euro">The logo for Euro</string>
+    <string name="the_logo_for_dollar">The logo for Dollar</string>
+    <string name="the_logo_for_pound">The logo for Pound</string>
+    <string name="the_logo_for_franc">The logo for Franc</string>
+    <string name="the_logo_for_lira">The logo for Lira</string>
+    <string name="the_logo_for_yen">The logo for Yen</string>
+    <string name="swedish_krona">Swedish Krona</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="euro">Euro</string>
 </resources>
