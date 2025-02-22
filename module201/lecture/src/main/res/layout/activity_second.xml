@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black_Pearl"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/moneyGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/the_logo_for_euro"
+            android:src="@drawable/euro" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/the_logo_for_dollar"
+            android:src="@drawable/dollar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/the_logo_for_pound"
+            android:src="@drawable/pound" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moneyGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/the_logo_for_franc"
+            android:src="@drawable/franc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/the_logo_for_lira"
+            android:src="@drawable/lira" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/the_logo_for_yen"
+            android:src="@drawable/yen" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/x_changer"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/we_accept_all_major_currencies"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <Button
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="281dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@color/darkorange"
+        android:text="@string/get_started" />
+
+</LinearLayout>
