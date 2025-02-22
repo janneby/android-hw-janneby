@@ -9,3 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
+
+// How to calculate the monthly payments of a mortgage
+// M = p [ i(1 + i)^n ] / [ ((1 + i)^n) – 1]
