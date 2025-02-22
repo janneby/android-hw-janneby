@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomework">
         <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
