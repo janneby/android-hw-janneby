@@ -8,4 +8,8 @@
     <string name="year_of_birth">Year of birth</string>
     <string name="month_of_birth">Month of birth</string>
     <string name="your_age_in">Your age in</string>
+    <string name="day_of_birth">Day of birth</string>
+    <string name="year_is_asumed_to_have_max_4_digits_max_birth_is_2025">Year is asumed to have max 4 digits \n Max birth is 2025</string>
+    <string name="month_is_asumed_to_have_max_2_digits_max_month_is_12">Month is asumed to have max 2 digits \n Max month is 12</string>
+    <string name="day_is_asumed_to_have_max_2_digits_max_day_is_31">Day is asumed to have max 2 digits \n Max day is 31</string>
 </resources>
