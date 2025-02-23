@@ -5,20 +5,45 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background_2"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity2">
 
     <ImageView
-        android:background="@drawable/transfer_money"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/transfer_money" />
 
     <TextView
-        android:text="Instantly receive /n money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="@string/instantly_receive_money"
+        android:textAlignment="center"
+        android:textColor="@color/darkorange"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/apply_to_over_100_banks_and_after_a_n_few_minutes_you_will_receive_the_money_n_to_your_back_account"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:text="@string/next"
+        android:textSize="15sp"
+        android:textColor="@color/darkorange"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="27dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
 
 </LinearLayout>
