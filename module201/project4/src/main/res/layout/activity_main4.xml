@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
         android:layout_marginBottom="138dp"
-        android:background="@drawable/investing" />
+        android:background="@drawable/investing"
+        android:contentDescription="@string/image_investing" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,20 +32,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
-        android:text="No hidden costs. No hidden fees. All the \n data is easy clear and to point."
+        android:text="@string/no_hidden_costs_no_hidden_fees_all_the_n_data_is_easy_clear_and_to_point"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textViewNext"
-        android:text="@string/next"
-        android:textSize="15sp"
-        android:textColor="@color/darkorange"
-        android:layout_marginBottom="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="170dp"
         android:layout_marginRight="27dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="22dp"
+        android:text="@string/next"
+        android:textColor="@color/darkorange"
+        android:textSize="15sp" />
 
 </LinearLayout>

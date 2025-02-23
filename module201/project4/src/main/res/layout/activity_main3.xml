@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
         android:layout_marginBottom="84dp"
-        android:background="@drawable/vault" />
+        android:background="@drawable/vault"
+        android:contentDescription="@string/image_vault" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
-        android:text="All your data is encrypted and securely \n stored. Your data belongs to you."
+        android:text="@string/all_your_data_is_encrypted_and_securely_n_stored_your_data_belongs_to_you"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="15sp" />

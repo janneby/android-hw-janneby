@@ -19,7 +19,7 @@ class MainActivity3 : AppCompatActivity() {
 
     private fun setTextViewListener() {
         binding.textViewNext.setOnClickListener() {
-            startActivity(Intent(this,  MainActivity4::class.java))
+            startActivity(Intent(this, MainActivity4::class.java))
         }
     }
 }

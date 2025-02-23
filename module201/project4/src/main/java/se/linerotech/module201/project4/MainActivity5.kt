@@ -15,7 +15,6 @@ class MainActivity5 : AppCompatActivity() {
         setContentView(binding.root)
 
         setButtonOnClickListener()
-
     }
 
     private fun setButtonOnClickListener() {
@@ -39,12 +38,12 @@ class MainActivity5 : AppCompatActivity() {
         val interestRateI = binding.editTextInterestRate.text.toString().toDouble()
         val payBacktimeN = binding.editTextPaybackTime.text.toString().toDouble()
 
-        val P = loanAmountP
+        val p = loanAmountP
         val i = interestRateI / 100.0 / 12.0
         val n = payBacktimeN * 12
 
         // M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
-        val mortage = P * ( i * (1.0 + i ).pow(n) ) / ( (1.0 + i).pow(n) - 1.0 )
+        val mortage = p * (i * (1.0 + i).pow(n)) / ((1.0 + i).pow(n) - 1.0)
 
         binding.setTextKrMonth.text = getString(
             R.string.mortage_value,
@@ -52,4 +51,3 @@ class MainActivity5 : AppCompatActivity() {
         )
     }
 }
-

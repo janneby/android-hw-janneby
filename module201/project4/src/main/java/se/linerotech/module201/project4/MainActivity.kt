@@ -19,15 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setButtonOnClickListener() {
         binding.buttonGetStarted.setOnClickListener() {
-            startActivity(Intent(this,  MainActivity2::class.java))
+            startActivity(Intent(this, MainActivity2::class.java))
         }
     }
-
-    // How to calculate the monthly payments of a mortgage
-    // M = p [ i(1 + i)^n ] / [ ((1 + i)^n) – 1]
-    private fun calcLoan() {
-
-    }
-
 }
-

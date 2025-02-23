@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
         android:layout_marginBottom="172dp"
-        android:background="@drawable/transfer_money" />
+        android:background="@drawable/transfer_money"
+        android:contentDescription="@string/image_transfer_money" />
 
     <TextView
         android:layout_width="wrap_content"

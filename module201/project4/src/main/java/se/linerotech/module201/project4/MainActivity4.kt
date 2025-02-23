@@ -11,7 +11,7 @@ class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding= ActivityMain4Binding.inflate(layoutInflater)
+        binding = ActivityMain4Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setTextViewListener()
@@ -19,7 +19,7 @@ class MainActivity4 : AppCompatActivity() {
 
     private fun setTextViewListener() {
         binding.textViewNext.setOnClickListener() {
-            //startActivity(Intent(this,  MainActivity5::class.java))
+            startActivity(Intent(this, MainActivity5::class.java))
         }
     }
 }

@@ -12,29 +12,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="@color/blacky"
         android:layout_marginTop="532dp"
         android:layout_marginBottom="17dp"
-        android:text="Welcome" />
+        android:text="@string/welcome"
+        android:textColor="@color/blacky"
+        android:textSize="30sp" />
 
     <TextView
-        android:text="LT Finance helps you calculate \n and apply for mortages in \n over 100+ banks"
-        android:layout_marginBottom="38dp"
-        android:textSize="15sp"
-        android:textColor="@color/blacky"
-        android:textAlignment="center"
-        android:layout_marginHorizontal="25dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/lt_finance_helps_you_calculate_n_and_apply_for_mortages_in_n_over_100_banks"
+        android:textAlignment="center"
+        android:textColor="@color/blacky"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/buttonGetStarted"
-        android:text="Get started"
-        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="38dp"
         android:backgroundTint="@color/darkorange"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="@string/get_started"
+        android:textColor="@color/white" />
 
 </LinearLayout>
