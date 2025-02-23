@@ -22,7 +22,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,  MainActivity2::class.java))
         }
     }
+
+    // How to calculate the monthly payments of a mortgage
+    // M = p [ i(1 + i)^n ] / [ ((1 + i)^n) – 1]
+    private fun calcLoan() {
+
+    }
+
 }
 
-// How to calculate the monthly payments of a mortgage
-// M = p [ i(1 + i)^n ] / [ ((1 + i)^n) – 1]
