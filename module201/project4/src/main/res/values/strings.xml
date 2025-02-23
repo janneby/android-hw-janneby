@@ -5,4 +5,18 @@
     <string name="next">NEXT</string>
     <string name="military_grade_security">Military Grade \n Security</string>
     <string name="easy_to_visualize_n_monthly_costs">Easy to visualize \n monthly costs</string>
+    <string name="calculate_mortage">Calculate mortage</string>
+    <string name="payback_time">Payback time</string>
+    <string name="years_to_payback">Years to payback</string>
+    <string name="yearly_interest_rate">Yearly Interest rate</string>
+    <string name="interest_rate">Interest rate</string>
+    <string name="welcome">Welcome</string>
+    <string name="lt_finance_helps_you_calculate_n_and_apply_for_mortages_in_n_over_100_banks">LT Finance helps you calculate \n and apply for mortages in \n over 100+ banks</string>
+    <string name="get_started">Get started</string>
+    <string name="all_your_data_is_encrypted_and_securely_n_stored_your_data_belongs_to_you">All your data is encrypted and securely \n stored. Your data belongs to you.</string>
+    <string name="image_investing">Image Investing</string>
+    <string name="image_vault">Image Vault</string>
+    <string name="image_transfer_money">Image transfer money</string>
+    <string name="no_hidden_costs_no_hidden_fees_all_the_n_data_is_easy_clear_and_to_point">No hidden costs. No hidden fees. All the \n data is easy clear and to point.</string>
+    <string name="mortage_value">%1$s Kr / Month</string>
 </resources>
