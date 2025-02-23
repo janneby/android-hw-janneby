@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/vault" />
 
     <TextView
@@ -38,13 +38,13 @@
 
     <TextView
         android:id="@+id/textViewNext"
-        android:text="@string/next"
-        android:textSize="15sp"
-        android:textColor="@color/darkorange"
-        android:layout_marginBottom="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="170dp"
         android:layout_marginRight="27dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="22dp"
+        android:text="@string/next"
+        android:textColor="@color/darkorange"
+        android:textSize="15sp" />
 
 </LinearLayout>
