@@ -37,6 +37,7 @@
         android:textSize="15sp" />
 
     <TextView
+        android:id="@+id/textViewNext"
         android:text="@string/next"
         android:textSize="15sp"
         android:textColor="@color/darkorange"

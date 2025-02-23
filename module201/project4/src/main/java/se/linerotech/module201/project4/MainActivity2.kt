@@ -1,5 +1,6 @@
 package se.linerotech.module201.project4
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import se.linerotech.module201.project4.databinding.ActivityMain2Binding
@@ -17,6 +18,8 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun setTextViewListener() {
-        //binding
+        binding.textViewNext.setOnClickListener() {
+            startActivity(Intent(this,  MainActivity3::class.java))
+        }
     }
 }
