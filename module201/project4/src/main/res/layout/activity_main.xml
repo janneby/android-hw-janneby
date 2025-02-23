@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/buttonGetStarted"
         android:text="Get started"
         android:textColor="@color/white"
         android:layout_marginBottom="38dp"
