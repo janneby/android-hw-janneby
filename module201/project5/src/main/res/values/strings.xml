@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">Module 201 - Project 5</string>
+    <string name="years">Years</string>
+    <string name="months">Months</string>
+    <string name="weeks">Weeks</string>
+    <string name="days">Days</string>
+    <string name="age_calculator">Age Calculator</string>
+    <string name="year_of_birth">Year of birth</string>
+    <string name="month_of_birth">Month of birth</string>
+    <string name="your_age_in">Your age in</string>
 </resources>
