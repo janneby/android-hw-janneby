@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blacky">#05171C</color>
     <color name="darkorange">#FF9701</color>
+    <color name="grayLight">#898989</color>
 </resources>
