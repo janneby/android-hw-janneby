@@ -1,5 +1,6 @@
 package se.linerotech.module202.guide
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showCategories() {
         binding.recyclerView.apply {
-            adapter = CategoryRecylerViewAdapter(items = categories())
+            adapter = CategoryRecyclerViewAdapter(items = categories(), onCellClicked = ::showNews)
             layoutManager = LinearLayoutManager(this@MainActivity)
             setHasFixedSize(true)
         }
@@ -40,5 +41,9 @@ class MainActivity : AppCompatActivity() {
             Category(name = getString(R.string.science), image = R.drawable.science_image),
             Category(name = getString(R.string.technology), image = R.drawable.technology_image),
         )
+    }
+
+    private fun showNews() {
+        startActivity(Intent(this, NewsListActivity::class.java))
     }
 }
