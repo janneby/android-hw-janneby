@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun configureToolbar() {
         setSupportActionBar(binding.toolbar)
-        supportActionBar?.title = "Categories"
+        supportActionBar?.title = getString(R.string.categories)
     }
 
     private fun showCategories() {
