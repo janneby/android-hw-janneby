@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val ZERO_VALUE = 0.0
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
