@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="general">Almänna områden</string>
+    <string name="business">Affärsliv</string>
+    <string name="entertainment">Nöjje och underhållning</string>
+    <string name="health">Hälsa</string>
+    <string name="sports">Sport</string>
+    <string name="science">Vetenskap</string>
+    <string name="technology">Teknologi</string>
+    <string name="categories">Kategorier</string>
+</resources>
