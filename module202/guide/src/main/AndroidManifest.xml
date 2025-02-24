@@ -8,6 +8,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomework">
         <activity
+            android:name=".NewsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -16,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
