@@ -7,12 +7,10 @@ import se.linerotech.module202.guide.databinding.LayoutCellCategoryBinding
 
 class CategoryRecylerViewAdapter(
     val items: List<Category>
-) : RecyclerView.Adapter<CategoryViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
-        val binding =
-            LayoutCellCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+) : RecyclerView.Adapter<CategoryRecylerViewAdapter.CategoryViewHolder>() {
 
-        return CategoryViewHolder(binding)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
+        return CategoryViewHolder.create(parent)
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
@@ -22,5 +20,21 @@ class CategoryRecylerViewAdapter(
 
     override fun getItemCount(): Int {
         return items.size
+    }
+
+    class CategoryViewHolder(private val binding: LayoutCellCategoryBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(category: Category) {
+            binding.categoryName.text = category.name
+            binding.cardView.setBackgroundResource(category.image)
+        }
+
+        companion object {
+            fun create(parent: ViewGroup): CategoryViewHolder {
+                val binding = LayoutCellCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+                return CategoryViewHolder(binding)
+            }
+        }
     }
 }
