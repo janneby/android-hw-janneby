@@ -1,6 +1,5 @@
 package se.linerotech.module202.guide
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -43,7 +42,8 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-    private fun showNews() {
-        startActivity(Intent(this, NewsListActivity::class.java))
+    private fun showNews(categoryName: String) {
+        val intent = NewsListActivity.intent(this, categoryName)
+        startActivity(intent)
     }
 }

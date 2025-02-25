@@ -7,7 +7,7 @@ import se.linerotech.module202.guide.databinding.LayoutCellCategoryBinding
 
 class CategoryRecyclerViewAdapter(
     private val items: List<Category>,
-    private val onCellClicked: () -> Unit,
+    private val onCellClicked: (String) -> Unit,
 ) : RecyclerView.Adapter<CategoryRecyclerViewAdapter.CategoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
@@ -25,23 +25,18 @@ class CategoryRecyclerViewAdapter(
 
     class CategoryViewHolder(
         private val binding: LayoutCellCategoryBinding,
-        private val onCellClicked: () -> Unit
+        private val onCellClicked: (String) -> Unit
     ) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(category: Category) {
             binding.categoryName.text = category.name
             binding.cardView.setBackgroundResource(category.image)
-            binding.cardView.setOnClickListener {
-                onCellClicked()
-
-                // Toast.makeText(context, "Toast-test!", Toast.LENGTH_SHORT).show()
-                // Log.d("View Holder", "The category clicked = ${category.name}")
-            }
+            binding.cardView.setOnClickListener { onCellClicked(category.name) }
         }
 
         companion object {
-            fun create(parent: ViewGroup, onCellClicked: () -> Unit): CategoryViewHolder {
+            fun create(parent: ViewGroup, onCellClicked: (String) -> Unit): CategoryViewHolder {
                 val binding = LayoutCellCategoryBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
