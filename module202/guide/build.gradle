@@ -3,6 +3,7 @@ plugins {
     // DO NOT CHANGE OR UPDATE THE PLUGINS OR VERSION, UNLESS SPECIFIED BY THE INSTRUCTOR
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
     id 'kotlin-parcelize'
     // Also add ksp plugin in project-level build.gradle file
     id 'com.google.devtools.ksp'
