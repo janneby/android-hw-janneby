@@ -76,7 +76,7 @@ class NewsListActivity : AppCompatActivity() {
 
         binding.recyclerView.apply {
             visibility = View.VISIBLE
-            addItemDecoration(DividerItemDecoration(this@NewsListActivity), LinearLayout.VERTICAL)
+            addItemDecoration(DividerItemDecoration(this@NewsListActivity, LinearLayout.VERTICAL))
             adapter = NewsRecyclerViewAdapter(items = news, onCellClicked = ::showNewsDetails)
             layoutManager = LinearLayoutManager(this@NewsListActivity)
             setHasFixedSize(true)
