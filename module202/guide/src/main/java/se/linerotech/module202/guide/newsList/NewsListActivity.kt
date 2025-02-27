@@ -60,7 +60,8 @@ class NewsListActivity : AppCompatActivity() {
     }
 
     private fun categoryName(): String {
-        return intent.getStringExtra(KEY_CATEGORY_NAME) ?: ""
+        val categoryName = intent.getIntExtra(KEY_CATEGORY_NAME, 0)
+        return getString(categoryName)
     }
 
     private fun showProgressBar() {
@@ -93,7 +94,7 @@ class NewsListActivity : AppCompatActivity() {
     companion object {
         private const val KEY_CATEGORY_NAME = "KEY_CATEGORY_NAME"
 
-        fun intent(context: Context, categoryName: String): Intent {
+        fun intent(context: Context, categoryName: Int): Intent {
             val intent = Intent(context, NewsListActivity::class.java)
             intent.putExtra(KEY_CATEGORY_NAME, categoryName)
             return intent
