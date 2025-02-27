@@ -1,4 +1,4 @@
-package se.linerotech.module202.guide
+package se.linerotech.module202.guide.common
 
 data class News(
     val title: String,

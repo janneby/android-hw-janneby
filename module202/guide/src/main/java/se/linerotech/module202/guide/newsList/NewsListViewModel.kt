@@ -1,4 +1,4 @@
-package se.linerotech.module202.guide
+package se.linerotech.module202.guide.newsList
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -7,6 +7,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import se.linerotech.module202.guide.common.News
 
 class NewsListViewModel : ViewModel() {
     private val _state = MutableStateFlow<NewsListState>(NewsListState.Loading)

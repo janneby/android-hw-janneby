@@ -1,8 +1,9 @@
-package se.linerotech.module202.guide
+package se.linerotech.module202.guide.selectCategory
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import se.linerotech.module202.guide.common.Category
 import se.linerotech.module202.guide.databinding.LayoutCellCategoryBinding
 
 class CategoryRecyclerViewAdapter(

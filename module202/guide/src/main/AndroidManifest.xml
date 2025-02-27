@@ -8,10 +8,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomework">
         <activity
-            android:name=".NewsListActivity"
+            android:name=".newsList.NewsListActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".selectCategory.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

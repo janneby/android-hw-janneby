@@ -1,8 +1,11 @@
-package se.linerotech.module202.guide
+package se.linerotech.module202.guide.selectCategory
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import se.linerotech.module202.guide.common.Category
+import se.linerotech.module202.guide.newsList.NewsListActivity
+import se.linerotech.module202.guide.R
 import se.linerotech.module202.guide.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

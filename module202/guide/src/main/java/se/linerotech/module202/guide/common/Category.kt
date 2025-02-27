@@ -1,4 +1,4 @@
-package se.linerotech.module202.guide
+package se.linerotech.module202.guide.common
 
 import androidx.annotation.DrawableRes
 

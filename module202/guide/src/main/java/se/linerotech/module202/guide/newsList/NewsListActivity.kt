@@ -1,4 +1,4 @@
-package se.linerotech.module202.guide
+package se.linerotech.module202.guide.newsList
 
 import android.content.Context
 import android.content.Intent
@@ -14,6 +14,8 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.launch
+import se.linerotech.module202.guide.R
+import se.linerotech.module202.guide.common.News
 import se.linerotech.module202.guide.databinding.ActivityNewsListBinding
 
 class NewsListActivity : AppCompatActivity() {
