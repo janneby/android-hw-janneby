@@ -3,6 +3,8 @@ package se.linerotech.module202.guide.newsList
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import se.linerotech.module202.guide.R
 import se.linerotech.module202.guide.common.News
 import se.linerotech.module202.guide.databinding.LayoutCellNewsBinding
 
@@ -35,6 +37,20 @@ class NewsRecyclerViewAdapter(
             binding.textViewDate.text = news.date
             binding.textViewTitle.text = news.title
             binding.root.setOnClickListener { onCellClicked() }
+            loadImage(url = news.image)
+        }
+
+        private fun loadImage(url: String) {
+            if (url.isEmpty()) {
+                binding.image.setImageResource(R.drawable.general_image)
+            } else {
+                Glide
+                    .with(binding.image)
+                    .load(url)
+                    .placeholder(R.drawable.general_image)
+                    .centerCrop()
+                    .into(binding.image)
+            }
         }
 
         companion object {

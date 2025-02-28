@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showNews(categoryName: Int) {
-        val intent = NewsListActivity.intent(this, categoryName)
+    private fun showNews(category: Category) {
+        val intent = NewsListActivity.intent(this, category.name, category.id)
         startActivity(intent)
     }
 }

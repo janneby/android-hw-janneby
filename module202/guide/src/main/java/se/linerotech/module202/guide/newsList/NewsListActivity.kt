@@ -20,7 +20,7 @@ import se.linerotech.module202.guide.databinding.ActivityNewsListBinding
 
 class NewsListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewsListBinding
-    private val viewModel: NewsListViewModel by viewModels { NewsListViewModel.factory() }
+    private val viewModel: NewsListViewModel by viewModels { NewsListViewModel.factory(categoryId()) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,6 +64,10 @@ class NewsListActivity : AppCompatActivity() {
         return getString(categoryName)
     }
 
+    private fun categoryId(): String {
+        return intent.getStringExtra(KEY_CATEGORY_ID) ?: ""
+    }
+
     private fun showProgressBar() {
         binding.progressBar.visibility = View.VISIBLE
     }
@@ -92,11 +96,13 @@ class NewsListActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val KEY_CATEGORY_NAME = "KEY_CATEGORY_NAME"
+        private const val KEY_CATEGORY_NAME = "CATEGORY_NAME"
+        private const val KEY_CATEGORY_ID = "CATEGORY_ID"
 
-        fun intent(context: Context, categoryName: Int): Intent {
+        fun intent(context: Context, categoryName: Int, categoryId: String): Intent {
             val intent = Intent(context, NewsListActivity::class.java)
             intent.putExtra(KEY_CATEGORY_NAME, categoryName)
+            intent.putExtra(KEY_CATEGORY_ID, categoryId)
             return intent
         }
     }
