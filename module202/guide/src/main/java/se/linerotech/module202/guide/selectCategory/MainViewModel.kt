@@ -13,13 +13,13 @@ class MainViewModel : ViewModel() {
 
     private fun categories(): List<Category> {
         return listOf(
-            Category(name = R.string.general, image = R.drawable.general_image),
-            Category(name = R.string.business, image = R.drawable.business_image),
-            Category(name = R.string.entertainment, image = R.drawable.entertainment_image),
-            Category(name = R.string.health, image = R.drawable.health_image),
-            Category(name = R.string.sports, image = R.drawable.sports_image),
-            Category(name = R.string.science, image = R.drawable.science_image),
-            Category(name = R.string.technology, image = R.drawable.technology_image),
+            Category(id = "general", name = R.string.general, image = R.drawable.general_image),
+            Category(id = "business", name = R.string.business, image = R.drawable.business_image),
+            Category(id = "entertainment", name = R.string.entertainment, image = R.drawable.entertainment_image),
+            Category(id = "health", name = R.string.health, image = R.drawable.health_image),
+            Category(id = "sports", name = R.string.sports, image = R.drawable.sports_image),
+            Category(id = "science", name = R.string.science, image = R.drawable.science_image),
+            Category(id = "technology", name = R.string.technology, image = R.drawable.technology_image),
         )
     }
 
