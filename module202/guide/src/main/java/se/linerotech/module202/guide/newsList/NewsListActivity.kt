@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -15,19 +16,20 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.launch
 import se.linerotech.module202.guide.R
+import se.linerotech.module202.guide.common.Category
 import se.linerotech.module202.guide.common.News
 import se.linerotech.module202.guide.databinding.ActivityNewsListBinding
 
 class NewsListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewsListBinding
-    private val viewModel: NewsListViewModel by viewModels { NewsListViewModel.factory(categoryId()) }
+    private val viewModel: NewsListViewModel by viewModels { NewsListViewModel.factory(category().id) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNewsListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        configureToolbar(title = categoryName())
+        configureToolbar(title = category().name)
         observeState()
     }
 
@@ -36,10 +38,10 @@ class NewsListActivity : AppCompatActivity() {
         return true
     }
 
-    private fun configureToolbar(title: String?) {
+    private fun configureToolbar(@StringRes title: Int) {
         setSupportActionBar((binding.toolbar))
         supportActionBar?.apply {
-            this.title = title
+            this.title = getString(title)
             setDisplayHomeAsUpEnabled(true)
             setHomeAsUpIndicator(R.drawable.arrow_back)
         }
@@ -59,13 +61,8 @@ class NewsListActivity : AppCompatActivity() {
         }
     }
 
-    private fun categoryName(): String {
-        val categoryName = intent.getIntExtra(KEY_CATEGORY_NAME, 0)
-        return getString(categoryName)
-    }
-
-    private fun categoryId(): String {
-        return intent.getStringExtra(KEY_CATEGORY_ID) ?: ""
+    private fun category(): Category {
+        return intent.getParcelableExtra(KEY_CATEGORY)!!
     }
 
     private fun showProgressBar() {
@@ -96,13 +93,11 @@ class NewsListActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val KEY_CATEGORY_NAME = "CATEGORY_NAME"
-        private const val KEY_CATEGORY_ID = "CATEGORY_ID"
+        private const val KEY_CATEGORY = "CATEGORY_NAME"
 
-        fun intent(context: Context, categoryName: Int, categoryId: String): Intent {
+        fun intent(context: Context, category: Category): Intent {
             val intent = Intent(context, NewsListActivity::class.java)
-            intent.putExtra(KEY_CATEGORY_NAME, categoryName)
-            intent.putExtra(KEY_CATEGORY_ID, categoryId)
+            intent.putExtra(KEY_CATEGORY, category)
             return intent
         }
     }
