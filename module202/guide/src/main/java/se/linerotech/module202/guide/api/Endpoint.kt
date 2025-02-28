@@ -6,11 +6,11 @@ import retrofit2.http.Query
 
 interface Endpoint {
 
-    @GET("top-headlines")
-    fun topHeadLines(
-        @Query("apiKey")apiKey: String,
+    @GET("news")
+    fun news(
+        @Query("country")country: String,
         @Query("language")language: String,
-        @Query("")country: String,
         @Query("category")category: String,
+        @Query("apikey")apiKey: String,
     ): Call<NewsResultDTO>
 }

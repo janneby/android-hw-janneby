@@ -5,8 +5,8 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class SourceDTO(
-    @Json(name = "id")
+    @Json(name = "source_id")
     val id: String? = "",
-    @Json(name = "name")
+    @Json(name = "source_name")
     val name: String? = ""
 )

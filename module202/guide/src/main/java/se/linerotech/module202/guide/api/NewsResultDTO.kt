@@ -5,8 +5,10 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class NewsResultDTO(
-    @Json(name = "articles")
-    val articles: List<ArticleDTO?>? = listOf(),
+    @Json(name = "nextPage")
+    val nextPage: String? = "",
+    @Json(name = "results")
+    val results: List<ArticleDTO>? = listOf(),
     @Json(name = "status")
     val status: String? = "",
     @Json(name = "totalResults")
