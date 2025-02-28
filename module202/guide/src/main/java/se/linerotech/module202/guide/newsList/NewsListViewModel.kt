@@ -53,20 +53,11 @@ class NewsListViewModel(private val categoryName: String) : ViewModel() {
 
     private fun news(articles: List<ArticleDTO>): List<News> {
         return articles.map { dto ->
-            News(
-                title = dto.title ?: "",
-                date = dto.pubDate?.substring(ZERO_INT_VALUE, TEN_INT_VALUE) ?: "",
-                source = dto.sourceName ?: "",
-                imageSource = dto.sourceUrl ?: "",
-                image = dto.imageUrl ?: "",
-            )
+            News(dto)
         }
     }
 
     companion object {
-        private const val ZERO_INT_VALUE = 0
-        private const val TEN_INT_VALUE = 0
-
         fun factory(categoryName: String): ViewModelProvider.Factory {
             return object : ViewModelProvider.Factory {
                 override fun <T : ViewModel> create(modelClass: Class<T>): T {
