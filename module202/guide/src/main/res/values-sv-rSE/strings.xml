@@ -9,4 +9,5 @@
     <string name="technology">Teknologi</string>
     <string name="categories">Kategorier</string>
     <string name="unable_to_retrieve_news">Gick inte att ladda hem nyheter</string>
+    <string name="read_story">Läs Artikeln</string>
 </resources>
