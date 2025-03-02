@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomework">
         <activity
+            android:name=".newsDetails.NewsDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".newsList.NewsListActivity"
             android:exported="false" />
         <activity
