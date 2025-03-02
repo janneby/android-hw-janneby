@@ -19,6 +19,7 @@ import se.linerotech.module202.guide.R
 import se.linerotech.module202.guide.common.Category
 import se.linerotech.module202.guide.common.News
 import se.linerotech.module202.guide.databinding.ActivityNewsListBinding
+import se.linerotech.module202.guide.newsDetails.NewsDetailsActivity
 
 class NewsListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewsListBinding
@@ -89,7 +90,9 @@ class NewsListActivity : AppCompatActivity() {
         binding.progressBar.visibility = View.GONE
     }
 
-    private fun showNewsDetails() {
+    private fun showNewsDetails(news: News) {
+        val intent = NewsDetailsActivity.intent(this, news)
+        startActivity(intent)
     }
 
     companion object {

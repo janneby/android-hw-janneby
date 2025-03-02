@@ -10,7 +10,7 @@ import se.linerotech.module202.guide.databinding.LayoutCellNewsBinding
 
 class NewsRecyclerViewAdapter(
     private val items: List<News>,
-    private val onCellClicked: () -> Unit,
+    private val onCellClicked: (News) -> Unit,
 ) : RecyclerView.Adapter<NewsRecyclerViewAdapter.NewsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
@@ -28,7 +28,7 @@ class NewsRecyclerViewAdapter(
 
     class NewsViewHolder(
         private val binding: LayoutCellNewsBinding,
-        private val onCellClicked: () -> Unit
+        private val onCellClicked: (News) -> Unit
     ) :
         RecyclerView.ViewHolder(binding.root) {
 
@@ -36,7 +36,7 @@ class NewsRecyclerViewAdapter(
             binding.textViewSource.text = news.source
             binding.textViewDate.text = news.date
             binding.textViewTitle.text = news.title
-            binding.root.setOnClickListener { onCellClicked() }
+            binding.root.setOnClickListener { onCellClicked(news) }
             loadImage(url = news.image)
         }
 
@@ -54,7 +54,7 @@ class NewsRecyclerViewAdapter(
         }
 
         companion object {
-            fun create(parent: ViewGroup, onCellClicked: () -> Unit): NewsViewHolder {
+            fun create(parent: ViewGroup, onCellClicked: (News) -> Unit): NewsViewHolder {
                 val binding = LayoutCellNewsBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
