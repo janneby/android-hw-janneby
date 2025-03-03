@@ -26,7 +26,11 @@ class NewsListViewModel(private val categoryName: String) : ViewModel() {
         headLines().enqueue(object : Callback<NewsResultDTO> {
             override fun onResponse(call: Call<NewsResultDTO>, response: Response<NewsResultDTO>) {
                 if (isSuccessful(response)) {
-                    _state.value = NewsListState.Success(news(response.body()!!.results!!))
+                    val news = news(response.body()!!.results!!)
+                    _state.value = NewsListState.Success(
+                        news = news,
+                        sources = sources(news = news)
+                    )
                 } else {
                     _state.value = NewsListState.Failure
                 }
@@ -55,6 +59,10 @@ class NewsListViewModel(private val categoryName: String) : ViewModel() {
         return articles.map { dto ->
             News(dto)
         }
+    }
+
+    private fun sources(news: List<News>): List<String> {
+        return news.map { it.source }.distinct().sortedBy { it.first() }
     }
 
     companion object {

@@ -14,11 +14,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.chip.Chip
 import kotlinx.coroutines.launch
 import se.linerotech.module202.guide.R
 import se.linerotech.module202.guide.common.Category
 import se.linerotech.module202.guide.common.News
 import se.linerotech.module202.guide.databinding.ActivityNewsListBinding
+import se.linerotech.module202.guide.databinding.LayoutChipBinding
 import se.linerotech.module202.guide.newsDetails.NewsDetailsActivity
 
 class NewsListActivity : AppCompatActivity() {
@@ -54,7 +56,11 @@ class NewsListActivity : AppCompatActivity() {
                 viewModel.state.collect { state ->
                     when (state) {
                         NewsListState.Loading -> showProgressBar()
-                        is NewsListState.Success -> showNews(news = state.news)
+                        is NewsListState.Success -> {
+                            showSources(sources = state.sources)
+                            showNews(news = state.news)
+                        }
+
                         NewsListState.Failure -> showErrorMessage()
                     }
                 }
@@ -74,6 +80,13 @@ class NewsListActivity : AppCompatActivity() {
         Toast.makeText(this, getString(R.string.unable_to_retrieve_news), Toast.LENGTH_LONG).show()
     }
 
+    private fun showSources(sources: List<String>) {
+        sources.forEach { source ->
+            val chip = createChip(label = source)
+            binding.chipGroup.addView(chip)
+        }
+    }
+
     private fun showNews(news: List<News>) {
         hideProgressBar()
 
@@ -88,6 +101,16 @@ class NewsListActivity : AppCompatActivity() {
 
     private fun hideProgressBar() {
         binding.progressBar.visibility = View.GONE
+    }
+
+    private fun createChip(label: String): Chip {
+        val chip = LayoutChipBinding.inflate(layoutInflater).root
+        chip.text = label
+        chip.setOnClickListener {
+            Toast.makeText(this, "${chip.text} was clicked!", Toast.LENGTH_SHORT).show()
+        }
+
+        return chip
     }
 
     private fun showNewsDetails(news: News) {

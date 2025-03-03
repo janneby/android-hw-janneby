@@ -27,8 +27,7 @@ class CategoryRecyclerViewAdapter(
     class CategoryViewHolder(
         private val binding: LayoutCellCategoryBinding,
         private val onCellClicked: (Category) -> Unit
-    ) :
-        RecyclerView.ViewHolder(binding.root) {
+    ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(category: Category) {
             binding.categoryName.setText(category.name)
