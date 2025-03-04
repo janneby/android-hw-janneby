@@ -31,15 +31,15 @@
 
     <EditText
         android:id="@+id/editTextEnterAmount"
-        tools:text="Enter amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="58dp"
-
         android:inputType="numberDecimal"
+
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        tools:text="Enter amount" />
 
     <LinearLayout
         android:layout_width="wrap_content"
