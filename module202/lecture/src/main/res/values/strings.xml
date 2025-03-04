@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Module 202 - Lecture</string>
+    <string name="country_flag">Country flag</string>
+    <string name="view_more_details">View more details</string>
 </resources>
