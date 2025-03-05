@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:text="Amount you want to borrow"
+        android:text="@string/amount_you_want_to_borrow"
         android:textAlignment="center"
         android:textColor="@color/darkorange"
         android:textSize="20sp" />
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/grayLight"
-        android:hint="Loan amount"
+        android:hint="@string/loan_amount"
         android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/grayLight" />
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="33dp"
-        android:text="0 kr / month"
+        android:text="@string/_0_kr_month"
         android:textColor="@color/white"
         android:textSize="30sp" />
 

@@ -19,4 +19,7 @@
     <string name="image_transfer_money">Image transfer money</string>
     <string name="no_hidden_costs_no_hidden_fees_all_the_n_data_is_easy_clear_and_to_point">No hidden costs. No hidden fees. All the \n data is easy clear and to point.</string>
     <string name="mortage_value">%1$s Kr / Month</string>
+    <string name="amount_you_want_to_borrow">Amount you want to borrow</string>
+    <string name="loan_amount">Loan amount</string>
+    <string name="_0_kr_month">0 kr / month</string>
 </resources>

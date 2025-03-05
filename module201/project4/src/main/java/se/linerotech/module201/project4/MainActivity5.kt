@@ -3,6 +3,7 @@ package se.linerotech.module201.project4
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import se.linerotech.module201.project4.databinding.ActivityMain5Binding
+import java.util.Locale
 import kotlin.math.pow
 
 class MainActivity5 : AppCompatActivity() {
@@ -24,7 +25,7 @@ class MainActivity5 : AppCompatActivity() {
     }
 
     private fun calculateMortage() {
-//        Actual valid comment to explain this loan calculation
+//        Valid comment to explain the loan calculation that is used in this scenario
 //        ==============================================================================
 //        How to calculate the monthly payments of a mortgage:
 //        M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
@@ -39,15 +40,21 @@ class MainActivity5 : AppCompatActivity() {
         val payBacktimeN = binding.editTextPaybackTime.text.toString().toDouble()
 
         val p = loanAmountP
-        val i = interestRateI / 100.0 / 12.0
-        val n = payBacktimeN * 12
+        val i = interestRateI / GETTING_PERCENT_VALUE / MONTHS_IN_A_YEAR
+        val n = payBacktimeN * MONTHS_IN_A_YEAR
 
         // M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
-        val mortage = p * (i * (1.0 + i).pow(n)) / ((1.0 + i).pow(n) - 1.0)
+        val mortage = p * (i * (DOUBLE_ONE_ZERO + i).pow(n)) / ((DOUBLE_ONE_ZERO + i).pow(n) - DOUBLE_ONE_ZERO)
 
         binding.setTextKrMonth.text = getString(
             R.string.mortage_value,
-            String.format("%.0f", mortage)
+            String.format(Locale.forLanguageTag("sv_SE"), "%.0f", mortage)
         )
+    }
+
+    companion object {
+        private const val GETTING_PERCENT_VALUE = 100.0
+        private const val MONTHS_IN_A_YEAR = 12.0
+        private const val DOUBLE_ONE_ZERO = 1.0
     }
 }
