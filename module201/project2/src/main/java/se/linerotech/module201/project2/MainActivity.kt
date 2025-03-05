@@ -7,84 +7,89 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
 import se.linerotech.module201.project2.databinding.ActivityMainBinding
-
-private const val ZERO_VALUE = 0
-private const val PERCENT_VALUE = 100
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
 
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setClickListeners()
+
+        setInitialTipsyValues()
+        setListeners()
     }
 
-    private fun setClickListeners() {
+    private fun setInitialTipsyValues() {
+        setTipsyValues(billAmount = ZERO_INT_VALUE, percentValue = ZERO_INT_VALUE)
+    }
+
+    private fun setListeners() {
+        binding.editTextBillAmount.addTextChangedListener {
+            if (getBillAmount().isNotEmpty()) {
+                setTipsyValues(
+                    billAmount = getBillAmount().toInt(),
+                    percentValue = getPercent(),
+                )
+            } else {
+                setInitialTipsyValues()
+            }
+        }
+
         binding.buttonPlus.setOnClickListener {
             hideKeyboard()
-            addTipPercentage()
+            changeTipPercentage(condition = getString(R.string.addpercent))
         }
 
         binding.buttonMinus.setOnClickListener {
             hideKeyboard()
-            removeTipPercentage()
+            changeTipPercentage(condition = getString(R.string.subtractpercent))
         }
     }
 
-    private fun addTipPercentage() {
-        var stringPercentValue = binding.textViewTipPercent.text
-        var intPercentValue = stringPercentValue.substring(ZERO_VALUE, stringPercentValue.length - 1).toInt()
+    private fun getPercent(): Int {
+        return binding.textViewTipPercent.text.substring(
+            ZERO_INT_VALUE,
+            binding.textViewTipPercent.text.length - 1
+        ).toInt()
+    }
 
-        if (stringPercentValue.isNotEmpty() &&
-            binding.editTextBillAmount.text.isNotEmpty() &&
-            intPercentValue < PERCENT_VALUE
-        ) {
-            intPercentValue++
-            stringPercentValue = "$intPercentValue%"
-            binding.textViewTipPercent.text = stringPercentValue
+    private fun getBillAmount(): String {
+        return binding.editTextBillAmount.text.toString()
+    }
 
-            val doubleBill = roundTwoDigits(binding.editTextBillAmount.text.toString().toDouble())
-            val doubleTip = roundTwoDigits(intPercentValue.toDouble() / PERCENT_VALUE * doubleBill)
-            val doubleTotal = roundTwoDigits(doubleBill + doubleTip)
+    private fun changeTipPercentage(condition: String) {
+        var intPercentValue = getPercent()
 
-            binding.textViewTotalKr.text = "$doubleTotal kr"
-            binding.textViewBillKr.text = "$doubleBill kr"
-            binding.textViewTipKr.text = "$doubleTip kr"
-        } else if (intPercentValue == PERCENT_VALUE) {
-            sendMessage(R.string.tip_amount_cant_be_more_then_100)
+        if (getBillAmount().isNotEmpty()) {
+            if (condition == getString(R.string.addpercent) && intPercentValue < PERCENT_MAX_VALUE
+            ) {
+                intPercentValue++
+                setTipsyValues(billAmount = getBillAmount().toInt(), percentValue = intPercentValue)
+            } else if (condition == getString(R.string.subtractpercent) && intPercentValue > ZERO_INT_VALUE) {
+                intPercentValue--
+                setTipsyValues(billAmount = getBillAmount().toInt(), percentValue = intPercentValue)
+            } else if (intPercentValue == PERCENT_MAX_VALUE) {
+                sendMessage(R.string.tip_amount_cant_be_more_then_100)
+            } else if (intPercentValue == ZERO_INT_VALUE) {
+                sendMessage(R.string.tip_amount_cant_be_less_then_0)
+            }
         } else {
             sendMessage(R.string.bill_amount_cant_be_empty)
         }
     }
 
-    private fun removeTipPercentage() {
-        var stringPercentValue = binding.textViewTipPercent.text
-        var intPercentValue = stringPercentValue.substring(ZERO_VALUE, stringPercentValue.length - 1).toInt()
+    private fun setTipsyValues(billAmount: Int, percentValue: Int) {
+        val doubleTip = roundTwoDigits(percentValue.toDouble() / PERCENT_MAX_VALUE * billAmount)
+        val doubleTotal = roundTwoDigits(billAmount + doubleTip)
 
-        if (stringPercentValue.isNotEmpty() &&
-            binding.editTextBillAmount.text.isNotEmpty() &&
-            intPercentValue > ZERO_VALUE
-        ) {
-            intPercentValue--
-            stringPercentValue = "$intPercentValue%"
-            binding.textViewTipPercent.text = stringPercentValue
-
-            val doubleBill = roundTwoDigits(binding.editTextBillAmount.text.toString().toDouble())
-            val doubleTip = roundTwoDigits(intPercentValue.toDouble() / PERCENT_VALUE * doubleBill)
-            val doubleTotal = roundTwoDigits(doubleBill + doubleTip)
-
-            binding.textViewTotalKr.text = "$doubleTotal kr"
-            binding.textViewBillKr.text = "$doubleBill kr"
-            binding.textViewTipKr.text = "$doubleTip kr"
-        } else if (intPercentValue == ZERO_VALUE) {
-            sendMessage(R.string.tip_amount_cant_be_less_then_0)
-        } else {
-            sendMessage(R.string.bill_amount_cant_be_empty)
-        }
+        binding.textViewTipPercent.text = percentValue.toString() + "%"
+        binding.textViewTotalKr.text = doubleTotal.toString() + " kr"
+        binding.textViewBillKr.text = billAmount.toString() + " kr"
+        binding.textViewTipKr.text = doubleTip.toString() + " kr"
     }
 
     private fun sendMessage(@StringRes message: Int) {
@@ -95,7 +100,7 @@ class MainActivity : AppCompatActivity() {
         val activityView: View? = this.currentFocus
         if (activityView != null) {
             val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-            inputMethodManager.hideSoftInputFromWindow(activityView.getWindowToken(), ZERO_VALUE)
+            inputMethodManager.hideSoftInputFromWindow(activityView.getWindowToken(), ZERO_INT_VALUE)
         }
     }
 
@@ -103,5 +108,10 @@ class MainActivity : AppCompatActivity() {
         val decimalFormat = DecimalFormat("#.##")
         val formattedNumber = decimalFormat.format(doubleNumber).toDouble()
         return formattedNumber
+    }
+
+    companion object {
+        private const val ZERO_INT_VALUE = 0
+        private const val PERCENT_MAX_VALUE = 100
     }
 }

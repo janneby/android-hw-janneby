@@ -4,10 +4,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@color/darkslategray"
-    android:paddingHorizontal="25dp"
+    android:gravity="center"
     android:orientation="horizontal"
+    android:paddingHorizontal="25dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -25,44 +25,44 @@
         android:id="@+id/textViewEnterBillAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTipsy"
         android:layout_marginBottom="32dp"
-        android:text="Enter bill amount"
+        android:text="@string/enter_bill_amount"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp"
-        android:layout_below="@+id/textViewTipsy"/>
+        android:textSize="22dp" />
 
     <EditText
         android:id="@+id/editTextBillAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEnterBillAmount"
         android:layout_marginBottom="60dp"
-        android:hint="Bill amount"
+        android:hint="@string/bill_amount"
         android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="14sp"
-        android:layout_below="@+id/textViewEnterBillAmount"/>
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textViewChooseTipAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBillAmount"
         android:layout_marginBottom="20dp"
-        android:text="Choose tip amount"
+        android:text="@string/choose_tip_amount"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp"
-        android:layout_below="@+id/editTextBillAmount"/>
+        android:textSize="22dp" />
 
     <LinearLayout
         android:id="@+id/linearVerticalGroup1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingVertical="20dp"
         android:layout_below="@+id/textViewChooseTipAmount"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="20dp">
 
         <Button
             android:id="@+id/buttonMinus"
@@ -78,8 +78,8 @@
             android:id="@+id/textViewTipPercent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0%"
             android:layout_marginHorizontal="30dp"
+            android:text="0%"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="35dp" />
@@ -100,28 +100,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_below="@+id/linearVerticalGroup1"
         android:text="0.00 kr"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="50dp"
-        android:layout_below="@+id/linearVerticalGroup1"/>
+        android:textSize="50dp" />
+
     <TextView
         android:id="@+id/textViewSumTotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTotalKr"
         android:layout_marginBottom="20dp"
-        android:text="total"
+        android:text="@string/total"
         android:textAlignment="center"
         android:textColor="@color/crimsonRed"
-        android:textSize="40dp"
-        android:layout_below="@+id/textViewTotalKr"/>
+        android:textSize="40dp" />
 
     <LinearLayout
         android:id="@+id/linearVerticalGroup2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_below="@id/textViewSumTotal"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -129,8 +130,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingHorizontal="20dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
             <TextView
                 android:id="@+id/textViewBillKr"
                 android:layout_width="wrap_content"
@@ -139,26 +141,28 @@
                 android:text="0.00 kr"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="30dp"/>
+                android:textSize="30dp" />
+
             <TextView
                 android:id="@+id/textViewBillText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewBillKr"
                 android:layout_marginBottom="40dp"
-                android:text="bill"
+                android:text="@string/bill"
                 android:textAlignment="center"
                 android:textColor="@color/crimsonRed"
-                android:textSize="25dp"
-                android:layout_below="@+id/textViewBillKr"/>
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearHorizontalGroupRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="20dp"
             android:layout_gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
             <TextView
                 android:id="@+id/textViewTipKr"
                 android:layout_width="wrap_content"
@@ -168,16 +172,17 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="30dp" />
+
             <TextView
                 android:id="@+id/textViewTipText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTipKr"
                 android:layout_marginBottom="40dp"
-                android:text="tip"
+                android:text="@string/tip"
                 android:textAlignment="center"
                 android:textColor="@color/crimsonRed"
-                android:textSize="25dp"
-                android:layout_below="@+id/textViewTipKr"/>
+                android:textSize="25dp" />
         </LinearLayout>
 
     </LinearLayout>
