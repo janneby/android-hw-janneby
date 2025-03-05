@@ -4,16 +4,11 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.addTextChangedListener
 import se.linerotech.module201.project3.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-
-    companion object {
-        private const val TEMP_DEFAULT_VALUE = 200.0
-        private const val ZERO_INT_VALUE = 0
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,19 +17,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setInitialTempValues()
-        setTextChangedListener()
         setClickListeners()
     }
 
     private fun setInitialTempValues() {
         binding.buttonCelcius.performClick()
         binding.editTextTemperature.setText(TEMP_DEFAULT_VALUE.toString())
-    }
-
-    private fun setTextChangedListener() {
-        binding.editTextTemperature.addTextChangedListener { text ->
-            // TODO: Calcualte stuff on the fly
-        }
     }
 
     private fun setClickListeners() {
@@ -73,24 +61,24 @@ class MainActivity : AppCompatActivity() {
         if (type1 == 'f') {
             binding.textViewOne.text = getString(
                 R.string.farenheit_value,
-                String.format("%.0f", temp1)
+                String.format(Locale.forLanguageTag("sv_SE"), "%.0f", temp1)
             )
         } else if (type1 == 'c') {
             binding.textViewOne.text = getString(
                 R.string.celcius_value,
-                String.format("%.0f", temp1)
+                String.format(Locale.UK, "%.0f", temp1)
             )
         }
 
         if (type2 == 'k') {
             binding.textViewTwo.text = getString(
                 R.string.kelvin_value,
-                String.format("%.2f", temp2)
+                String.format(Locale.UK, "%.2f", temp2)
             )
         } else if (type2 == 'f') {
             binding.textViewTwo.text = getString(
                 R.string.farenheit_value,
-                String.format("%.0f", temp2)
+                String.format(Locale.FRANCE, "%.0f", temp2)
             )
         }
     }
@@ -101,32 +89,32 @@ class MainActivity : AppCompatActivity() {
 
     private fun celciusToFarenheit(celsius: Double): Double {
         // °F = (°C × 9/5) + 32
-        return (celsius * 9.0 / 5.0) + 32.0
+        return (celsius * C_TO_F_9 / C_TO_F_5) + C_TO_F_32
     }
 
     private fun celciusToKelvin(celsius: Double): Double {
         // K = T (°C) + 273.15
-        return celsius + 273.15
+        return celsius + KELVIN_273
     }
 
     private fun farenheitToCelcius(farenheit: Double): Double {
         // °C = (°F − 32) x 5/9
-        return (farenheit - 32.0) * 5.0 / 9.0
+        return (farenheit - C_TO_F_32) * C_TO_F_5 / C_TO_F_9
     }
 
     private fun farenheitToKelvin(farenheit: Double): Double {
         // K = (°F − 32) × 5 ⁄ 9 + 273.15
-        return ((farenheit - 32.0) * 5.0 / 9.0) + 273.15
+        return ((farenheit - C_TO_F_32) * C_TO_F_5 / C_TO_F_9) + KELVIN_273
     }
 
     private fun kelvinToCelcius(kelvin: Double): Double {
         // °C = K - 273.15
-        return kelvin - 273.15
+        return kelvin - KELVIN_273
     }
 
     private fun kelvinToFarenheit(kelvin: Double): Double {
         // °F = (K − 273.15) × 9/5 + 32
-        return ((kelvin - 273.15) * 9.0 / 5.0) + 32
+        return ((kelvin - KELVIN_273) * C_TO_F_9 / C_TO_F_5) + C_TO_F_32
     }
 
     private fun hideKeyboard() {
@@ -135,5 +123,14 @@ class MainActivity : AppCompatActivity() {
             val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.hideSoftInputFromWindow(activityView.getWindowToken(), ZERO_INT_VALUE)
         }
+    }
+
+    companion object {
+        private const val TEMP_DEFAULT_VALUE = 200.0
+        private const val ZERO_INT_VALUE = 0
+        private const val C_TO_F_9 = 9.0
+        private const val C_TO_F_5 = 5.0
+        private const val C_TO_F_32 = 32.0
+        private const val KELVIN_273 = 273.15
     }
 }
