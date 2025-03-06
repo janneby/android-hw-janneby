@@ -64,7 +64,7 @@
         android:id="@+id/textViewYearsOutput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="40sp" />
 
@@ -84,7 +84,7 @@
         android:id="@+id/textViewMonthsOutput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="40sp" />
 
@@ -104,7 +104,7 @@
         android:id="@+id/textViewWeeksOutput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="40sp" />
 
@@ -124,7 +124,7 @@
         android:id="@+id/textViewDaysOutput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="40sp" />
 

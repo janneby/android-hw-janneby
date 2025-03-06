@@ -1,17 +1,20 @@
 package se.linerotech.module201.project5
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import se.linerotech.module201.project5.databinding.ActivityMainBinding
-import java.util.Calendar
+import java.time.LocalDate
+import java.time.Period
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     companion object {
         private const val ZERO_VALUE = 0.0
+        private const val AVERAGE_DAYS_IN_A_YEAR = 365.25
+        private const val AVERAGE_DAYS_IN_A_MONTH = 30.4375
+        private const val AVERAGE_DAYS_IN_A_WEEK = 7
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,89 +23,78 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setInitialValues()
         setTextChangedListeners()
     }
 
+    private fun setInitialValues() {
+        val initialText = getString(R.string._none)
+        binding.textViewYearsOutput.text = initialText
+        binding.textViewMonthsOutput.text = initialText
+        binding.textViewWeeksOutput.text = initialText
+        binding.textViewDaysOutput.text = initialText
+    }
+
     private fun setTextChangedListeners() {
-        var year: Int = 1
-        var month: Int = 1
-        var day: Int = 1
         binding.editTextYearOfBirth.addTextChangedListener {
-            year = readYearInput()
-            calculateAgeSummary(year = year, month = month, day = day)
+            calculateAgeSummary()
         }
 
         binding.editTextMonthOfBirth.addTextChangedListener {
-            month = readMonthInput()
-            calculateAgeSummary(year = year, month = month, day = day)
+            calculateAgeSummary()
         }
 
         binding.editTextDayOfBirth.addTextChangedListener {
-            month = readDayInput()
-            calculateAgeSummary(year = year, month = month, day = day)
+            calculateAgeSummary()
         }
     }
 
-    private fun readYearInput(): Int {
-        val year: Int = binding.editTextYearOfBirth.text.toString().toInt()
-        if (year >= 0 && year < 2025) {
-            return year
-        } else {
-            Toast.makeText(
-                this,
-                getString(R.string.year_is_asumed_to_have_max_4_digits_max_birth_is_2025),
-                Toast.LENGTH_SHORT
-            ).show()
-            binding.editTextYearOfBirth.setText("${year / 10}")
-            return year / 10
+    private fun calculateAgeSummary() {
+        val (yearInput, monthInput, dayInput) = getInputs()
+
+        if (yearInput.isNotEmpty() && monthInput.isNotEmpty() && dayInput.isNotEmpty()) {
+            if (
+                yearInput.toInt() > ZERO_VALUE &&
+                monthInput.toInt() > ZERO_VALUE &&
+                dayInput.toInt() > ZERO_VALUE
+            ) {
+                val currentDate = LocalDate.now()
+                val birthDate = LocalDate.of(yearInput.toInt(), monthInput.toInt(), dayInput.toInt())
+
+                val period: Period = Period.between(birthDate, currentDate)
+
+                val yearsLived = period.years
+                val monthsLived = period.toTotalMonths().toInt()
+                val daysLived = (
+                    (period.years * AVERAGE_DAYS_IN_A_YEAR) +
+                        (period.months * AVERAGE_DAYS_IN_A_MONTH) +
+                        period.days
+                    ).toInt()
+                val weeksLived = daysLived / AVERAGE_DAYS_IN_A_WEEK
+
+                setCalculatedValues(yearsLived, monthsLived, weeksLived, daysLived)
+            } else {
+                setInitialValues()
+            }
         }
     }
 
-    private fun readMonthInput(): Int {
-        val month: Int = binding.editTextMonthOfBirth.text.toString().toInt()
-        if (month >= 0 && month <= 12) {
-            return month
-        } else {
-            Toast.makeText(
-                this,
-                getString(R.string.month_is_asumed_to_have_max_2_digits_max_month_is_12),
-                Toast.LENGTH_SHORT
-            ).show()
-            binding.editTextMonthOfBirth.setText("${month / 10}")
-            return month / 10
-        }
+    private fun getInputs(): Triple<String, String, String> {
+        val yearInput = binding.editTextYearOfBirth.text.toString()
+        val monthInput = binding.editTextMonthOfBirth.text.toString()
+        val dayInput = binding.editTextDayOfBirth.text.toString()
+        return Triple(yearInput, monthInput, dayInput)
     }
 
-    private fun readDayInput(): Int {
-        val day: Int = binding.editTextDayOfBirth.text.toString().toInt()
-        if (day >= 0 && day <= 31) {
-            return day
-        } else {
-            Toast.makeText(
-                this,
-                getString(R.string.day_is_asumed_to_have_max_2_digits_max_day_is_31),
-                Toast.LENGTH_SHORT
-            ).show()
-            binding.editTextMonthOfBirth.setText("${day / 10}")
-            return day / 10
-        }
-    }
-
-    private fun calculateAgeSummary(year: Int, month: Int, day: Int) {
-        val currentDate = Calendar.getInstance()
-        val birthDate = Calendar.getInstance()
-        birthDate.set(year, month, day)
-
-        val milliSecLived = currentDate.timeInMillis - birthDate.timeInMillis
-
-        val daysLived = milliSecLived / (1000 * 60 * 60 * 24)
-        val weeksLived = milliSecLived / (1000 * 60 * 60 * 24) / 7.0
-        val monthsLived = milliSecLived / (1000 * 60 * 60 * 24) / 12.0
-        val yearsLived = milliSecLived / (1000 * 60 * 60 * 24) / 365.0
-
-        binding.textViewYearsOutput.setText(String.format("%.2f", yearsLived))
-        binding.textViewMonthsOutput.setText(String.format("%.2f", monthsLived))
-        binding.textViewWeeksOutput.setText(String.format("%.2f", weeksLived))
-        binding.textViewDaysOutput.setText(daysLived.toString())
+    private fun setCalculatedValues(
+        yearsLived: Int,
+        monthsLived: Int,
+        weeksLived: Int,
+        daysLived: Int,
+    ) {
+        binding.textViewYearsOutput.text = "$yearsLived"
+        binding.textViewMonthsOutput.text = "$monthsLived"
+        binding.textViewWeeksOutput.text = "$weeksLived"
+        binding.textViewDaysOutput.text = "$daysLived"
     }
 }

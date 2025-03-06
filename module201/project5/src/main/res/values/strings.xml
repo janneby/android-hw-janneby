@@ -12,4 +12,6 @@
     <string name="year_is_asumed_to_have_max_4_digits_max_birth_is_2025">Year is asumed to have max 4 digits \n Max birth is 2025</string>
     <string name="month_is_asumed_to_have_max_2_digits_max_month_is_12">Month is asumed to have max 2 digits \n Max month is 12</string>
     <string name="day_is_asumed_to_have_max_2_digits_max_day_is_31">Day is asumed to have max 2 digits \n Max day is 31</string>
+    <string name="_2f">%.2f</string>
+    <string name="_none">-</string>
 </resources>
