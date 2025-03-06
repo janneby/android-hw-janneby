@@ -16,4 +16,5 @@
     <string name="obese">Obese</string>
     <string name="severely_obese">Severely Obese</string>
     <string name="_none">-</string>
+    <string name="_2f">%.2f</string>
 </resources>

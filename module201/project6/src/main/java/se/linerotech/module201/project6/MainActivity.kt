@@ -1,14 +1,22 @@
 package se.linerotech.module201.project6
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import se.linerotech.module201.project6.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
+    companion object {
+        private const val CM_PER_METER = 100.0
+        private const val BMI_LEVEL_UNDERWEIGHT_HIGHEST = 18.5
+        private const val BMI_LEVEL_NORMAL_HIGHEST = 25.0
+        private const val BMI_LEVEL_OVERWEIGHT_HIGHEST = 30.00
+        private const val BMI_LEVEL_OBESE_HIGHEST = 40.00
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,15 +74,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateBmiScore(weight: Double, height: Double): Double {
-        val heightInMeter = height / 100.0
+        val heightInMeter = height / CM_PER_METER
         return weight / (heightInMeter * heightInMeter)
     }
 
-    @SuppressLint("DefaultLocale")
     private fun showBmiResults(bmiScore: Double) {
         val bmiLevel = getBmiLevel(bmiScore)
 
-        binding.textViewBmiScore.text = String.format("%.2f", bmiScore)
+        binding.textViewBmiScore.text = String.format(
+            Locale.forLanguageTag("sv_SE"),
+            getString(R.string._2f),
+            bmiScore
+        )
         binding.textViewBmiLevel.text = getString(bmiLevel.text)
     }
 
@@ -92,11 +103,11 @@ class MainActivity : AppCompatActivity() {
 
     fun getBmiLevel(bmiScore: Double): BmiLevel {
         return when {
-            bmiScore < 18.5 -> BmiLevel.Underweight
-            bmiScore in 18.5..24.99 -> BmiLevel.Normal
-            bmiScore in 25.0..29.99 -> BmiLevel.Overweight
-            bmiScore in 30.0..39.99 -> BmiLevel.Obese
-            else -> BmiLevel.ServerlyObese
+            bmiScore < BMI_LEVEL_UNDERWEIGHT_HIGHEST -> BmiLevel.Underweight
+            bmiScore in BMI_LEVEL_UNDERWEIGHT_HIGHEST..BMI_LEVEL_NORMAL_HIGHEST -> BmiLevel.Normal
+            bmiScore in BMI_LEVEL_NORMAL_HIGHEST..BMI_LEVEL_OVERWEIGHT_HIGHEST -> BmiLevel.Overweight
+            bmiScore in BMI_LEVEL_OVERWEIGHT_HIGHEST..BMI_LEVEL_OBESE_HIGHEST -> BmiLevel.Obese
+            else -> BmiLevel.ServerelyObese
         }
     }
 }
@@ -106,5 +117,5 @@ enum class BmiLevel(@StringRes val text: Int) {
     Normal(text = R.string.normal),
     Overweight(text = R.string.overweight),
     Obese(text = R.string.obese),
-    ServerlyObese(text = R.string.severely_obese)
+    ServerelyObese(text = R.string.severely_obese)
 }

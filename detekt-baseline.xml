@@ -83,6 +83,8 @@
     <ID>NoWildcardImports:se.linerotech.module205.project6.ExampleUnitTest.kt:3</ID>
     <ID>TooManyFunctions:CreateAccountActivity.kt$CreateAccountActivity : AppCompatActivity</ID>
     <ID>TooManyFunctions:LoginActivity.kt$LoginActivity : AppCompatActivity</ID>
+    <ID>TooManyFunctions:MainActivity.kt$MainActivity : AppCompatActivity</ID>
+    <ID>TooManyFunctions:NewsListActivity.kt$NewsListActivity : AppCompatActivity</ID>
     <ID>TooManyFunctions:RegisterActivity.kt$RegisterActivity : AppCompatActivity</ID>
     <ID>UnusedPrivateMember:MainActivity.kt$MainActivity.&lt;no name provided&gt;$val a = 90</ID>
     <ID>UnusedPrivateMember:MainActivity.kt$MainActivity.&lt;no name provided&gt;$val listOfIngr = firstDrink.strInstructions</ID>
