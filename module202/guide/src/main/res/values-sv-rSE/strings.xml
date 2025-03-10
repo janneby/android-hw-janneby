@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="general">Almänna områden</string>
+    <string name="top">Top</string>
     <string name="business">Affärsliv</string>
     <string name="entertainment">Nöjje och underhållning</string>
     <string name="health">Hälsa</string>
