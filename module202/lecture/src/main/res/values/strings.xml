@@ -2,4 +2,5 @@
     <string name="app_name">Module 202 - Lecture</string>
     <string name="country_flag">Country flag</string>
     <string name="view_more_details">View more details</string>
+    <string name="unable_to_retrieve_data">Unable to retrieve data</string>
 </resources>
