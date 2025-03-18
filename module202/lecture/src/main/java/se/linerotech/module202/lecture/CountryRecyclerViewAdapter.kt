@@ -3,6 +3,7 @@ package se.linerotech.module202.lecture
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import se.linerotech.module202.lecture.databinding.LayoutCellBinding
 
 class CountryRecyclerViewAdapter(
@@ -29,8 +30,14 @@ class CountryRecyclerViewAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(country: Country) {
-            binding.textViewCountryName.text = country.name
+            binding.textViewCountryName.text = country.countryName
             binding.root.setOnClickListener { onCountryClickListener(country) }
+
+            Glide
+                .with(binding.imageViewFlag)
+                .load(country.flagUrl)
+                .centerCrop()
+                .into(binding.imageViewFlag)
         }
 
         companion object {
