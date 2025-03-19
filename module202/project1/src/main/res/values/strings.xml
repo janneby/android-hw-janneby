@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name" translatable="false">Module 202 - Project 1</string>
+    <string name="agra">agra</string>
+    <string name="barcelona">barcelona</string>
+    <string name="beijing">beijing</string>
+    <string name="sydney">sydney</string>
+    <string name="paris">paris</string>
+    <string name="new_york">new York</string>
+    <string name="london">london</string>
+    <string name="rio_de_janeiro">rio De janeiro</string>
+    <string name="moscow">moscow</string>
+    <string name="rome">rome</string>
 </resources>
