@@ -3,7 +3,11 @@ package se.linerotech.module202.project1
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import se.linerotech.module202.project1.databinding.ActivityCityWeatherBinding
 
 class CityWeatherActivity : AppCompatActivity() {
@@ -15,7 +19,27 @@ class CityWeatherActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         configureToolbar()
-        showDetails(city = city())
+        retrieveCityWeather()
+    }
+
+    private fun retrieveCityWeather() {
+        RetroFitClient.instance.cityWeather(
+            apikey = Credentials.weatherApiKey,
+            q = city().id,
+        ).enqueue(object : Callback<CityWeatherDTO> {
+            override fun onResponse(call: Call<CityWeatherDTO>, response: Response<CityWeatherDTO>) {
+                if (response.isSuccessful && response.body() != null && response.body()!!.current != null) {
+                    val currentCityWeather = response.body()!!.current
+                    showCityWeather(city().id, currentCityWeather)
+                } else {
+                    Toast.makeText(this@CityWeatherActivity, "We got a problem!", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<CityWeatherDTO>, t: Throwable) {
+                Toast.makeText(this@CityWeatherActivity, "Failed to retrieve weatherdata!", Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 
     private fun configureToolbar() {
@@ -28,14 +52,16 @@ class CityWeatherActivity : AppCompatActivity() {
     }
 
     private fun city(): City {
-        return intent.getParcelableExtra<City>(KEY_CITY)!!
+        return intent.getParcelableExtra(KEY_CITY)!!
     }
 
-    private fun showDetails(city: City) {
-//        binding.textViewSource.text = news.title
-//        binding.textViewDate.text = news.date
-//        binding.textViewDescription.text = news.description
-//        loadImage(url = news.image)
+    private fun showCityWeather(city: String, cityWeather: CityWeatherDTO.Current?) {
+        binding.textViewCityName.text = city
+        binding.textViewTemp.text = cityWeather?.tempC.toString()
+        binding.textViewWeatherCondition.text = cityWeather?.condition?.text.toString()
+        binding.textViewCloudiness.text = cityWeather?.cloud.toString()
+        binding.textViewHumidity.text = cityWeather?.humidity.toString()
+        binding.textViewUvIndex.text = cityWeather?.uv.toString()
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -46,9 +72,9 @@ class CityWeatherActivity : AppCompatActivity() {
     companion object {
         private const val KEY_CITY = "KEY_CITY"
 
-        fun intent(context: Context, category: City): Intent {
+        fun intent(context: Context, city: City): Intent {
             val intent = Intent(context, CityWeatherActivity::class.java)
-            intent.putExtra(KEY_CITY, category)
+            intent.putExtra(KEY_CITY, city)
             return intent
         }
     }

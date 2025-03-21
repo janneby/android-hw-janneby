@@ -5,28 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:paddingHorizontal="50dp"
-    android:orientation="vertical"
     android:background="@drawable/background_sunny"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
     tools:context=".CityWeatherActivity">
 
     <TextView
+        android:id="@+id/textViewCityName"
         android:layout_width="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="10dp"
-        android:textSize="50sp"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
-        android:text="32 C" />
+        android:layout_marginTop="30dp"
+        android:text="CityName"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
 
     <TextView
+        android:id="@+id/textViewTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="32 C"
         android:textColor="@color/black"
-        android:text="Sunny" />
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/text_view_weather_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Sunny"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,67 +47,70 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginHorizontal="15dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textViewCloudiness"
                 android:layout_width="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="25sp"
                 android:layout_height="wrap_content"
-                android:text="2%" />
+                android:text="2%"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:text="Cloudiness"
                 android:textColor="@color/black"
-                android:text="Cloudiness" />
+                android:textSize="15sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginHorizontal="15dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textViewHumidity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:text="55%"
                 android:textColor="@color/black"
-                android:text="55%" />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Humidity"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:text="Humidity" />
+                android:textSize="15sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textViewUvIndex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="1.49"
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:text="1.49" />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="UV Index"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:text="UV Index" />
+                android:textSize="15sp" />
         </LinearLayout>
 
     </LinearLayout>
