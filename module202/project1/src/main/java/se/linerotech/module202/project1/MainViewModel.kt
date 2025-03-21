@@ -11,16 +11,16 @@ class MainViewModel : ViewModel() {
 
     private fun cities(): List<City> {
         return listOf(
-            City(cityId = R.string.agra, cityImage = R.drawable.agra),
-            City(cityId = R.string.barcelona, cityImage = R.drawable.barcelona),
-            City(cityId = R.string.beijing, cityImage = R.drawable.beijing),
-            City(cityId = R.string.sydney, cityImage = R.drawable.sydney),
-            City(cityId = R.string.paris, cityImage = R.drawable.paris),
-            City(cityId = R.string.new_york, cityImage = R.drawable.new_york),
-            City(cityId = R.string.london, cityImage = R.drawable.london),
-            City(cityId = R.string.rio_de_janeiro, cityImage = R.drawable.rio_de_janeiro),
-            City(cityId = R.string.moscow, cityImage = R.drawable.moscow),
-            City(cityId = R.string.rome, cityImage = R.drawable.rome),
+            City(id = "agra", cityName = R.string.agra, cityImage = R.drawable.agra),
+            City(id = "barcelona", cityName = R.string.barcelona, cityImage = R.drawable.barcelona),
+            City(id = "beijing", cityName = R.string.beijing, cityImage = R.drawable.beijing),
+            City(id = "sydney", cityName = R.string.sydney, cityImage = R.drawable.sydney),
+            City(id = "paris", cityName = R.string.paris, cityImage = R.drawable.paris),
+            City(id = "new_york", cityName = R.string.new_york, cityImage = R.drawable.new_york),
+            City(id = "london", cityName = R.string.london, cityImage = R.drawable.london),
+            City(id = "rio_de_janeiro", cityName = R.string.rio_de_janeiro, cityImage = R.drawable.rio_de_janeiro),
+            City(id = "moscow", cityName = R.string.moscow, cityImage = R.drawable.moscow),
+            City(id = "rome", cityName = R.string.rome, cityImage = R.drawable.rome),
         )
     }
 
