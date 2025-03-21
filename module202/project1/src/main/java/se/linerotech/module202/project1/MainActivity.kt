@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun showCities(cities: List<City>) {
         binding.recyclerView.apply {
             adapter = CityRecyclerViewAdapter(items = cities, onCellClicked = ::showCity)
