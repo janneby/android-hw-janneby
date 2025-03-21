@@ -7,6 +7,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class City(
-    @StringRes val cityId: Int,
+    val id: String,
+    @StringRes val cityName: Int,
     @DrawableRes val cityImage: Int,
 ) : Parcelable
