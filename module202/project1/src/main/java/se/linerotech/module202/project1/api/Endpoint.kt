@@ -1,4 +1,4 @@
-package se.linerotech.module202.project1
+package se.linerotech.module202.project1.api
 
 import retrofit2.Call
 import retrofit2.http.GET

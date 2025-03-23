@@ -1,4 +1,4 @@
-package se.linerotech.module202.project1
+package se.linerotech.module202.project1.api
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
