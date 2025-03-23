@@ -2,6 +2,7 @@ package se.linerotech.module202.project1
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
+import se.linerotech.module202.project1.api.CityWeatherDTO
 
 @Parcelize
 data class CityWeather(

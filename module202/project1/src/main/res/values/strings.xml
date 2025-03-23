@@ -10,4 +10,11 @@
     <string name="rio_de_janeiro">rio De janeiro</string>
     <string name="moscow">moscow</string>
     <string name="rome">rome</string>
+    <string name="cityname">CityName</string>
+    <string name="sunny">sunny</string>
+    <string name="cloudy">cloudy</string>
+    <string name="rainy">rainy</string>
+    <string name="clear">clear</string>
+    <string name="we_got_a_problem">We got a problem!</string>
+    <string name="failed_to_retrieve_weatherdata">Failed to retrieve weatherdata!</string>
 </resources>

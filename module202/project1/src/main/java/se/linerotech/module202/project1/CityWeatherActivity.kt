@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import se.linerotech.module202.project1.api.CityWeatherDTO
+import se.linerotech.module202.project1.api.Credentials
+import se.linerotech.module202.project1.api.RetroFitClient
 import se.linerotech.module202.project1.databinding.ActivityCityWeatherBinding
 
 class CityWeatherActivity : AppCompatActivity() {
@@ -32,23 +35,31 @@ class CityWeatherActivity : AppCompatActivity() {
                     val currentCityWeather = response.body()!!.current
                     showCityWeather(city().id, currentCityWeather)
                 } else {
-                    Toast.makeText(this@CityWeatherActivity, "We got a problem!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@CityWeatherActivity,
+                        getString(R.string.we_got_a_problem),
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
 
             override fun onFailure(call: Call<CityWeatherDTO>, t: Throwable) {
-                Toast.makeText(this@CityWeatherActivity, "Failed to retrieve weatherdata!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@CityWeatherActivity,
+                    getString(R.string.failed_to_retrieve_weatherdata),
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         })
     }
 
     private fun configureToolbar() {
-//        setSupportActionBar((binding.toolbar))
-//        supportActionBar?.apply {
-//            this.title = ""
-//            setDisplayHomeAsUpEnabled(true)
-//            setHomeAsUpIndicator(R.drawable.arrow_back)
-//        }
+        // setSupportActionBar((binding.toolbar))
+        supportActionBar?.apply {
+            this.title = ""
+            setDisplayHomeAsUpEnabled(true)
+            setHomeAsUpIndicator(R.drawable.back_arrow)
+        }
     }
 
     private fun city(): City {
@@ -56,12 +67,28 @@ class CityWeatherActivity : AppCompatActivity() {
     }
 
     private fun showCityWeather(city: String, cityWeather: CityWeatherDTO.Current?) {
-        binding.textViewCityName.text = city
+        binding.textViewCityName.text = city.first().uppercase() + city.substring(1, city.length)
         binding.textViewTemp.text = cityWeather?.tempC.toString()
         binding.textViewWeatherCondition.text = cityWeather?.condition?.text.toString()
         binding.textViewCloudiness.text = cityWeather?.cloud.toString()
         binding.textViewHumidity.text = cityWeather?.humidity.toString()
         binding.textViewUvIndex.text = cityWeather?.uv.toString()
+
+        if (cityWeather?.condition?.text.toString().contains(getString(R.string.sunny), ignoreCase = true)) {
+            binding.root.background = getDrawable(R.drawable.background_sunny)
+        }
+
+        if (cityWeather?.condition?.text.toString().contains(getString(R.string.cloudy), ignoreCase = true)) {
+            binding.root.background = getDrawable(R.drawable.background_cloudy)
+        }
+
+        if (cityWeather?.condition?.text.toString().contains(getString(R.string.rainy), ignoreCase = true)) {
+            binding.root.background = getDrawable(R.drawable.background_rainy)
+        }
+
+        if (cityWeather?.condition?.text.toString().contains(getString(R.string.clear), ignoreCase = true)) {
+            binding.root.background = getDrawable(R.drawable.background_night)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

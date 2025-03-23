@@ -5,18 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_sunny"
+    android:background="@color/purple_200"
     android:gravity="center"
     android:orientation="vertical"
     android:paddingHorizontal="50dp"
     tools:context=".CityWeatherActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextAppearance="@style/AppTheme.Toolbar" />
+
     <TextView
         android:id="@+id/textViewCityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="CityName"
+        android:layout_marginTop="20dp"
+        android:text="@string/cityname"
         android:textColor="@color/black"
         android:textSize="35sp" />
 
@@ -24,7 +30,7 @@
         android:id="@+id/textViewTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:text="32 C"
         android:textColor="@color/black"
@@ -34,7 +40,7 @@
         android:id="@+id/text_view_weather_condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="50dp"
         android:text="Sunny"
         android:textColor="@color/black"
         android:textSize="25sp" />
