@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">Module 203 - Guide</string>
+    <string name="transportation">Transportation</string>
+    <string name="rent_a_car_from_an_extensive_variety_of_types_and_models">Rent a car from an extensive variety of types and models</string>
+    <string name="flights">Flights</string>
+    <string name="cheap_flights_to_anywhere_in_the_world_you_can_imagine">Cheap flights to anywhere in the world you can imagine</string>
+    <string name="tours">Tours</string>
+    <string name="the_best_attractions_for_you_and_your_family">The best attractions for you and your family</string>
+    <string name="get_started">Get Started</string>
 </resources>
