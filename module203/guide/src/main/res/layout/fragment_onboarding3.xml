@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Onboarding3Fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/tours"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/the_best_attractions_for_you_and_your_family"
+        android:textAlignment="textStart"
+        android:textColor="@color/monsoon"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/porceline"
+        android:backgroundTint="@color/deep_orange"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/get_started"
+        android:textAllCaps="false" />
+</LinearLayout>
