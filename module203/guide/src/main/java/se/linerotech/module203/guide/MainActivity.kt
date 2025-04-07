@@ -2,6 +2,7 @@ package se.linerotech.module203.guide
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.tabs.TabLayoutMediator
 import se.linerotech.module203.guide.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +16,8 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = OnboardingViewPagerAdapter(activity = this)
         binding.viewPager.adapter = adapter
+
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ ->
+        }.attach()
     }
 }
