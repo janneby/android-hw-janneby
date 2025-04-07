@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="monsoon">#898989</color>
+    <color name="deep_orange">#D55A00</color>
+    <color name="porceline">#EEF3F2</color>
 </resources>
