@@ -24,18 +24,16 @@ class OnboardingFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        showOnboardingDetails()
+    }
+
+    private fun showOnboardingDetails() {
         val state = state()
 
         binding.title.setText(state.title)
         binding.subtitle.setText(state.subtitle)
         binding.image.setImageResource(state.image)
-
-        if (state.showGetStarted) {
-            binding.buttonGetStarted.visibility = View.VISIBLE
-        } else {
-            binding.buttonGetStarted.visibility = View.GONE
-        }
-
+        binding.buttonGetStarted.visibility = if(state.showGetStarted) View.VISIBLE else View.GONE
         binding.buttonGetStarted.setOnClickListener {
             activity?.startActivity(Intent(context, HomeActivity::class.java))
             activity?.finish()
