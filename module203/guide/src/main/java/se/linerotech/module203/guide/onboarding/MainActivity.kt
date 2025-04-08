@@ -1,9 +1,11 @@
-package se.linerotech.module203.guide
+package se.linerotech.module203.guide.onboarding
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
+import se.linerotech.module203.guide.HomeActivity
+import se.linerotech.module203.guide.R
 import se.linerotech.module203.guide.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

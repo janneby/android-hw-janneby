@@ -6,7 +6,7 @@
     android:background="#FFFFFF"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Onboarding1Fragment">
+    tools:context=".onboarding.Onboarding1Fragment">
 
     <ImageView
         android:layout_width="wrap_content"
