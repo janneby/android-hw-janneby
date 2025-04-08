@@ -35,14 +35,14 @@
         android:textColor="@color/monsoon"
         android:textSize="18sp" />
 
-
     <Button
+        android:id="@+id/buttonGetStarted"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:textColor="@color/porceline"
         android:backgroundTint="@color/deep_orange"
         android:fontFamily="@font/montserrat_medium"
         android:text="@string/get_started"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="@color/porceline" />
 </LinearLayout>
