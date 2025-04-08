@@ -17,18 +17,31 @@ class OnboardingActivity : AppCompatActivity() {
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        showOnboardingScreens()
+        showPageIndicator()
+        configureMenuItemClickListener()
+    }
+
+    private fun showOnboardingScreens() {
         val adapter = OnboardingViewPagerAdapter(activity = this)
         binding.viewPager.adapter = adapter
+        binding.toolbar.inflateMenu(R.menu.onboarding_menu)
+    }
 
+    private fun showPageIndicator() {
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ ->
         }.attach()
+    }
 
-        binding.toolbar.inflateMenu(R.menu.onboarding_menu)
-
+    private fun configureMenuItemClickListener() {
         binding.toolbar.setOnMenuItemClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
+            openHomeScreen()
             true
         }
+    }
+
+    private fun openHomeScreen() {
+        startActivity(Intent(this, HomeActivity::class.java))
+        finish()
     }
 }
