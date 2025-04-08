@@ -1,5 +1,6 @@
 package se.linerotech.module203.guide
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
@@ -19,5 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ ->
         }.attach()
+
+        binding.toolbar.inflateMenu(R.menu.onboarding_menu)
+
+        binding.toolbar.setOnMenuItemClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+            true
+        }
     }
 }
