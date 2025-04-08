@@ -6,15 +6,15 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import se.linerotech.module203.guide.HomeActivity
 import se.linerotech.module203.guide.R
-import se.linerotech.module203.guide.databinding.ActivityMainBinding
+import se.linerotech.module203.guide.databinding.ActivityOnboardingBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class OnboardingActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityOnboardingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val adapter = OnboardingViewPagerAdapter(activity = this)
