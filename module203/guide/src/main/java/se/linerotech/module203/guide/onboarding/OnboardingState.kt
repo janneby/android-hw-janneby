@@ -11,4 +11,5 @@ data class OnboardingState(
     @StringRes val subtitle: Int,
     @DrawableRes val image: Int,
     val showGetStarted: Boolean,
+    val onGetStartedClicked: () -> Unit
 ) : Parcelable

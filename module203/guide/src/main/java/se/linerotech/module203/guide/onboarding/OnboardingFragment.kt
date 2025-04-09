@@ -1,12 +1,10 @@
 package se.linerotech.module203.guide.onboarding
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import se.linerotech.module203.guide.HomeActivity
 import se.linerotech.module203.guide.databinding.FragmentOnboardingBinding
 
 class OnboardingFragment : Fragment() {
@@ -35,8 +33,7 @@ class OnboardingFragment : Fragment() {
         binding.image.setImageResource(state.image)
         binding.buttonGetStarted.visibility = if (state.showGetStarted) View.VISIBLE else View.GONE
         binding.buttonGetStarted.setOnClickListener {
-            activity?.startActivity(Intent(context, HomeActivity::class.java))
-            activity?.finish()
+            state.onGetStartedClicked()
         }
     }
 

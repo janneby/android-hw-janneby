@@ -15,7 +15,9 @@ import se.linerotech.module203.guide.databinding.ActivityOnboardingBinding
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
-    private val onboardingViewModel: OnboardingViewModel by viewModels { OnboardingViewModel.factory() }
+    private val onboardingViewModel: OnboardingViewModel by viewModels {
+        OnboardingViewModel.factory(onGetStartedClicked = ::openHomeScreen)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
