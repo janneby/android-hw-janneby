@@ -14,4 +14,8 @@
         <item name="android:actionMenuTextColor">@color/artyclick_orange</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Item.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
 </resources>
