@@ -2,14 +2,20 @@ package se.linerotech.module203.guide.onboarding
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.coroutines.launch
 import se.linerotech.module203.guide.HomeActivity
 import se.linerotech.module203.guide.R
 import se.linerotech.module203.guide.databinding.ActivityOnboardingBinding
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
+    private val onboardingViewModel: OnboardingViewModel by viewModels { OnboardingViewModel.factory() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,38 +23,14 @@ class OnboardingActivity : AppCompatActivity() {
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        showOnboardingScreens()
-        showPageIndicator()
+        observeState()
         configureMenuItemClickListener()
     }
 
-    private fun showOnboardingScreens() {
-        val adapter = OnboardingViewPagerAdapter(states = onboardingStates(), activity = this)
+    private fun showOnboardingScreens(states: List<OnboardingState>) {
+        val adapter = OnboardingViewPagerAdapter(states = states, activity = this)
         binding.viewPager.adapter = adapter
         binding.toolbar.inflateMenu(R.menu.onboarding_menu)
-    }
-
-    private fun onboardingStates(): List<OnboardingState> {
-        return listOf(
-            OnboardingState(
-                title = R.string.transportation,
-                subtitle = R.string.rent_a_car_from_an_extensive_variety_of_types_and_models,
-                image = R.drawable.onboarding_1,
-                showGetStarted = false
-            ),
-            OnboardingState(
-                title = R.string.flights,
-                subtitle = R.string.cheap_flights_to_anywhere_in_the_world_you_can_imagine,
-                image = R.drawable.onboarding_2,
-                showGetStarted = false
-            ),
-            OnboardingState(
-                title = R.string.flights,
-                subtitle = R.string.the_best_attractions_for_you_and_your_family,
-                image = R.drawable.onboarding_3,
-                showGetStarted = true
-            )
-        )
     }
 
     private fun showPageIndicator() {
@@ -60,6 +42,17 @@ class OnboardingActivity : AppCompatActivity() {
         binding.toolbar.setOnMenuItemClickListener {
             openHomeScreen()
             true
+        }
+    }
+
+    private fun observeState() {
+        lifecycleScope.launch {
+            repeatOnLifecycle((Lifecycle.State.CREATED)) {
+                onboardingViewModel.state.collect { states ->
+                    showOnboardingScreens(states)
+                    showPageIndicator()
+                }
+            }
         }
     }
 
