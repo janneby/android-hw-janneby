@@ -3,9 +3,11 @@ package se.linerotech.module203.guide
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
@@ -23,7 +25,24 @@ class HomeActivity : AppCompatActivity() {
         binding.bottomNavBar.setupWithNavController(navHost.navController)
 
         setSupportActionBar(binding.toolbar)
-        setupActionBarWithNavController(navHost.navController)
+
+        val appBarConfiguration = AppBarConfiguration(
+            topLevelDestinationIds = setOf(
+                R.id.toursFragment,
+                R.id.flightsFragment,
+                R.id.carsFragment,
+            ),
+            fallbackOnNavigateUpListener = ::onSupportNavigateUp
+        )
+        setupActionBarWithNavController(navHost.navController, appBarConfiguration)
+
+        navHost.navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.hotelsFragment) {
+                binding.bottomNavBar.visibility = View.GONE
+            } else {
+                binding.bottomNavBar.visibility = View.VISIBLE
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -34,5 +53,10 @@ class HomeActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val navController = findNavController(R.id.navController)
         return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.navController)
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
