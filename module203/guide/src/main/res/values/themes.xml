@@ -15,6 +15,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Apptheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    
     <style name="Item.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
         <item name="fontFamily">@font/montserrat</item>
     </style>
