@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/toursFragment"
+        android:icon="@drawable/tours_icon"
+        android:title="@string/tours" />
+
+    <item
+        android:id="@id/flightsFragment"
+        android:icon="@drawable/flight_icon"
+        android:title="@string/flights" />
+
+    <item
+        android:id="@id/carsFragment"
+        android:icon="@drawable/car_icon"
+        android:title="@string/cars" />
+
+</menu>
