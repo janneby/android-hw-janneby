@@ -1,10 +1,11 @@
-package se.linerotech.module203.guide
+package se.linerotech.module203.guide.hotels
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import se.linerotech.module203.guide.R
 
 class HotelsFragment : Fragment() {
     override fun onCreateView(

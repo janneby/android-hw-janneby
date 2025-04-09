@@ -1,4 +1,4 @@
-package se.linerotech.module203.guide
+package se.linerotech.module203.guide.home
 
 import android.os.Bundle
 import android.view.Menu
@@ -12,6 +12,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import se.linerotech.module203.guide.R
 import se.linerotech.module203.guide.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
