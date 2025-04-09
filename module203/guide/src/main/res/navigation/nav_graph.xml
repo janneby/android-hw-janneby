@@ -7,22 +7,26 @@
 
     <fragment
         android:id="@+id/toursFragment"
-        tools:layout="@layout/fragment_tours"
-        android:name="se.linerotech.module203.guide.ToursFragment"/>
+        android:name="se.linerotech.module203.guide.ToursFragment"
+        android:label="@string/tours"
+        tools:layout="@layout/fragment_tours" />
 
     <fragment
         android:id="@+id/flightsFragment"
-        tools:layout="@layout/fragment_flights"
-        android:name="se.linerotech.module203.guide.FlightsFragment"/>
+        android:name="se.linerotech.module203.guide.FlightsFragment"
+        android:label="@string/flights"
+        tools:layout="@layout/fragment_flights" />
 
     <fragment
         android:id="@+id/carsFragment"
-        tools:layout="@layout/fragment_cars"
-        android:name="se.linerotech.module203.guide.CarsFragment"/>
+        android:name="se.linerotech.module203.guide.CarsFragment"
+        android:label="@string/cars"
+        tools:layout="@layout/fragment_cars" />
 
     <fragment
         android:id="@+id/hotelsFragment"
-        tools:layout="@layout/fragment_hotels"
-        android:name="se.linerotech.module203.guide.HotelsFragment"/>
+        android:name="se.linerotech.module203.guide.HotelsFragment"
+        android:label="@string/hotels"
+        tools:layout="@layout/fragment_hotels" />
 
 </navigation>
