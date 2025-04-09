@@ -33,7 +33,7 @@ class OnboardingFragment : Fragment() {
         binding.title.setText(state.title)
         binding.subtitle.setText(state.subtitle)
         binding.image.setImageResource(state.image)
-        binding.buttonGetStarted.visibility = if(state.showGetStarted) View.VISIBLE else View.GONE
+        binding.buttonGetStarted.visibility = if (state.showGetStarted) View.VISIBLE else View.GONE
         binding.buttonGetStarted.setOnClickListener {
             activity?.startActivity(Intent(context, HomeActivity::class.java))
             activity?.finish()

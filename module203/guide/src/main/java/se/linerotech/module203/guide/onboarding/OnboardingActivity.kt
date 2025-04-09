@@ -23,9 +23,32 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     private fun showOnboardingScreens() {
-        val adapter = OnboardingViewPagerAdapter(activity = this)
+        val adapter = OnboardingViewPagerAdapter(states = onboardingStates(), activity = this)
         binding.viewPager.adapter = adapter
         binding.toolbar.inflateMenu(R.menu.onboarding_menu)
+    }
+
+    private fun onboardingStates(): List<OnboardingState> {
+        return listOf(
+            OnboardingState(
+                title = R.string.transportation,
+                subtitle = R.string.rent_a_car_from_an_extensive_variety_of_types_and_models,
+                image = R.drawable.onboarding_1,
+                showGetStarted = false
+            ),
+            OnboardingState(
+                title = R.string.flights,
+                subtitle = R.string.cheap_flights_to_anywhere_in_the_world_you_can_imagine,
+                image = R.drawable.onboarding_2,
+                showGetStarted = false
+            ),
+            OnboardingState(
+                title = R.string.flights,
+                subtitle = R.string.the_best_attractions_for_you_and_your_family,
+                image = R.drawable.onboarding_3,
+                showGetStarted = true
+            )
+        )
     }
 
     private fun showPageIndicator() {
