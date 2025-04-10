@@ -48,4 +48,5 @@
         android:text="@string/get_started"
         android:textAllCaps="false"
         android:textColor="@color/porceline" />
+
 </LinearLayout>
