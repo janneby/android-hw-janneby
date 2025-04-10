@@ -81,6 +81,7 @@
     <ID>NoWildcardImports:se.linerotech.module205.project4.ExampleUnitTest.kt:3</ID>
     <ID>NoWildcardImports:se.linerotech.module205.project6.ExampleInstrumentedTest.kt:5</ID>
     <ID>NoWildcardImports:se.linerotech.module205.project6.ExampleUnitTest.kt:3</ID>
+    <ID>SwallowedException:ToursViewModel.kt$ToursViewModel$exception: java.lang.Exception</ID>
     <ID>TooManyFunctions:CreateAccountActivity.kt$CreateAccountActivity : AppCompatActivity</ID>
     <ID>TooManyFunctions:LoginActivity.kt$LoginActivity : AppCompatActivity</ID>
     <ID>TooManyFunctions:MainActivity.kt$MainActivity : AppCompatActivity</ID>

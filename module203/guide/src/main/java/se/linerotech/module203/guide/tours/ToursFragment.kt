@@ -15,7 +15,7 @@ class ToursFragment : Fragment() {
     private var _binding: FragmentToursBinding? = null
     private val binding get() = _binding!!
     private val toursViewModel: ToursViewModel by viewModels {
-        ToursViewModel.factory()
+        ToursViewModel.factory(activity?.resources)
     }
 
     override fun onCreateView(
