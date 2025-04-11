@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import se.linerotech.module203.guide.R
 import se.linerotech.module203.guide.databinding.FragmentToursBinding
@@ -51,10 +52,15 @@ class ToursFragment : Fragment() {
 
         binding.recyclerView.apply {
             visibility = View.VISIBLE
-            adapter = TourRecyclerViewAdapter(items = tours, onCellClicked = {})
+            adapter = TourRecyclerViewAdapter(items = tours, onCellClicked = ::showTourDetail)
             layoutManager = LinearLayoutManager(this@ToursFragment.context)
             setHasFixedSize(true)
         }
+    }
+
+    private fun showTourDetail(tour: Tour) {
+        val action = ToursFragmentDirections.tourDetailsAction(tour = tour)
+        findNavController().navigate(action)
     }
 
     private fun showError() {
