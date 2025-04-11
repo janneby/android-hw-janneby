@@ -9,7 +9,16 @@
         android:id="@+id/toursFragment"
         android:name="se.linerotech.module203.guide.tours.ToursFragment"
         android:label="@string/tours"
-        tools:layout="@layout/fragment_tours" />
+        tools:layout="@layout/fragment_tours">
+        <action
+            android:id="@+id/tourDetailsAction"
+            app:destination="@id/tourDetailsFragment">
+            <argument
+                android:name="tour"
+                app:argType="se.linerotech.module203.guide.tours.Tour" />
+
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/flightsFragment"
@@ -28,5 +37,15 @@
         android:name="se.linerotech.module203.guide.hotels.HotelsFragment"
         android:label="@string/hotels"
         tools:layout="@layout/fragment_hotels" />
+
+    <fragment
+        android:id="@+id/tourDetailsFragment"
+        android:name="se.linerotech.module203.guide.tourDetails.TourDetailsFragment"
+        android:label="@string/tour_details"
+        tools:layout="@layout/fragment_tour_details">
+        <argument
+            android:name="tour"
+            app:argType="se.linerotech.module203.guide.tours.Tour" />
+    </fragment>
 
 </navigation>
