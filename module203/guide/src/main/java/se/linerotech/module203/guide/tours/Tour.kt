@@ -11,6 +11,7 @@ data class Tour(
     val days: Int,
     val cost: Int,
     val image: String,
+    val description: String,
 ) : Parcelable {
     constructor(dto: TourDto) : this(
         name = dto.title,
@@ -18,5 +19,6 @@ data class Tour(
         days = dto.days,
         cost = dto.price,
         image = dto.image,
+        description = dto.details,
     )
 }
