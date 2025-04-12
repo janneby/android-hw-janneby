@@ -27,7 +27,7 @@ class OnboardingViewModel(private val onGetStartedClicked: () -> Unit) : ViewMod
                 onGetStartedClicked = {},
             ),
             OnboardingState(
-                title = R.string.flights,
+                title = R.string.tours,
                 subtitle = R.string.the_best_attractions_for_you_and_your_family,
                 image = R.drawable.onboarding_3,
                 showGetStarted = true,
