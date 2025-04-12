@@ -1,14 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
     tools:context=".tourDetails.TourDetailsFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tour Details"
-        android:textSize="30sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
 
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="355dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="220dp"
+            android:background="@color/black"
+            android:src="@color/monsoon" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="The panana Canal"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:textColor="#AAAAAA"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/location_icon"
+                tools:text="San Blas" />
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:textColor="@color/monsoon"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/calendar_icon"
+                tools:text="7 days" />
+
+        </LinearLayout>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/artyclick_orange"
+            android:clickable="false"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            tools:text="700 SEK" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="26dp"
+            android:text="Travel southbound through the Panama Canal during this 6-hour tour from Panama City. With your local guide, board a bus for a 45-minute journey to Gamboa, home of the Panama Canal Dredging Division. Meet your vessel, the Pacific Queen, for a trip through the Gailard cut, the Pedro Miguel Locks and the Miraflores Locks. Admire scenic views of the Centennial Bridge, the Chagres River, and the Bridge of the Americas. Eat a complimentary lunch on board during your journey. Disembark at the Flamenco Marina in Panama City."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 </FrameLayout>
