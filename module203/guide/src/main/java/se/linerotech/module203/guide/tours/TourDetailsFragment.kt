@@ -1,7 +1,6 @@
-package se.linerotech.module203.guide.tourDetails
+package se.linerotech.module203.guide.tours
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,24 +30,23 @@ class TourDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val tour = args.tour
-
         binding.title.text = tour.name
-        //binding.cost.text = tour.cost.toString()
         binding.cost.text = getString(R.string.sek, tour.cost)
-        //binding.days.text = tour.days.toString()
         binding.days.text = resources.getQuantityString(R.plurals.days, tour.days, tour.days)
         binding.location.text = tour.location
         binding.description.text = tour.description
         loadImage(tour.image)
-
-        //Log.i("TourDetail", tour.toString())
     }
 
     private fun loadImage(url: String) {
         Glide
             .with(binding.image)
             .load(url)
-            .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(25)))
+            .apply(RequestOptions().transform(CenterCrop(), RoundedCorners(ROUNDING_RADIUS)))
             .into(binding.image)
+    }
+
+    companion object {
+        private const val ROUNDING_RADIUS = 25
     }
 }
