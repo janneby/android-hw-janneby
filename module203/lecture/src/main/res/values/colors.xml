@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="monsoon">#898989</color>
+    <color name="blueish_green">#16A464</color>
+    <color name="porcelain">#EEF3F2</color>
+    <color name="artyclick_orange">#FF7D0D</color>
+    <color name="greeny_thing">#16A464</color>
 </resources>
