@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AndroidHomework" parent="Theme.Material3.Light">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.AndroidHomework" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/greeny_thing</item>
+        <item name="colorPrimaryVariant">@color/greeny_thing</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:actionMenuTextColor">@color/greeny_thing</item>
+
     </style>
 
     <style name="Theme.AndroidHomework" parent="Base.Theme.AndroidHomework" />
+
 </resources>
