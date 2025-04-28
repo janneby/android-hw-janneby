@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Module 203 - Lecture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stay_connected_with_your_colleagues_and_friends">Stay connected with your colleagues and friends</string>
+    <string name="never_miss_a_notification_everthing_easily_accessible">Never miss a notification. Everthing easily accessible</string>
+    <string name="peace_of_mind_never_miss_an_important_notification">Peace of mind. Never miss an important notification</string>
+    <string name="onboarding_image">Onboarding Image</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
 </resources>
