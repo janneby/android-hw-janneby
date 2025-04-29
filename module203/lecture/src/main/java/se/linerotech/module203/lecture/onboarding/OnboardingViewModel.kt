@@ -1,9 +1,10 @@
-package se.linerotech.module203.lecture
+package se.linerotech.module203.lecture.onboarding
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import se.linerotech.module203.lecture.R
 
 class OnboardingViewModel(private val onGetStartedClicked: () -> Unit) : ViewModel() {
     private val _state = MutableStateFlow(onboardingStates())

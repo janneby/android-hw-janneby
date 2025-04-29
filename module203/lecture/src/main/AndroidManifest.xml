@@ -12,7 +12,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".onboarding.OnboardingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

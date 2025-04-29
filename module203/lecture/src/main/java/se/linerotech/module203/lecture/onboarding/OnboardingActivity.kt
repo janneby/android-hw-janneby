@@ -1,4 +1,4 @@
-package se.linerotech.module203.lecture
+package se.linerotech.module203.lecture.onboarding
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
+import se.linerotech.module203.lecture.HomeActivity
 import se.linerotech.module203.lecture.databinding.ActivityOnboardingBinding
 
 class OnboardingActivity : AppCompatActivity() {

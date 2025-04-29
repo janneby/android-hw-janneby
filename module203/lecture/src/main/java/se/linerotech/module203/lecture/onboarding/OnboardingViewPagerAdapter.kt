@@ -1,4 +1,4 @@
-package se.linerotech.module203.lecture
+package se.linerotech.module203.lecture.onboarding
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

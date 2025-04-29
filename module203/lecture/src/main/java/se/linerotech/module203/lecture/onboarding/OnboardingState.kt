@@ -1,4 +1,4 @@
-package se.linerotech.module203.lecture
+package se.linerotech.module203.lecture.onboarding
 
 import android.os.Parcelable
 import androidx.annotation.DrawableRes
