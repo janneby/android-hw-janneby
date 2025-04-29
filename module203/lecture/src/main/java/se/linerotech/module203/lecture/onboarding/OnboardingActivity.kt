@@ -28,24 +28,6 @@ class OnboardingActivity : AppCompatActivity() {
         configureMenuItemClickListener()
     }
 
-    private fun showOnboardingScreens(states: List<OnboardingState>) {
-        val adapter = OnboardingViewPagerAdapter(states = states, activity = this)
-        binding.viewPager.adapter = adapter
-        // binding.toolbar.inflateMenu(R.menu.onboarding_menu)
-    }
-
-    private fun showPageIndicator() {
-        TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ ->
-        }.attach()
-    }
-
-    private fun configureMenuItemClickListener() {
-        binding.toolbar.setOnMenuItemClickListener {
-            openHomeScreen()
-            true
-        }
-    }
-
     private fun observeState() {
         lifecycleScope.launch {
             repeatOnLifecycle((Lifecycle.State.CREATED)) {
@@ -55,6 +37,24 @@ class OnboardingActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun configureMenuItemClickListener() {
+        binding.toolbar.setOnMenuItemClickListener {
+            openHomeScreen()
+            true
+        }
+    }
+
+    private fun showOnboardingScreens(states: List<OnboardingState>) {
+        val adapter = OnboardingViewPagerAdapter(states = states, activity = this)
+        binding.viewPager.adapter = adapter
+        // binding.toolbar.inflateMenu(R.menu.onboarding_menu)
+    }
+
+    private fun showPageIndicator() {
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ ->
+        }.attach()
     }
 
     private fun openHomeScreen() {
