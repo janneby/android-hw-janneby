@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@id/inboxFragement"
+        android:id="@id/inboxFragment"
         android:icon="@drawable/inbox_icon"
         android:title="@string/inbox" />
 
     <item
-        android:id="@id/calendarFragement"
+        android:id="@id/calendarFragment"
         android:icon="@drawable/calendar_icon"
         android:title="@string/calendar" />
 
     <item
-        android:id="@id/contactsFragement"
+        android:id="@id/contactsFragment"
         android:icon="@drawable/contacts_icon"
         android:title="@string/contacts" />
 

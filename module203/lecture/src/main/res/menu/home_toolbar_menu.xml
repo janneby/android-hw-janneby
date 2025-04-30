@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/contactsFragement"
-        android:contentDescription="@string/contacts"
+        android:id="@+id/testFragment"
+        android:contentDescription="Test"
         android:icon="@drawable/contacts_icon"
-        android:title="@string/contacts"
+        android:title="Test"
         app:showAsAction="always" />
 
 </menu>
