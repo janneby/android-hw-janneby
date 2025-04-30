@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inboxFragement">
+
+    <fragment
+        android:id="@+id/inboxFragement"
+        android:name="se.linerotech.module203.lecture.InboxFragment"
+        tools:layout="@layout/fragment_inbox" />
+
+    <fragment
+        android:id="@+id/calendarFragement"
+        android:name="se.linerotech.module203.lecture.CalendarFragment"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/contactsFragement"
+        android:name="se.linerotech.module203.lecture.ContactsFragment"
+        tools:layout="@layout/fragment_contacts" />
+
+</navigation>
