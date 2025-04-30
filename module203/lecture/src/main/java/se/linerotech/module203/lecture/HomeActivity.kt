@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -22,10 +23,18 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navHost = supportFragmentManager.findFragmentById(R.id.navController) as NavHostFragment
-        binding.bottomNavBar.setupWithNavController(navHost.navController)
 
+        configureBottomNavView(navHost.navController)
+        configureToolbar(navHost.navController)
+        setDestinationListener(navHost.navController)
+    }
+
+    private fun configureBottomNavView(navController: NavController) {
+        binding.bottomNavBar.setupWithNavController(navController)
+    }
+
+    private fun configureToolbar(navController: NavController) {
         setSupportActionBar(binding.toolbar)
-
         val appBarConfiguration = AppBarConfiguration(
             topLevelDestinationIds = setOf(
                 R.id.inboxFragment,
@@ -34,13 +43,15 @@ class HomeActivity : AppCompatActivity() {
             ),
             fallbackOnNavigateUpListener = ::onSupportNavigateUp
         )
-        setupActionBarWithNavController(navHost.navController, appBarConfiguration)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+    }
 
-        navHost.navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.testFragment) {
-                binding.bottomNavBar.visibility = View.GONE
+    private fun setDestinationListener(navController: NavController) {
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            binding.bottomNavBar.visibility = if (destination.id == R.id.testFragment) {
+                View.GONE
             } else {
-                binding.bottomNavBar.visibility = View.VISIBLE
+                View.VISIBLE
             }
         }
     }
