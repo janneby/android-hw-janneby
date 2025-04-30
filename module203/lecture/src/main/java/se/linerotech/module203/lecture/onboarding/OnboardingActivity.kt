@@ -9,8 +9,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
-import se.linerotech.module203.lecture.HomeActivity
 import se.linerotech.module203.lecture.databinding.ActivityOnboardingBinding
+import se.linerotech.module203.lecture.home.HomeActivity
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding

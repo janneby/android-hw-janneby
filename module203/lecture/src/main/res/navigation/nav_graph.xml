@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/inboxFragment"
-        android:name="se.linerotech.module203.lecture.InboxFragment"
+        android:name="se.linerotech.module203.lecture.inbox.InboxFragment"
         android:label="@string/inbox"
         tools:layout="@layout/fragment_inbox" />
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="se.linerotech.module203.lecture.CalendarFragment"
+        android:name="se.linerotech.module203.lecture.calendar.CalendarFragment"
         android:label="@string/calendar"
         tools:layout="@layout/fragment_calendar" />
 
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="se.linerotech.module203.lecture.ContactsFragment"
+        android:name="se.linerotech.module203.lecture.contacts.ContactsFragment"
         android:label="@string/contacts"
         tools:layout="@layout/fragment_contacts" />
 
     <fragment
         android:id="@+id/testFragment"
-        android:name="se.linerotech.module203.lecture.TestFragment"
+        android:name="se.linerotech.module203.lecture.test.TestFragment"
         android:label="Test"
         tools:layout="@layout/fragment_test" />
 
