@@ -1,20 +1,38 @@
 package se.linerotech.module203.lecture
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import se.linerotech.module203.lecture.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_home)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val navHost = supportFragmentManager.findFragmentById(R.id.navController) as NavHostFragment
+        binding.bottomNavBar.setupWithNavController(navHost.navController)
+
+        setSupportActionBar(binding.toolbar)
+        setupActionBarWithNavController(navHost.navController)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.home_toolbar_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val navController = findNavController(R.id.navController)
+        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
     }
 }
