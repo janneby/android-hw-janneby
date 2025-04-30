@@ -3,21 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/inboxFragement">
+    app:startDestination="@id/inboxFragment">
 
     <fragment
-        android:id="@+id/inboxFragement"
+        android:id="@+id/inboxFragment"
         android:name="se.linerotech.module203.lecture.InboxFragment"
+        android:label="@string/inbox"
         tools:layout="@layout/fragment_inbox" />
 
     <fragment
-        android:id="@+id/calendarFragement"
+        android:id="@+id/calendarFragment"
         android:name="se.linerotech.module203.lecture.CalendarFragment"
+        android:label="@string/calendar"
         tools:layout="@layout/fragment_calendar" />
 
     <fragment
-        android:id="@+id/contactsFragement"
+        android:id="@+id/contactsFragment"
         android:name="se.linerotech.module203.lecture.ContactsFragment"
+        android:label="@string/contacts"
         tools:layout="@layout/fragment_contacts" />
+
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="se.linerotech.module203.lecture.TestFragment"
+        android:label="Test"
+        tools:layout="@layout/fragment_test" />
 
 </navigation>
