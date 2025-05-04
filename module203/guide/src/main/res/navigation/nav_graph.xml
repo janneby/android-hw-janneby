@@ -37,15 +37,21 @@
                 android:name="car"
                 app:argType="se.linerotech.module203.guide.cars.Car" />
         </action>
-
-
     </fragment>
 
     <fragment
         android:id="@+id/hotelsFragment"
         android:name="se.linerotech.module203.guide.hotels.HotelsFragment"
         android:label="@string/hotels"
-        tools:layout="@layout/fragment_hotels"/>
+        tools:layout="@layout/fragment_hotels">
+        <action
+            android:id="@+id/hotelDetailsAction"
+            app:destination="@id/hotelDetailsFragment">
+            <argument
+                android:name="hotel"
+                app:argType="se.linerotech.module203.guide.hotels.Hotel" />
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/tourDetailsFragment"
@@ -65,6 +71,16 @@
         <argument
             android:name="car"
             app:argType="se.linerotech.module203.guide.cars.Car" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotelDetailsFragment"
+        android:name="se.linerotech.module203.guide.hotels.HotelDetailsFragment"
+        android:label="Hotel Details"
+        tools:layout="@layout/fragment_hotel_details">
+        <argument
+            android:name="hotel"
+            app:argType="se.linerotech.module203.guide.hotels.Hotel" />
     </fragment>
 
 </navigation>
