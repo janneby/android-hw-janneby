@@ -1,6 +1,7 @@
 package se.linerotech.module203.guide.cars
 
 import android.content.res.Resources
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.squareup.moshi.JsonAdapter
@@ -39,7 +40,8 @@ class CarsViewModel(resources: Resources?) : ViewModel() {
             val dto = jsonAdapter.fromJson(json)
             dto?.carDtos?.map { Car(it) }
         } catch (exception: java.lang.Exception) {
-            null
+            Log.e("Error during carData operation", exception.message.toString())
+            throw exception // Rethrow the original exception
         }
     }
 
