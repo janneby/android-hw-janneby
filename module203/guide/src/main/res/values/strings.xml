@@ -14,13 +14,35 @@
     <string name="unable_to_get_your_data_please_try_again_later">Unable to get your data. Please try again later</string>
     <string name="sek">%1$d SEK</string>
     <string name="sek_day">%1$d SEK / day</string>
+    <string name="sek_night">%1$d SEK / night</string>
     <string name="tour_details">Tour Details</string>
+    <string name="non_stop">Non-stop</string>
     <plurals name="seats">
         <item quantity="one">%1$d seat</item>
         <item quantity="other">%1$d seats</item>
     </plurals>
+    <plurals name="hours">
+        <item quantity="one">%1$d hour</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="stops">
+        <item quantity="one">%1$d stop</item>
+        <item quantity="other">%1$d stops</item>
+    </plurals>
+    <plurals name="stars">
+        <item quantity="one">%1$d star</item>
+        <item quantity="other">%1$d stars</item>
+    </plurals>
+    <plurals name="reviews">
+        <item quantity="one">%1$d review</item>
+        <item quantity="other">%1$d reviews</item>
+    </plurals>
     <plurals name="days">
         <item quantity="one">%1$d day</item>
         <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="nights">
+        <item quantity="one">%1$d night</item>
+        <item quantity="other">%1$d nights</item>
     </plurals>
 </resources>
