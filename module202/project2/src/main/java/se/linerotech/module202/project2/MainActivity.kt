@@ -22,22 +22,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPopularItems() {
-        showPopularLanguages(listOf(
-            PopularItem(id = "Kotlin"),
-            PopularItem(id = "Python"),
-            PopularItem(id = "Java"),
-            PopularItem(id = "C++"),
-        ))
-        showPopularOrgs(listOf(
-            PopularItem(id = "JetBrains"),
-            PopularItem(id = "google"),
-            PopularItem(id = "github"),
-        ))
-        showPopularUsers(listOf(
-            PopularItem(id = "hlinero"),
-            PopularItem(id = "torvalds"),
-            PopularItem(id = "gaeron"),
-        ))
+        showPopularLanguages(
+            listOf(
+                PopularItem(id = "Kotlin"),
+                PopularItem(id = "Python"),
+                PopularItem(id = "Java"),
+                PopularItem(id = "C++"),
+            )
+        )
+        showPopularOrgs(
+            listOf(
+                PopularItem(id = "JetBrains"),
+                PopularItem(id = "google"),
+                PopularItem(id = "github"),
+            )
+        )
+        showPopularUsers(
+            listOf(
+                PopularItem(id = "hlinero"),
+                PopularItem(id = "torvalds"),
+                PopularItem(id = "gaeron"),
+            )
+        )
     }
 
     private fun showPopularLanguages(popularItems: List<PopularItem>) {
@@ -91,7 +97,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setClickListeners() {
-
         binding.editTextGitHubUsername.setOnEditorActionListener { v, actionId, event ->
             return@setOnEditorActionListener when (actionId) {
                 EditorInfo.IME_ACTION_SEND -> {
@@ -103,6 +108,5 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
     }
 }

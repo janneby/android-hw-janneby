@@ -1,9 +1,8 @@
 package se.linerotech.module202.project2
 
-import android.os.Bundle
 import android.content.Context
 import android.content.Intent
-import android.view.View
+import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -16,7 +15,7 @@ import se.linerotech.module202.project2.databinding.ActivityUserInfoBinding
 
 class UserInfoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityUserInfoBinding
-    //private val viewModel: UserInfoViewModel by viewModels { UserInfoViewModel.factory(popularUser().userId) }
+    // private val viewModel: UserInfoViewModel by viewModels { UserInfoViewModel.factory(popularUser().userId) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +51,7 @@ class UserInfoActivity : AppCompatActivity() {
                 ).show()
             }
         })
-        }
+    }
 
     private fun configureToolbar() {
         setSupportActionBar((binding.toolbar))
@@ -77,7 +76,7 @@ class UserInfoActivity : AppCompatActivity() {
 
         binding.textViewTwitterUserName.text = getString(R.string.at) + userInfo.twitterUsername
         binding.textViewWebpage.text = userInfo.blog
-        if(userInfo.hireable == null) {
+        if (userInfo.hireable == null) {
             binding.textViewHireStatus.text = "Not hireable"
         } else {
             binding.textViewHireStatus.text = userInfo.hireable.toString()
@@ -87,25 +86,25 @@ class UserInfoActivity : AppCompatActivity() {
     }
 
     private fun loadImage(url: String?) {
-            Glide
-                .with(binding.imageViewUser)
-                .load(url)
-                .placeholder(R.drawable.github_logo)
-                .centerCrop()
-                .into(binding.imageViewUser)
+        Glide
+            .with(binding.imageViewUser)
+            .load(url)
+            .placeholder(R.drawable.github_logo)
+            .centerCrop()
+            .into(binding.imageViewUser)
     }
 
     private fun popularUser(): PopularItem? {
         return intent.getParcelableExtra(KEY_USER)
     }
 
-    private fun showProgressBar() {
-        binding.progressBar.visibility = View.VISIBLE
-    }
-
-    private fun showErrorMessage() {
-        Toast.makeText(this, "UserInfo - error", Toast.LENGTH_LONG).show()
-    }
+//    private fun showProgressBar() {
+//        binding.progressBar.visibility = View.VISIBLE
+//    }
+//
+//    private fun showErrorMessage() {
+//        Toast.makeText(this, "UserInfo - error", Toast.LENGTH_LONG).show()
+//    }
 
     override fun onSupportNavigateUp(): Boolean {
         finish()
