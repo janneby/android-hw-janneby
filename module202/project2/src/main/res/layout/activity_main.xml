@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,12 +9,21 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextAppearance="@style/AppTheme.Toolbar" />
 
     <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="40dp"
         android:gravity="center"
         android:orientation="vertical">
@@ -27,11 +36,14 @@
             android:background="@drawable/github_logo" />
 
         <EditText
+            android:id="@+id/editTextGitHubUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
+            android:imeOptions="actionSend"
             android:inputType="text"
-            tools:text="Enter a GitHub Username" />
+            android:hint="@string/enter_a_github_username"
+            android:tooltipText="@string/enter_a_github_username" />
 
         <TextView
             android:layout_width="match_parent"
@@ -41,48 +53,16 @@
             android:textColor="#FF9701"
             android:textSize="15sp" />
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <com.google.android.material.chip.Chip
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/popular_languages_chip_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="Kotlin"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="Python"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="Java"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="C++"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-        </LinearLayout>
+                app:singleLine="true" />
+        </HorizontalScrollView>
 
         <TextView
             android:layout_width="match_parent"
@@ -92,83 +72,37 @@
             android:textColor="#FF9701"
             android:textSize="15sp" />
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content">
 
-            android:orientation="horizontal">
-
-            <com.google.android.material.chip.Chip
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/popular_organisations_chip_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="JetBrains"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="google"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:text="github"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-        </LinearLayout>
+                app:singleLine="true" />
+        </HorizontalScrollView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat"
             android:text="Popular Users"
             android:textColor="#FF9701"
             android:textSize="15sp" />
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <com.google.android.material.chip.Chip
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/popularUserChipGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="hlinero"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="torvalds"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:backgroundTint="@color/white"
-                android:text="gaerson"
-                app:chipStrokeColor="@color/black"
-                app:chipStrokeWidth="1dp" />
-
-        </LinearLayout>
+                app:singleLine="true" />
+        </HorizontalScrollView>
 
     </LinearLayout>
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
