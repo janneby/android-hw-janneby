@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/discoverFragment">
+
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="se.linerotech.module203.project1.discover.DiscoverFragment"
+        android:label="@string/discover"
+        tools:layout="@layout/fragment_discover">
+        <action
+            android:id="@+id/discoverDetailsAction"
+            app:destination="@id/discoverDetailFragment">
+            <argument
+                android:name="discover"
+                app:argType="se.linerotech.module203.project1.discover.Discover" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="se.linerotech.module203.project1.library.LibraryFragment"
+        android:label="@string/library"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="se.linerotech.module203.project1.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+
+    <fragment
+        android:id="@+id/discoverDetailFragment"
+        android:name="se.linerotech.module203.project1.discover.DiscoverFragment"
+        android:label="@string/discover"
+        tools:layout="@layout/fragment_discover_details">
+        <argument
+            android:name="discover"
+            app:argType="se.linerotech.module203.project1.discover.Discover" />
+    </fragment>
+
+</navigation>
