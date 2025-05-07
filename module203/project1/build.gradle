@@ -1,6 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+    // Also add ksp plugin in project-level build.gradle file
+    id 'com.google.devtools.ksp'
+    id 'kotlin-kapt' // For Moshi codegen
 }
 
 android {
@@ -30,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -41,4 +50,17 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Navigation (See project-level build.gradle file)
+    // Must be same version as specified in project-level build.gradle file
+    implementation "androidx.navigation:navigation-fragment-ktx:2.7.7"
+    implementation "androidx.navigation:navigation-ui-ktx:2.7.7"
+
+    // Moshi
+    implementation "com.squareup.moshi:moshi:1.14.0"
+    // To use ksp, add dependency in plugin section. See top of this file
+    ksp "com.squareup.moshi:moshi-kotlin-codegen:1.14.0"
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
 }
