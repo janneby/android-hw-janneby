@@ -2,4 +2,30 @@
     <string name="app_name" translatable="false">Module 202 - Project 2</string>
     <string name="at">\@</string>
     <string name="enter_a_github_username">Enter a Github Username</string>
+    <string name="user">User</string>
+    <string name="not_hireable">Not hireable</string>
+    <string name="no_username">No Username</string>
+    <string name="userinfoactivity_onresponse_error">UserInfoActivity - onResponse error</string>
+    <string name="userinfoactivity_onfailure_error">UserInfoActivity - onFailure error</string>
+    <string name="unknown_user">Unknown User</string>
+    <string name="popular_languages">Popular Languages</string>
+    <string name="popular_organizations">Popular Organizations</string>
+    <string name="popular_users">Popular Users</string>
+    <string name="placeholder_name">Placeholder Name</string>
+    <string name="country">Country</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repositories">Repositories</string>
+    <string name="about">About</string>
+    <string name="about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text">About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text.</string>
+    <string name="basics">Basics</string>
+    <string name="hireable_or_not">hireable or not</string>
+    <string name="sometech_ab">Sometech AB</string>
+    <string name="top_3_languages">Top 3 Languages</string>
+    <string name="error_unable_to_retrieve_repositories">ERROR - Unable to retrieve Repositories</string>
+    <string name="username_1">username#1</string>
+    <string name="user_picture">User Picture</string>
+    <string name="error_unable_to_retrieve_followers">ERROR - Unable to retrieve Followers</string>
+    <string name="error_unable_to_retrieve_following">ERROR - Unable to retrieve Following</string>
+    <string name="followerss">Followerss</string>
 </resources>
