@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".onboarding.OnboardingFragment">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/onboarding_3" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:text="@string/discover" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAlignment="textStart"
+        android:textColor="@color/monsoon"
+        android:textSize="18sp"
+        tools:text="@string/thousands_of_books_at_your_fingertip" />
+
+    <Button
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/mediumvioletred"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        android:textColor="@color/mediumvioletred" />
+
+</LinearLayout>
