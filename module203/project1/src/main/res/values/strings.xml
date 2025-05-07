@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name" translatable="false">Module 203 - Project 1</string>
+    <string name="discover">Discover</string>
+    <string name="thousands_of_books_at_your_fingertip">Thousands of books at your fingertip</string>
+    <string name="share">Share</string>
+    <string name="send_to_your_friends_your_favorite_reads">Send to your friends your favorite reads</string>
+    <string name="collect">Collect</string>
+    <string name="never_miss_a_page_create_collections_and_save_your_favorite_books">Never miss a page. Create collections and save your favorite books</string>
+    <string name="personalize">Personalize</string>
+    <string name="set_your_own_tone_look_and_feel_make_it_yours">Set your own tone, look, and feel. Make it yours</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started">Get started</string>
+    <string name="skip">Skip</string>
+    <string name="library">Library</string>
+    <string name="profile">Profile</string>
+    <string name="library_details">Library Details</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="hotels">Hotels</string>
+    <string name="unable_to_get_your_data_please_try_again_later">Unable to get your data. Please try again later</string>
+    <string name="nothing_was_discovered">Nothing was discovered</string>
 </resources>
