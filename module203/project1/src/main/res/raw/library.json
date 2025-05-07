@@ -1,0 +1,2109 @@
+{
+    "categories":[
+       {
+          "name":"Design",
+          "books":[
+             {
+                "author":"Helen Armstrong",
+                "averageRating":3.96,
+                "categories":[
+                   "Design"
+                ],
+                "collectionId":"0e6c4712-ec61-46d3-a14d-1de3a73271f7",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:11:19",
+                "description":"Digital Design Theory bridges the gap between the discourse of print design and interactive experience by examining the impact of computation on the field of design. As graphic design moves from the creation of closed, static objects to the development of open, interactive frameworks, designers seek to understand their own rapidly shifting profession. Helen Armstrong's carefully curated introduction to groundbreaking primary texts, from the 1960s to the present, provides the background necessary for an understanding of digital design vocabulary and thought. Accessible essays from designers and programmers are by influential figures such as Ladislav Sutnar, Bruno Munari, Wim Crouwel, Sol LeWitt, Muriel Cooper, Zuzana Licko, Rudy VanderLans, John Maeda, Paola Antonelli, Luna Maurer, and Keetra Dean Dixon. Their topics range from graphic design's fascination with programmatic design, to early strivings for an authentic digital aesthetic, to the move from object-based design and to experience-based design. Accompanying commentary assesses the relevance of each excerpt to the working and intellectual life of designers.",
+                "goodReadsBookId":"30775613",
+                "image":"https://books.google.com/books/content?id=D0UEDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781616894955",
+                "pageCount":152,
+                "publicationDate":"2016-06-28",
+                "publisher":"Chronicle Books",
+                "ratingCount":28,
+                "title":"Digital Design Theory"
+             },
+             {
+                "author":"James Pannafino",
+                "averageRating":3.64,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"0e6c4712-ec61-46d3-a14d-1de3a73271f7",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:13:06",
+                "description":"\"Interaction design has many dimensions to it. It addresses how people deal with words, read images, explore physical space, think about time and motion, and how actions and responses affect human behavior. Various disciplines make up interaction design, such as industrial design, cognitive psychology, user interface design and many others. It is my hope that this book is a starting point for creating a visual language to enhance the understanding of interdisciplinary theories within interaction design. The book uses concise descriptions, visual metaphors and comparative diagrams to explain each term's meaning. Many ideas in this book are based on timeless principles that will function in varying contexts\"--Provided by author.",
+                "goodReadsBookId":"6157547",
+                "image":"https://books.google.com/books/content?id=Wk5fmwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780982634813",
+                "pageCount":94,
+                "publicationDate":"2012",
+                "publisher":"",
+                "ratingCount":91,
+                "title":"Interdisciplinary Interaction Design"
+             },
+             {
+                "author":"Susan Weinschenk",
+                "averageRating":4.1,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"0e6c4712-ec61-46d3-a14d-1de3a73271f7",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:13:58",
+                "description":"We design to elicit responses from people. We want them to buy something, read more, or take action of some kind. Designing without understanding what makes people act the way they do is like exploring a new city without a map: results will be haphazard, confusing, and inefficient. This book combines real science and research with practical examples to deliver a guide every designer needs. With it you’ll be able to design more intuitive and engaging work for print, websites, applications, and products that matches the way people think, work, and play. Learn to increase the effectiveness, conversion rates, and usability of your own design projects by finding the answers to questions such as: What grabs and holds attention on a page or screen? What makes memories stick? What is more important, peripheral or central vision? How can you predict the types of errors that people will make? What is the limit to someone’s social circle? How do you motivate people to continue on to (the next step? What line length for text is best? Are some fonts better than others? These are just a few of the questions that the book answers in its deep-dive exploration of what makes people tick.",
+                "goodReadsBookId":"11670989",
+                "image":"https://books.google.com/books/content?id=yODWdMUhkFwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780132658607",
+                "pageCount":256,
+                "publicationDate":"2011-04-14",
+                "publisher":"Pearson Education",
+                "ratingCount":4269,
+                "title":"100 Things Every Designer Needs to Know About People"
+             }
+          ]
+       },
+       {
+          "name":"Engineering",
+          "books":[
+             {
+                "author":"K. N. Kukoyi",
+                "averageRating":3.67,
+                "categories":[
+                   "Application software"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:33:19",
+                "description":"A software survival guide for non-technical entrepreneurs entering the tech space who want to reduce the uncertainty associated to starting their business, and for seed startups who require support and ideas when dealing with the daily realities of managing the software development process and getting a quality software application built and launched.",
+                "goodReadsBookId":"35252184",
+                "image":"https://books.google.com/books/content?id=yzqGswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781539188193",
+                "pageCount":386,
+                "publicationDate":"2017-05-26",
+                "publisher":"Createspace Independent Publishing Platform",
+                "ratingCount":3,
+                "title":"Don't Hire a Software Developer Until You Read This Book"
+             },
+             {
+                "author":"David Sumpter",
+                "averageRating":3.98,
+                "categories":[
+                   "Mathematics"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-11 15:00:12",
+                "description":"Outnumbered is a journey to the dark side of mathematics, from how it dictates our social media activities to our travel routes. Algorithms are running our society, and as Facebook's Cambridge Analytica scandal has revealed, we don't even realize how our data has been used against us. David Sumpter investigates whether mathematics is crossing dangerous lines when it comes to what we can make decisions about. Our increasing reliance on technology and the internet has opened a window for mathematicians and data researchers to gaze through into our lives. Using the data they are constantly collecting about where we travel, where we shop, what we buy, and what interests us, they can begin to predict our daily habits, and increasingly we are relinquishing our decision-making to algorithms. Are we giving this up too easily? Without understanding what mathematics can and can't do it is impossible to get a handle on how it is changing our lives. In this book, David Sumpter takes an algorithm-strewn journey to the dark side of mathematics. He investigates the equations that analyze us, influence us and will (maybe) become like us, answering questions like: Who are Cambridge Analytica, and what are they doing with our data? How does Facebook build a 100-dimensional picture of your personality? Are Google algorithms racist and sexist? Why do election predictions fail so drastically? Are algorithms that are designed to find criminals making terrible mistakes? What does the future hold as we relinquish our decision-making to machines? Featuring interviews with those working at the cutting edge of algorithm, Outnumbered explains how mathematics and statistics work in the real world, and what we should and shouldn't worry about.",
+                "goodReadsBookId":"36762542",
+                "image":"https://books.google.com/books/content?id=R14stAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781472947413",
+                "pageCount":272,
+                "publicationDate":"2018-06-19",
+                "publisher":"Bloomsbury Sigma",
+                "ratingCount":250,
+                "title":"Outnumbered"
+             },
+             {
+                "author":"Viktor Mayer-Schönberger",
+                "averageRating":3.71,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-11 15:00:24",
+                "description":"New and expanded edition. An International Bestseller - Over One Million Copies Sold! Shortlisted for the Financial Times/Goldman Sachs Business Book of the Year Award. Since Aristotle, we have fought to understand the causes behind everything. But this ideology is fading. In the age of big data, we can crunch an incomprehensible amount of information, providing us with invaluable insights about the what rather than the why. We're just starting to reap the benefits: tracking vital signs to foresee deadly infections, predicting building fires, anticipating the best moment to buy a plane ticket, seeing inflation in real time and monitoring social media in order to identify trends. But there is a dark side to big data. Will it be machines, rather than people, that make the decisions? How do you regulate an algorithm? What will happen to privacy? Will individuals be punished for acts they have yet to commit? In this groundbreaking and fascinating book, two of the world's most-respected data experts reveal the reality of a big data world and outline clear and actionable steps that will equip the reader with the tools needed for this next phase of human evolution.",
+                "goodReadsBookId":"34686572",
+                "image":"https://books.google.com/books/content?id=ee9BDQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781473647206",
+                "pageCount":320,
+                "publicationDate":"2017-01-10",
+                "publisher":"John Murray",
+                "ratingCount":7209,
+                "title":"Big Data"
+             },
+             {
+                "author":"Pratap Dangeti",
+                "averageRating":3.4,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-06 17:57:57",
+                "description":"Build Machine Learning models with a sound statistical understanding. About This Book Learn about the statistics behind powerful predictive models with p-value, ANOVA, and F- statistics. Implement statistical computations programmatically for supervised and unsupervised learning through K-means clustering. Master the statistical aspect of Machine Learning with the help of this example-rich guide to R and Python. Who This Book Is For This book is intended for developers with little to no background in statistics, who want to implement Machine Learning in their systems. Some programming knowledge in R or Python will be useful. What You Will Learn Understand the Statistical and Machine Learning fundamentals necessary to build models Understand the major differences and parallels between the statistical way and the Machine Learning way to solve problems Learn how to prepare data and feed models by using the appropriate Machine Learning algorithms from the more-than-adequate R and Python packages Analyze the results and tune the model appropriately to your own predictive goals Understand the concepts of required statistics for Machine Learning Introduce yourself to necessary fundamentals required for building supervised & unsupervised deep learning models Learn reinforcement learning and its application in the field of artificial intelligence domain In Detail Complex statistics in Machine Learning worry a lot of developers. Knowing statistics helps you build strong Machine Learning models that are optimized for a given problem statement. This book will teach you all it takes to perform complex statistical computations required for Machine Learning. You will gain information on statistics behind supervised learning, unsupervised learning, reinforcement learning, and more. Understand the real-world examples that discuss the statistical side of Machine Learning and familiarize yourself with it. You will also design programs for performing tasks such as model, parameter fitting, regression, classification, density collection, and more. By the end of the book, you will have mastered the required statistics for Machine Learning and will be able to apply your new skills to any sort of industry problem. Style and approach This practical, step-by-step guide will give you an understanding of the Statistical and Machine Learning fundamentals you'll need to build models.",
+                "goodReadsBookId":"35873662",
+                "image":"https://books.google.com/books/content?id=C-dDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781788291224",
+                "pageCount":442,
+                "publicationDate":"2017-07-21",
+                "publisher":"Packt Publishing Ltd",
+                "ratingCount":20,
+                "title":"Statistics for Machine Learning"
+             },
+             {
+                "author":"Kim Zetter",
+                "averageRating":4.14,
+                "categories":[
+                   "History"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-11 19:23:26",
+                "description":"Top cybersecurity journalist Kim Zetter tells the story behind the virus that sabotaged Iran’s nuclear efforts and shows how its existence has ushered in a new age of warfare—one in which a digital attack can have the same destructive capability as a megaton bomb. In January 2010, inspectors with the International Atomic Energy Agency noticed that centrifuges at an Iranian uranium enrichment plant were failing at an unprecedented rate. The cause was a complete mystery—apparently as much to the technicians replacing the centrifuges as to the inspectors observing them. Then, five months later, a seemingly unrelated event occurred: A computer security firm in Belarus was called in to troubleshoot some computers in Iran that were crashing and rebooting repeatedly. At first, the firm’s programmers believed the malicious code on the machines was a simple, routine piece of malware. But as they and other experts around the world investigated, they discovered a mysterious virus of unparalleled complexity. They had, they soon learned, stumbled upon the world’s first digital weapon. For Stuxnet, as it came to be known, was unlike any other virus or worm built before: Rather than simply hijacking targeted computers or stealing information from them, it escaped the digital realm to wreak actual, physical destruction on a nuclear facility. In these pages, Wired journalist Kim Zetter draws on her extensive sources and expertise to tell the story behind Stuxnet’s planning, execution, and discovery, covering its genesis in the corridors of Bush’s White House and its unleashing on systems in Iran—and telling the spectacular, unlikely tale of the security geeks who managed to unravel a sabotage campaign years in the making. But Countdown to Zero Day ranges far beyond Stuxnet itself. Here, Zetter shows us how digital warfare developed in the US. She takes us inside today’s flourishing zero-day “grey markets,” in which intelligence agencies and militaries pay huge sums for the malicious code they need to carry out infiltrations and attacks. She reveals just how vulnerable many of our own critical systems are to Stuxnet-like strikes, from nation-state adversaries and anonymous hackers alike—and shows us just what might happen should our infrastructure be targeted by such an attack. Propelled by Zetter’s unique knowledge and access, and filled with eye-opening explanations of the technologies involved, Countdown to Zero Day is a comprehensive and prescient portrait of a world at the edge of a new kind of war.",
+                "goodReadsBookId":"22926847",
+                "image":"https://books.google.com/books/content?id=1l2YAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780770436186",
+                "pageCount":448,
+                "publicationDate":"2014-11-11",
+                "publisher":"Crown",
+                "ratingCount":4459,
+                "title":"Countdown to Zero Day"
+             },
+             {
+                "author":"Venkat Subramaniam",
+                "averageRating":4.79,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-06-23 17:34:46",
+                "description":"Programmers don't just use Kotlin, they love it. Even Google has adopted it as a first-class language for Android development. With Kotlin, you can intermix imperative, functional, and object-oriented styles of programming and benefit from the approach that's most suitable for the problem at hand. Learn to use the many features of this highly concise, fluent, elegant, and expressive statically typed language with easy-to-understand examples. Learn to write easy-to-maintain, high-performing JVM and Android applications, create DSLs, program asynchrony, and much more. Kotlin is a highly concise, elegant, fluent, and expressive statically typed multi-paradigm language. It is one of the few languages that compiles down to both Java bytecode and JavaScript. You can use it to build server-side, front-end, and Android applications. With Kotlin, you need less code to accomplish your tasks, while keeping the code type-safe and less prone to error. If you want to learn the essentials of Kotlin, from the fundamentals to more advanced concepts, you've picked the right book. Fire up your favorite IDE and practice hundreds of examples and exercises to sharpen your Kotlin skills. Learn to build standalone small programs to run as scripts, create type safe code, and then carry that knowledge forward to create fully object-oriented and functional style code that's easier to extend. Learn how to program with elegance but without compromising efficiency or performance, and how to use metaprogramming to build highly expressive code and create internal DSLs that exploit the fluency of the language. Explore coroutines, program asynchrony, run automated tests, and intermix Kotlin with Java in your enterprise applications. This book will help you master one of the few languages that you can use for the entire full stack - from the server to mobile devices - to create performant, concise, and easy to maintain applications. What You Need: To try out the examples in the book you'll need a computer with Kotlin SDK, JDK, and a text editor or a Kotlin IDE installed in it.",
+                "goodReadsBookId":"46159932",
+                "image":"https://books.google.com/books/content?id=cIF-vQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781680506358",
+                "pageCount":450,
+                "publicationDate":"2019-05-31",
+                "publisher":"Pragmatic Bookshelf",
+                "ratingCount":14,
+                "title":"Programming Kotlin"
+             },
+             {
+                "author":"Yegor Bugayenko",
+                "averageRating":4.06,
+                "categories":[
+                   
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-06-23 17:38:20",
+                "description":"TL;DR Compound variable names, validators, private static literals, configurable objects, inheritance, annotations, MVC, dependency injection containers, reflection, ORM and even algorithms are our enemies.",
+                "goodReadsBookId":"34975081",
+                "image":"https://books.google.com/books/content?id=8rxaswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781534908307",
+                "pageCount":222,
+                "publicationDate":"2017-04-18",
+                "publisher":"Createspace Independent Publishing Platform",
+                "ratingCount":200,
+                "title":"Elegant Objects"
+             },
+             {
+                "author":"Andy Greenberg",
+                "averageRating":0,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-07-21 13:49:47",
+                "description":"\"Sandworm is much more than a true-life techno-thriller. It's a tour through a realm that is both invisible and critical to the daily lives of every person alive in the 21st century.\" —Los Angeles Times From Wired senior writer Andy Greenberg comes the true story of the most devastating cyberattack in history and the desperate hunt to identify and track the elite Russian agents behind it In 2014, the world witnessed the start of a mysterious series of cyberattacks. Targeting American utility companies, NATO, and electric grids in Eastern Europe, the strikes grew ever more brazen. They culminated in the summer of 2017, when the malware known as NotPetya was unleashed, penetrating, disrupting, and paralyzing some of the world's largest businesses—from drug manufacturers to software developers to shipping companies. At the attack's epicenter in Ukraine, ATMs froze. The railway and postal systems shut down. Hospitals went dark. NotPetya spread around the world, inflicting an unprecedented ten billion dollars in damage—the largest, most destructive cyberattack the world had ever seen. The hackers behind these attacks are quickly gaining a reputation as the most dangerous team of cyberwarriors in history: a group known as Sandworm. Working in the service of Russia's military intelligence agency, they represent a persistent, highly skilled force, one whose talents are matched by their willingness to launch broad, unrestrained attacks on the most critical infrastructure of their adversaries. They target government and private sector, military and civilians alike. A chilling, globe-spanning detective story, Sandworm considers the danger this force poses to our national security and stability. As the Kremlin's role in foreign government manipulation comes into greater focus, Sandworm exposes the realities not just of Russia's global digital offensive, but of an era where warfare ceases to be waged on the battlefield. It reveals how the lines between digital and physical conflict, between wartime and peacetime, have begun to blur—with world-shaking implications.",
+                "goodReadsBookId":"",
+                "image":"https://books.google.com/books/content?id=ujxrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780385544412",
+                "pageCount":368,
+                "publicationDate":"2019-11-05",
+                "publisher":"Doubleday",
+                "ratingCount":0,
+                "title":"Sandworm"
+             },
+             {
+                "author":"John Ousterhout",
+                "averageRating":4.12,
+                "categories":[
+                   
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-07-24 21:47:43",
+                "description":"",
+                "goodReadsBookId":"39996759",
+                "image":"https://books.google.com/books/content?id=pD6-swEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781732102200",
+                "pageCount":0,
+                "publicationDate":"2018-04-10",
+                "publisher":"Yaknyam Publishing",
+                "ratingCount":994,
+                "title":"A Philosophy of Software Design"
+             },
+             {
+                "author":"David Hurst Thomas",
+                "averageRating":4,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-02-22 13:51:38.308191",
+                "dateAddedToLocalDB":"2020-09-01 22:23:20",
+                "description":"Using anecdotes, analogies, examples and parables, this user-friendly guide offers techniques for getting any programming job done effectively, and can help any programmer improve skills, no matter what level. Incorporates today's top languages, including Java, C, C++, and Perl.",
+                "goodReadsBookId":"45280024",
+                "image":"https://books.google.com/books/content?id=sNeFxAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780135957059",
+                "pageCount":352,
+                "publicationDate":"2019-09-13",
+                "publisher":"Addison-Wesley Professional",
+                "ratingCount":14277,
+                "title":"The Pragmatic Programmer"
+             },
+             {
+                "author":"Robert C. Martin",
+                "averageRating":4.4,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-12-20 11:02:57",
+                "description":"Looks at the principles and clean code, includes case studies showcasing the practices of writing clean code, and contains a list of heuristics and \"smells\" accumulated from the process of writing clean code.",
+                "goodReadsBookId":"3735293",
+                "image":"https://books.google.com/books/content?id=hjEFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780132350884",
+                "pageCount":431,
+                "publicationDate":"2009",
+                "publisher":"Pearson Education",
+                "ratingCount":15338,
+                "title":"Clean Code"
+             },
+             {
+                "author":"Frederick P. Brooks Jr.",
+                "averageRating":4.03,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-07-08 10:12:14",
+                "description":"Few books on software project management have been as influential and timeless as The Mythical Man-Month. With a blend of software engineering facts and thought-provoking opinions, Fred Brooks offers insight for anyone managing complex projects. These essays draw from his experience as project manager for the IBM System/360 computer family and then for OS/360, its massive software system. Now, 20 years after the initial publication of his book, Brooks has revisited his original ideas and added new thoughts and advice, both for readers already familiar with his work and for readers discovering it for the first time. The added chapters contain (1) a crisp condensation of all the propositions asserted in the original book, including Brooks' central argument in The Mythical Man-Month: that large programming projects suffer management problems different from small ones due to the division of labor; that the conceptual integrity of the product is therefore critical; and that it is difficult but possible to achieve this unity; (2) Brooks' view of these propositions a generation later; (3) a reprint of his classic 1986 paper \"No Silver Bullet\"; and (4) today's thoughts on the 1986 assertion, \"There will be no silver bullet within ten years.\"",
+                "goodReadsBookId":"8967425",
+                "image":"https://books.google.com/books/content?id=Yq35BY5Fk3gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780132119160",
+                "pageCount":336,
+                "publicationDate":"1995-08-02",
+                "publisher":"Pearson Education",
+                "ratingCount":12327,
+                "title":"The Mythical Man-Month"
+             },
+             {
+                "author":"Andy Hunt",
+                "averageRating":4.12,
+                "categories":[
+                   "Computers"
+                ],
+                "collectionId":"649246bc-e1b7-4e96-ac44-a6ddae4df1fa",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2022-10-13 10:25:28",
+                "description":"Printed in full color. Software development happens in your head. Not in an editor, IDE, or designtool. You're well educated on how to work with software and hardware, but what about wetware--our own brains? Learning new skills and new technology is critical to your career, and it's all in your head. In this book by Andy Hunt, you'll learn how our brains are wired, and how to take advantage of your brain's architecture. You'll learn new tricks and tipsto learn more, faster, and retain more of what you learn. You need a pragmatic approach to thinking and learning. You need to Refactor Your Wetware. Programmers have to learn constantly; not just the stereotypical new technologies, but also the problem domain of the application, the whims of the user community, the quirks of your teammates, the shifting sands of the industry, and the evolving characteristics of the project itself as it is built. We'll journey together through bits of cognitive and neuroscience, learning and behavioral theory. You'll see some surprising aspects of how our brains work, and how you can take advantage of the system to improve your own learning and thinking skills. In this book you'll learn how to: Use the Dreyfus Model of Skill Acquisition to become more expert Leverage the architecture of the brain to strengthen different thinking modes Avoid common \"known bugs\" in your mind Learn more deliberately and more effectively Manage knowledge more efficiently",
+                "goodReadsBookId":"38813660",
+                "image":"https://books.google.com/books/content?id=OA9QDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781680504224",
+                "pageCount":252,
+                "publicationDate":"2008-10-28",
+                "publisher":"Pragmatic Bookshelf",
+                "ratingCount":4106,
+                "title":"Pragmatic Thinking and Learning"
+             }
+          ]
+       },
+       {
+          "name":"Etiquette",
+          "books":[
+             {
+                "author":"John Bridges",
+                "averageRating":3.69,
+                "categories":[
+                   "Reference"
+                ],
+                "collectionId":"23a98921-0db8-4744-94b7-05faa9e62111",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:16:32",
+                "description":"How to Be a Gentleman: A Timely Guide to Timeless Manners is the revised and updated edition of the smash-hit How to Be a Gentleman and offers practical advice on being a gentleman in the twenty-first century. Should you take your BlackBerry on vacation? What is the best way to accept a compliment? Is an e-mail an acceptable means of writing a Thank-You note? While the tenets of gracious behavior never change, the situations a gentleman faces do and have changed significantly in the last ten years. In this revised, updated, and expanded version of the bestselling How to Be a Gentleman, Bridges addresses new issues such as airport security, Bluetooth and BlackBerry usage, and appropriate internet and instant message communication. Still featured are topics ranging from how to receive a compliment to how to act at funerals. Certain to be the must-have guide for the modern gentleman, this revised edition will echo the success of its predecessor.",
+                "goodReadsBookId":"11817773",
+                "image":"https://books.google.com/books/content?id=3Q0930ersqwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781401604738",
+                "pageCount":240,
+                "publicationDate":"2012-01-03",
+                "publisher":"Thomas Nelson Inc",
+                "ratingCount":1218,
+                "title":"How to Be a Gentleman"
+             },
+             {
+                "author":"Peter Post",
+                "averageRating":3.71,
+                "categories":[
+                   "Reference"
+                ],
+                "collectionId":"23a98921-0db8-4744-94b7-05faa9e62111",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:18:14",
+                "description":"Essential Manners for Men helps men make the right decisions about what to do and say in every situation that counts. Peter Post, great-grandson of Emily Post, distills the essential information men need for all the important roles they play in life. Organized into three parts -- \"Daily Life,\" \"Social Life,\" and \"On the Job\" -- Essential Manners for Men resolves situations that can stump even the savviest. Peter Post's advice is sharp-witted and sensible, with tips, boxes, and candid anecdotes about his own etiquette blunders. Topics include: The most important behaviors to avoid and emulate at the gym, at work, on the golf course, at home, out with friends, at a business social event, and a child's ball game Tipping, driver's \"ed-iquette,\" introductions, sportsmanship, and parenting Successfully sharing living spaces with a roommate, significant other, or spouse -- from the toilet seat to the remote control to the kitchen sink How to throw a great party or be the perfect guest How to successfully navigate the business dinner Things men do wrong that make women wince, and things men do right that women love The five-step process to resolve any situation where there is no etiquette \"rule\" Short and shoot-from-the-hip honest, Essential Manners for Men is a book no man can afford to be without.",
+                "goodReadsBookId":"530748",
+                "image":"https://books.google.com/books/content?id=Nm0z610tgloC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780060539801",
+                "pageCount":224,
+                "publicationDate":"2003-10-21",
+                "publisher":"Harper Collins",
+                "ratingCount":969,
+                "title":"Essential Manners for Men"
+             },
+             {
+                "author":"Hanna Rosin",
+                "averageRating":3.43,
+                "categories":[
+                   "Social Science"
+                ],
+                "collectionId":"23a98921-0db8-4744-94b7-05faa9e62111",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:19:25",
+                "description":"“You have to…play by the rules so you can get to the top and change things.” -- Sheryl Sandberg A landmark portrait of women, men, and power in a transformed world Men have been the dominant sex since, well, the dawn of mankind. But Hanna Rosin was the first to notice that this long-held truth is, astonishingly, no longer true. At this unprecedented moment, by almost every measure, women are no longer gaining on men: They have pulled decisively ahead. And “the end of men”—the title of Rosin’s Atlantic cover story on the subject—has entered the lexicon as dramatically as Betty Friedan’s “feminine mystique,” Simone de Beauvoir’s “second sex,” Susan Faludi’s “backlash,” and Naomi Wolf’s “beauty myth” once did. In this landmark book, Rosin reveals how this new state of affairs is radically shifting the power dynamics between men and women at every level of society, with profound implications for marriage, sex, children, work, and more. With wide-ranging curiosity and insight unhampered by assumptions or ideology, Rosin shows how the radically different ways men and women today earn, learn, spend, couple up—even kill—has turned the big picture upside down. And in The End of Men she helps us see how, regardless of gender, we can adapt to the new reality and channel it for a better future.",
+                "goodReadsBookId":"16599120",
+                "image":"https://books.google.com/books/content?id=OXYzk63jnPYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781101596920",
+                "pageCount":336,
+                "publicationDate":"2012-09-11",
+                "publisher":"Penguin",
+                "ratingCount":2007,
+                "title":"The End of Men"
+             },
+             {
+                "author":"Dorothea Johnson",
+                "averageRating":3.66,
+                "categories":[
+                   "Reference"
+                ],
+                "collectionId":"23a98921-0db8-4744-94b7-05faa9e62111",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:20:39",
+                "description":"From the world-renowned etiquette expert and her granddaughter, Liv Tyler, an elegant guide to 21st-century manners and etiquette for professionals who want to be confident and successful in the business and social arenas. Developing good etiquette and manners is an important investment in your future. They allow you to feel at ease in any situation--and give you the polish and confidence to become a leader. Etiquette expert Dorothea Johnson's essential dos and don'ts address both 21st-century and classic questions, including: * acing job interviews * giving confident handshakes * making conversation * proper business attire and meeting protocol * e-mail etiquette, including what to post--or not--on social media * how to deal with rude cell phone users * conducting a meeting at a restaurant * attending business or social events * table manners With style, wit, and delightful commentary throughout from her granddaughter, Liv Tyler, on everything from being a good guest to finding a balance with technology, Modern Manners is the must-have guide to ensure your success. From the Hardcover edition.",
+                "goodReadsBookId":"17934923",
+                "image":"https://books.google.com/books/content?id=CZePTqvF2tAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780770434113",
+                "pageCount":176,
+                "publicationDate":"2013-10-29",
+                "publisher":"Potter Style",
+                "ratingCount":640,
+                "title":"Modern Manners"
+             },
+             {
+                "author":"Paul O'Donnell",
+                "averageRating":3.45,
+                "categories":[
+                   "Reference"
+                ],
+                "collectionId":"23a98921-0db8-4744-94b7-05faa9e62111",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:48:18",
+                "description":"From career to relationships and grooming to gaming and more, the guys’ ultimate man-ual for living. For every guy too intimidated to ask a question for fear of seeming inexperienced and unworldly, here’s a book to answer all (or most!) of life’s pressing quandaries: Howdo you break off a friendship when it’s not working any longer? What should you cook when a date is coming over for dinner? How do you buy a used car and not get totally taken for a ride? How do you stop a charging dog? In Man Up!, journalist Paul O’Donnell and his team of knowledgable experts tackle 367 of these tough questions, imparting their advice in short to-the-point answers. Organized thematically, Man Up! is packed with essential advice delivered in prose that is as entertaining to read as it is helpful and clever. The tips run the gamut—from how to mix up a killer punch for a party to how to throw a punch when there is no other way out. Hip, engaging line drawings help to illustrate the advice, providing more than just sight gags. For every young man newly embarking on his independent adult life and for a guy at any age wanting to brush up on his skills, Man Up! is like having a trusted friend helping you along the way—except this friend has all the right answers!",
+                "goodReadsBookId":"12032603",
+                "image":"https://books.google.com/books/content?id=rnvOCASJJZoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781579654702",
+                "pageCount":336,
+                "publicationDate":"2011-06-27",
+                "publisher":"Artisan Books",
+                "ratingCount":234,
+                "title":"Man Up!"
+             }
+          ]
+       },
+       {
+          "name":"History",
+          "books":[
+             {
+                "author":"Serhii Plokhy",
+                "averageRating":4.23,
+                "categories":[
+                   "History"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-14 07:55:53",
+                "description":"A Chernobyl survivor and award-winning historian \"mercilessly chronicles the absurdities of the Soviet system\" in this \"vividly empathetic\" account of the worst nuclear accident in history (The Wall Street Journal). On the morning of April 26, 1986, Europe witnessed the worst nuclear disaster in history: the explosion of a reactor at the Chernobyl Nuclear Power Plant in Soviet Ukraine. Dozens died of radiation poisoning, fallout contaminated half the continent, and thousands fell ill. In Chernobyl, Serhii Plokhy draws on new sources to tell the dramatic stories of the firefighters, scientists, and soldiers who heroically extinguished the nuclear inferno. He lays bare the flaws of the Soviet nuclear industry, tracing the disaster to the authoritarian character of the Communist party rule, the regime's control over scientific information, and its emphasis on economic development over all else. Today, the risk of another Chernobyl looms in the mismanagement of nuclear power in the developing world. A moving and definitive account, Chernobyl is also an urgent call to action.",
+                "goodReadsBookId":"37689951",
+                "image":"https://books.google.com/books/content?id=7gQ0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781541617087",
+                "pageCount":432,
+                "publicationDate":"2018-05-15",
+                "publisher":"Basic Books",
+                "ratingCount":4470,
+                "title":"Chernobyl"
+             },
+             {
+                "author":"Svetlana Alexievich",
+                "averageRating":4.43,
+                "categories":[
+                   "History"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-14 07:57:08",
+                "description":"The people of Chernobyl talk about their lives before, during, and after the worst nuclear reactor accident in history, which occurred on April 26, 1986 in the Soviet Union in Chernobyl, a disaster that spread radioactive contamination across much of Europe. Reprint. 25,000 first printing.",
+                "goodReadsBookId":"357486",
+                "image":"https://books.google.com/books/content?id=7D1Mp57Tn8YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780312425845",
+                "pageCount":236,
+                "publicationDate":"2006-04-18",
+                "publisher":"Macmillan",
+                "ratingCount":30468,
+                "title":"Voices from Chernobyl"
+             },
+             {
+                "author":"Jonathan Clements",
+                "averageRating":3.76,
+                "categories":[
+                   "History"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-06-06 14:58:56",
+                "description":"His grandfather was the bloodthirsty Mongol leader Genghis Khan, his mother a Christian princess. Groomed from childhood for a position of authority, Khubilai snatched the position of Great Khan, becoming the overlord of a Mongol federation that stretched from the Balkans to the Korean coast. His armies conquered the Asian kingdom of Dali and brought down the last defenders of imperial China. Khubilai Khan presided over a glorious Asian renaissance, attracting emissaries from all across the continent, and opening his civil service to 'men with coloured eyes' - administrators from the far west. His reign began the glorious Yuan dynasty that ruled over China for only ninety years, but had a profound impact on Asian history, from international trade to cultural revolution. Jonathan Clements's insightful biography into the life and times of one of China's greatest leaders is a fascinating introduction to an important era, uncovering the man behind Marco Polo's mythic portrait.",
+                "goodReadsBookId":"45032212",
+                "image":"https://books.google.com/books/content?id=ooAuuQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781472143204",
+                "pageCount":288,
+                "publicationDate":"2019-12-03",
+                "publisher":"Robinson",
+                "ratingCount":88,
+                "title":"A Brief History of Khubilai Khan"
+             },
+             {
+                "author":"John Hirst",
+                "averageRating":4.1,
+                "categories":[
+                   "Europe"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-06-21 23:26:40",
+                "description":"Chinese civilisation was for a long period more advanced than European. From China, Europe acquired printing, paper-making, the compass, gunpowder and locks for canals. Yet it was in Europe that steady economic growth first occurred and then the Industrial Revolution. And it was in Europe that representative government and individual rights, those other hallmarks of modernity, first developed. What is it about Europe? Celebrated historian John Hirst offers a fascinating exploration of the qualities that made Europe a world-changing civilisation. The Shortest History of Europe begins with a rapid overview of European civilisation, describing its birth from an unlikely mixture of three elements: classical learning, Christianity and German warrior culture. Over the centuries, this unstable blend produced highly distinctive characters - pious knights and belligerent popes, romantics spouting folklore and revolutionaries imitating Rome - and its coming apart provided the dynamic of European history in modern times. Meanwhile the common people were tilling the soil, until they became the first to enjoy the prosperity of an industrialised urban society. The Shortest History of Europe is a clear, humorous and thought-provoking account of a remarkable civilisation.",
+                "goodReadsBookId":"6934913",
+                "image":"https://books.google.com/books/content?id=1U_PHaIRArMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781863954396",
+                "pageCount":149,
+                "publicationDate":"2009",
+                "publisher":"Black Inc.",
+                "ratingCount":2925,
+                "title":"The Shortest History of Europe"
+             },
+             {
+                "author":"Jon Krakauer",
+                "averageRating":3.99,
+                "categories":[
+                   "Travel"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-09-12 13:19:28",
+                "description":"In April 1992 a young man from a well-to-do family hitchhiked to Alaska and walked alone into the wilderness north of Mt. McKinley. His name was Christopher Johnson McCandless. He had given $25,000 in savings to charity, abandoned his car and most of his possessions, burned all the cash in his wallet, and invented a new life for himself. Four months later, his decomposed body was found by a moose hunter. How McCandless came to die is the unforgettable story of Into the Wild. Immediately after graduating from college in 1991, McCandless had roamed through the West and Southwest on a vision quest like those made by his heroes Jack London and John Muir. In the Mojave Desert he abandoned his car, stripped it of its license plates, and burned all of his cash. He would give himself a new name, Alexander Supertramp, and , unencumbered by money and belongings, he would be free to wallow in the raw, unfiltered experiences that nature presented. Craving a blank spot on the map, McCandless simply threw the maps away. Leaving behind his desperate parents and sister, he vanished into the wild. Jon Krakauer constructs a clarifying prism through which he reassembles the disquieting facts of McCandless's short life. Admitting an interst that borders on obsession, he searches for the clues to the dries and desires that propelled McCandless. Digging deeply, he takes an inherently compelling mystery and unravels the larger riddles it holds: the profound pull of the American wilderness on our imagination; the allure of high-risk activities to young men of a certain cast of mind; the complex, charged bond between fathers and sons. When McCandless's innocent mistakes turn out to be irreversible and fatal, he becomes the stuff of tabloid headlines and is dismissed for his naiveté, pretensions, and hubris. He is said to have had a death wish but wanting to die is a very different thing from being compelled to look over the edge. Krakauer brings McCandless's uncompromising pilgrimage out of the shadows, and the peril, adversity , and renunciation sought by this enigmatic young man are illuminated with a rare understanding--and not an ounce of sentimentality. Mesmerizing, heartbreaking, Into the Wild is a tour de force. The power and luminosity of Jon Krakauer's stoytelling blaze through every page. From the Trade Paperback edition.",
+                "goodReadsBookId":"6983497",
+                "image":"https://books.google.com/books/content?id=waBwNtI6rSwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780307476869",
+                "pageCount":240,
+                "publicationDate":"2009-09-22",
+                "publisher":"Anchor",
+                "ratingCount":870857,
+                "title":"Into the Wild"
+             },
+             {
+                "author":"Fred Burton",
+                "averageRating":3.77,
+                "categories":[
+                   "Political Science"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-12-31 22:42:14",
+                "description":"The New York Times bestselling inside account of the attack against the U.S. diplomatic and intelligence outposts in Benghazi, Libya On the night of September 11, 2012, the American diplomatic mission at Benghazi, Libya, came under ferocious attack by a heavily armed group of Islamic terrorists. The prolonged firefight, and the attack hours later on a nearby CIA outpost, resulted in the deaths of four Americans, including the American ambassador to Libya, Christopher Stevens, the Information Officer, Sean Smith, and two former Navy SEALs, Tyrone Woods and Glen Doherty, working for the Central Intelligence Agency. After the fall of Qaddafi, Benghazi was transformed into a hotbed of fundamentalist fervor and a den of spies for the northern half of the African continent. Moreover, it became the center of gravity for terrorist groups strategically situated in the violent whirlwinds of the Arab Spring. On the eleventh anniversary of the 9/11 attacks against the United States, a group of heavily armed Islamic terrorists had their sights set on the U.S. diplomatic and intelligence presence in the city. Based on the exclusive cooperation of eyewitnesses and confidential sources within the intelligence, diplomatic, and military communities, Fred Burton and Samuel M. Katz reveal for the first time the terrifying twelve-hour ordeal confronted by Ambassador Christopher Stevens, Sean Smith, his Diplomatic Security (DS) contingent, and the CIA security specialists who raced to rescue them. More than just the minute-by-minute narrative of a desperate last stand in the midst of an anarchic rebellion, Under Fire is an inspiring testament to the bravery and selflessness of the men and women who put their country first while serving in one of the most dangerous regions in the world.",
+                "goodReadsBookId":"17731867",
+                "image":"https://books.google.com/books/content?id=8Gv4AVL8W2AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781466837256",
+                "pageCount":320,
+                "publicationDate":"2013-09-03",
+                "publisher":"St. Martin's Press",
+                "ratingCount":534,
+                "title":"Under Fire: The Untold Story of the Attack in Benghazi"
+             },
+             {
+                "author":"Simon Winchester",
+                "averageRating":3.83,
+                "categories":[
+                   "Biography & Autobiography"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-01-15 21:15:26",
+                "description":"Mysterious (mistîe · ries), a. [f. L. mystérium Mysteryi + ous. Cf. F. mystérieux.] 1. Full of or fraught with mystery; wrapt in mystery; hidden from human knowledge or understanding; impossible or difficult to explain, solve, or discover; of obscure origin, nature, or purpose. It is known as one of the greatest literary achievements in the history of English letters. The creation of the Oxford English Dictionary began in 1857, took seventy years to complete, drew from tens of thousands of brilliant minds, and organized the sprawling language into 414,825 precise definitions. But hidden within the rituals of its creation is a fascinating and mysterious story--a story of two remarkable men whose strange twenty-year relationship lies at the core of this historic undertaking. Professor James Murray, an astonishingly learned former schoolmaster and bank clerk, was the distinguished editor of the OED project. Dr. William Chester Minor, an American surgeon from New Haven, Connecticut, who had served in the Civil War, was one of thousands of contributors who submitted illustrative quotations of words to be used in the dictionary. But Minor was no ordinary contributor. He was remarkably prolific, sending thousands of neat, handwritten quotations from his home in the small village of Crowthorne, fifty miles from Oxford. On numerous occasions Murray invited Minor to visit Oxford and celebrate his work, but Murray's offer was regularly--and mysteriously--refused. Thus the two men, for two decades, maintained a close relationship only through correspondence. Finally, in 1896, after Minor had sent nearly ten thousand definitions to the dictionary but had still never traveled from his home, a puzzled Murray set out to visit him. It was then that Murray finally learned the truth about Minor--that, in addition to being a masterful wordsmith, Minor was also a murderer, clinically insane--and locked up in Broadmoor, England's harshest asylum for criminal lunatics. The Professor and the Madman is an extraordinary tale of madness and genius, and the incredible obsessions of two men at the heart of the Oxford English Dictionary and literary history. With riveting insight and detail, Simon Winchester crafts a fascinating glimpse into one man's tortured mind and his contribution to another man's magnificent dictionary.",
+                "goodReadsBookId":"531764",
+                "image":"https://books.google.com/books/content?id=WV5XVjdF0xYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780060175962",
+                "pageCount":256,
+                "publicationDate":"1998-08-26",
+                "publisher":"Harper Collins",
+                "ratingCount":101232,
+                "title":"The Professor and the Madman"
+             },
+             {
+                "author":"Walter Tevis",
+                "averageRating":4.24,
+                "categories":[
+                   "Fiction"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-01-24 10:56:41",
+                "description":"The basis for the hit Netflix series! “What Walter Tevis did for pool in The Hustler, he does for chess in The Queen’s Gambit” (Playboy). When eight-year-old Beth Harmon’s parents are killed in an automobile accident, she’s placed in an orphanage in Mount Sterling, Kentucky. Plain and shy, Beth learns to play chess from the janitor in the basement and discovers she is a prodigy. Though penniless, she is desperate to learn more—and steals a chess magazine and enough money to enter a tournament. Beth also steals some of her foster mother’s tranquilizers to which she is becoming addicted. At thirteen, Beth wins the chess tournament. By the age of sixteen she is competing in the US Open Championship and, like Fast Eddie in The Hustler, she hates to lose. By eighteen she is the US champion—and Russia awaits . . . Fast-paced and elegantly written, The Queen’s Gambit is a thriller masquerading as a chess novel—one that’s sure to keep you on the edge of your seat. “The Queen’s Gambit is sheer entertainment. It is a book I reread every few years—for the pure pleasure and skill of it.” —Michael Ondaatje, Man Booker Prize–winning author of The English Patient",
+                "goodReadsBookId":"24627137",
+                "image":"https://books.google.com/books/content?id=i2hsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780795343063",
+                "pageCount":243,
+                "publicationDate":"2014-09-29",
+                "publisher":"Rosetta Books",
+                "ratingCount":22963,
+                "title":"The Queen's Gambit"
+             },
+             {
+                "author":"Geraldine Schwarz",
+                "averageRating":4.34,
+                "categories":[
+                   "Biography & Autobiography"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-02-10 09:08:20",
+                "description":"Those Who Forget, published to international awards and acclaim, is journalist Géraldine Schwarz’s riveting account of her German and French grandparents’ lives during World War II, an in-depth history of Europe’s post-war reckoning with fascism, and an urgent appeal to remember as a defense against today’s rise of far-right nationalism. During World War II, Géraldine Schwarz’s German grandparents were neither heroes nor villains; they were merely Mitlaüfer—those who followed the current. Once the war ended, they wanted to bury the past under the wreckage of the Third Reich. Decades later, while delving through filing cabinets in the basement of their apartment building in Mannheim, Schwarz discovers that in 1938, her paternal grandfather Karl took advantage of Nazi policies to buy a business from a Jewish family for a low price. She finds letters from the only survivor of this family (all the others perished in Auschwitz), demanding reparations. But Karl Schwarz refused to acknowledge his responsibility. Géraldine starts to question the past: How guilty were her grandparents? What makes us complicit? On her mother’s side, she investigates the role of her French grandfather, a policeman in Vichy. Weaving together the threads of three generations of her family story with Europe’s process of post-war reckoning, Schwarz explores how millions were seduced by ideology, overcome by a fog of denial after the war, and, in Germany at least, eventually managed to transform collective guilt into democratic responsibility. She asks: How can nations learn from history? And she observes that countries that avoid confronting the past are especially vulnerable to extremism. Searing and unforgettable, Those Who Forget is a riveting memoir, an illuminating history, and an urgent call for remembering.",
+                "goodReadsBookId":"52770659",
+                "image":"https://books.google.com/books/content?id=nl22DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781501199103",
+                "pageCount":320,
+                "publicationDate":"2020-09-22",
+                "publisher":"Simon and Schuster",
+                "ratingCount":564,
+                "title":"Those Who Forget"
+             },
+             {
+                "author":"Elisabeth Åsbrink",
+                "averageRating":3.93,
+                "categories":[
+                   "History"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-02-10 09:09:17",
+                "description":"“One of the best books, certainly the best nonfiction book, that I've read recently.” —Nancy Pearl on NPR’s Morning Edition “An extraordinary achievement.” —New York Times Book Review An award-winning writer captures a year that defined the modern world, intertwining historical events around the globe with key moments from her personal history. The year 1947 marks a turning point in the twentieth century. Peace with Germany becomes a tool to fortify the West against the threats of the Cold War. The CIA is created, Israel is about to be born, Simone de Beauvoir experiences the love of her life, an ill George Orwell is writing his last book, and Christian Dior creates the hyper-feminine New Look as women are forced out of jobs and back into the home. In the midst of it all, a ten-year-old Hungarian-Jewish boy resides in a refugee camp for children of parents murdered by the Nazis. This year he has to make the decision of a lifetime, one that will determine his own fate and that of his daughter yet to be born, Elisabeth",
+                "goodReadsBookId":"36914297",
+                "image":"https://books.google.com/books/content?id=ASAcDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781590518977",
+                "pageCount":288,
+                "publicationDate":"2018-01-30",
+                "publisher":"Other Press, LLC",
+                "ratingCount":1726,
+                "title":"1947"
+             },
+             {
+                "author":"Michael Lewis",
+                "averageRating":4.15,
+                "categories":[
+                   "Biography & Autobiography"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-02-13 22:13:10",
+                "description":"The book behind the Academy award-winning film starring Sandra Bullock and Tim McGraw—over one million copies sold. When we first meet him, Michael Oher is one of thirteen children by a mother addicted to crack; he does not know his real name, his father, his birthday, or how to read and write. He takes up football, and school, after a rich, white, Evangelical family plucks him from the streets. Then two great forces alter Oher: the family's love and the evolution of professional football into a game where the quarterback must be protected at any cost. Our protagonist becomes the priceless package of size, speed, and agility necessary to guard the quarterback's greatest vulnerability, his blind side.",
+                "goodReadsBookId":"7338121",
+                "image":"https://books.google.com/books/content?id=RIPdMkiKipMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780393079029",
+                "pageCount":352,
+                "publicationDate":"2009-10-12",
+                "publisher":"W. W. Norton & Company",
+                "ratingCount":87052,
+                "title":"The Blind Side (Movie Tie-in Edition) (Movie Tie-in Editions)"
+             },
+             {
+                "author":"Paulette Jiles",
+                "averageRating":4.09,
+                "categories":[
+                   "Fiction"
+                ],
+                "collectionId":"97226c31-89e2-4e50-9f36-7e2039f975b9",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-02-14 21:42:06",
+                "description":"Soon to be a Major Motion Picture National Book Award Finalist—Fiction In the aftermath of the Civil War, an aging itinerant news reader agrees to transport a young captive of the Kiowa back to her people in this exquisitely rendered, morally complex, multilayered novel of historical fiction from the author of Enemy Women that explores the boundaries of family, responsibility, honor, and trust. In the wake of the Civil War, Captain Jefferson Kyle Kidd travels through northern Texas, giving live readings from newspapers to paying audiences hungry for news of the world. An elderly widower who has lived through three wars and fought in two of them, the captain enjoys his rootless, solitary existence. In Wichita Falls, he is offered a $50 gold piece to deliver a young orphan to her relatives in San Antonio. Four years earlier, a band of Kiowa raiders killed Johanna’s parents and sister; sparing the little girl, they raised her as one of their own. Recently rescued by the U.S. army, the ten-year-old has once again been torn away from the only home she knows. Their 400-mile journey south through unsettled territory and unforgiving terrain proves difficult and at times dangerous. Johanna has forgotten the English language, tries to escape at every opportunity, throws away her shoes, and refuses to act “civilized.” Yet as the miles pass, the two lonely survivors tentatively begin to trust each other, forming a bond that marks the difference between life and death in this treacherous land. Arriving in San Antonio, the reunion is neither happy nor welcome. The captain must hand Johanna over to an aunt and uncle she does not remember—strangers who regard her as an unwanted burden. A respectable man, Captain Kidd is faced with a terrible choice: abandon the girl to her fate or become—in the eyes of the law—a kidnapper himself.",
+                "goodReadsBookId":"25858378",
+                "image":"https://books.google.com/books/content?id=HaoaCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780062409225",
+                "pageCount":304,
+                "publicationDate":"2016-10-04",
+                "publisher":"HarperCollins",
+                "ratingCount":74241,
+                "title":"News of the World"
+             }
+          ]
+       },
+       {
+          "name":"Leadership",
+          "books":[
+             {
+                "author":"Joseph Badaracco",
+                "averageRating":3.58,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"00a5a6b2-2ccd-44a4-8e10-d1d1cf37b565",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-29 09:26:41",
+                "description":"Most of us think of leaders as courageous risk takers, orchestrators of major events - in a word, heroes. Yet while such figures are inspiring and admirable, Harvard Business School Professor Joseph Badaracco argues that their larger-than-life accomplishments are simply not what makes the world work. What does, he says, is the sum of millions of small yet consequential decisions that men and women working far from the limelight make every day: how a line worker for a pharmaceutical company responds when he discovers a defect in a product's safety seal; how a manager deals with a valued employee suspected of stealing; how a trader handles a transaction error that will cost a client money. Badaracco calls them \"quiet leaders\" - people who choose responsible, behind-the-scenes action over public heroism to resolve tough leadership challenges. These indidviduals don't fit the stereotype of the bold and gutsy leader, and they don't want to. What they want is to do the \"right thing\" for their organizations, their coworkers, and themselves - but inconspicuously and without casualties. They do so by being baldly realistic about the complexities of their own motives and those of the dilemmas they face. In today's fast and fluid business world, nothing is as it seems. And they know it. Drawing from a four-year study of quiet leadership, Badaracco presents eight practical and counterintuitive guidelines for confronting situations in which right and wrong seem like moving targets. Grounding each strategy in an engaging story, he shows how these \"non-heroes\" succeed by managing their political capital, buying themselves time, bending the rules, and more.",
+                "goodReadsBookId":"1728717",
+                "image":"https://books.google.com/books/content?id=vKAHD8AIziQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781578514878",
+                "pageCount":201,
+                "publicationDate":"2002",
+                "publisher":"Harvard Business Press",
+                "ratingCount":242,
+                "title":"Leading Quietly"
+             },
+             {
+                "author":"David A. Livermore",
+                "averageRating":3.95,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"00a5a6b2-2ccd-44a4-8e10-d1d1cf37b565",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-05-31 13:29:00",
+                "description":"You've gotten used to managing a diverse workforce. You deal with vendors across the globe. You see people as people, whether they're Chinese, Indian, Mexican, or American. You know the basic protocols to follow and the taboos to avoid. Still, when you arrive in another country or sit down to negotiate with someone from a different culture, you feel anxious and awkward, and often wind up saying or doing something wrong. You're not alone. Seventy percent of international ventures fail because of cultural differences. Do you need to speak multiple languages and have a Ph.D. in international relations to succeed in these global times? The reassuring reality is that you don't need to master all the norms and nuances of the myriad of cultures you encounter. What you need is CQ. That's short for Cultural Intelligence, a new set of skills and sensitivities that picks up where EQ leaves off. Leading with Cultural Intelligence is a ground-breaking guide to developing the repertoire and perspective to lead across a wide range of cultures--effectively, respectfully, and confidently. A global leadership consultant, David Livermore presents a proven model for success in any unfamiliar cultural context. It's easy to grasp and follow, yet radically different from simplistic approaches that focus on mimicking other cultures' gestures and phrases. Rooted in rigorous research spanning 25 countries, the CQ way of relating to and inspiring people from different national, ethnic, and organizational cultures is an ongoing cycle. You'll learn how to lead cross-culturally--and continually grow in proficiency and comfort--by applying a process with four key components: Drive. What's your motivation for this cross-cultural assignment? How can you increase your confidence level? Knowledge. What specific cultural systems, issues, and values do you need to understand? Strategy. What information do you need to map out a successful cross-cultural plan? What assumptions do you need to check? Action. What communication style and behaviors should you adapt for this intercultural interaction? At every step, you'll find helpful summaries and best practices. You'll also gain valuable insights into common situations, from eating unfamiliar local delicacies to apologizing, through the stories of frequent cross-cultural travelers. With Leading with Cultural Intelligence as your trusted compass, you'll be able to thrive in the global business climate and handle multi-cultural hurdles in your own backyard. By raising your CQ, you'll also contribute to the greater good of equal humanity for all. David Livermore, Ph.D., is Executive Director of the Global Learning Center in Grand Rapids, Michigan. In addition, he is a Senior Research Consultant with the Cultural Intelligence Center in East Lansing, Michigan, and a Visiting Research Fellow at Nanyang Technological University in Singapore. He has done consulting and training with leaders in 75 countries across the Americas, Africa, Asia, Australia, and Europe. Visit www.davidlivermore.com",
+                "goodReadsBookId":"7102081",
+                "image":"https://books.google.com/books/content?id=hfozbuSLcNIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780814414873",
+                "pageCount":220,
+                "publicationDate":"2010",
+                "publisher":"AMACOM Div American Mgmt Assn",
+                "ratingCount":215,
+                "title":"Leading with Cultural Intelligence"
+             }
+          ]
+       },
+       {
+          "name":"Logic and Thinking",
+          "books":[
+             {
+                "author":"Deborah J. Bennett",
+                "averageRating":3.45,
+                "categories":[
+                   "Philosophy"
+                ],
+                "collectionId":"99995a08-1d94-4be9-8d0d-a017a19122bf",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:22:47",
+                "description":"\"The best introduction to logic you will find.\"—Martin Gardner \"Professor Bennett entertains as she instructs,\" writes Publishers Weekly about the penetrating yet practical Logic Made Easy. This brilliantly clear and gratifyingly concise treatment of the ancient Greek discipline identifies the illogical in everything from street signs to tax forms. Complete with puzzles you can try yourself, Logic Made Easy invites readers to identify and ultimately remedy logical slips in everyday life. Designed with dozens of visual examples, the book guides you through those hair-raising times when logic is at odds with our language and common sense. Logic Made Easy is indeed one of those rare books that will actually make you a more logical human being.",
+                "goodReadsBookId":"17757962",
+                "image":"https://books.google.com/books/content?id=WZ6K8_uLTB8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780393347616",
+                "pageCount":256,
+                "publicationDate":"2005-07-17",
+                "publisher":"W. W. Norton & Company",
+                "ratingCount":284,
+                "title":"Logic Made Easy: How to Know When Language Deceives You"
+             },
+             {
+                "author":"Robert Henry Thouless",
+                "averageRating":3.75,
+                "categories":[
+                   "Language Arts & Disciplines"
+                ],
+                "collectionId":"99995a08-1d94-4be9-8d0d-a017a19122bf",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:24:27",
+                "description":"This new edition of a timeless classic demonstrates how the use of clear, rational thinking and logic can win any argument, however emotionally charged the topic in question. It describes the typical flaws of reasoning in argument and shows how language can be used to deceive - and how to avoid being deceived. It will show you how, by learning what is 'straight', rational language, and clear thought, you can disentangle emotionally charged rhetoric and hold your own in any argument or debate, no matter how challenging. Although written nearly 80 years ago, this book proves that certain principles remain timeless; it has shown many thousands over the decades how to cope with media spin and distorted reasoning - and now it will do the same for you.",
+                "goodReadsBookId":"26332511",
+                "image":"https://books.google.com/books/content?id=Dw02AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781444134148",
+                "pageCount":300,
+                "publicationDate":"2011-04-29",
+                "publisher":"Teach Yourself",
+                "ratingCount":535,
+                "title":"Straight and Crooked Thinking"
+             },
+             {
+                "author":"Jacob E. Van Vleet",
+                "averageRating":4.48,
+                "categories":[
+                   "Philosophy"
+                ],
+                "collectionId":"99995a08-1d94-4be9-8d0d-a017a19122bf",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:25:05",
+                "description":"This is a systematic and concise introduction to more than forty fallacies, from anthropomorphism and argumentum ad baculum, to reductionism and the slippery slope argument. With helpful definitions, relevant examples, and thought-provoking exercises, the author guides the reader through the realms of fallacious reasoning and deceptive rhetoric.",
+                "goodReadsBookId":"16596410",
+                "image":"https://books.google.com/books/content?id=dnLKeGXQnJgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780761854340",
+                "pageCount":82,
+                "publicationDate":"2012-07-10",
+                "publisher":"University Press of America",
+                "ratingCount":40,
+                "title":"Informal Logical Fallacies"
+             },
+             {
+                "author":"Edward B. Burger",
+                "averageRating":4.08,
+                "categories":[
+                   "Self-Help"
+                ],
+                "collectionId":"99995a08-1d94-4be9-8d0d-a017a19122bf",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:25:31",
+                "description":"The 5 Elements of Effective Thinking presents practical, lively, and inspiring ways for you to become more successful through better thinking. The idea is simple: You can learn how to think far better by adopting specific strategies. Brilliant people aren't a special breed--they just use their minds differently. By using the straightforward and thought-provoking techniques in The 5 Elements of Effective Thinking, you will regularly find imaginative solutions to difficult challenges, and you will discover new ways of looking at your world and yourself--revealing previously hidden opportunities. The book offers real-life stories, explicit action items, and concrete methods that allow you to attain a deeper understanding of any issue, exploit the power of failure as a step toward success, develop a habit of creating probing questions, see the world of ideas as an ever-flowing stream of thought, and embrace the uplifting reality that we are all capable of change. No matter who you are, the practical mind-sets introduced in the book will empower you to realize any goal in a more creative, intelligent, and effective manner. Filled with engaging examples that unlock truths about thinking in every walk of life, The 5 Elements of Effective Thinking is written for all who want to reach their fullest potential--including students, parents, teachers, businesspeople, professionals, athletes, artists, leaders, and lifelong learners. Whenever you are stuck, need a new idea, or want to learn and grow, The 5 Elements of Effective Thinking will inspire and guide you on your way. To share thinking stories, go to: https://5elementsofthinking.wordpress.com",
+                "goodReadsBookId":"16306320",
+                "image":"https://books.google.com/books/content?id=_6xMnIsh-tIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781400844562",
+                "pageCount":168,
+                "publicationDate":"2012-08-26",
+                "publisher":"Princeton University Press",
+                "ratingCount":5439,
+                "title":"The 5 Elements of Effective Thinking"
+             },
+             {
+                "author":"Brian Christian",
+                "averageRating":4.15,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"99995a08-1d94-4be9-8d0d-a017a19122bf",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:46:20",
+                "description":"A fascinating exploration of how insights from computer algorithms can be applied to our everyday lives, helping to solve common decision-making problems and illuminate the workings of the human mind All our lives are constrained by limited space and time, limits that give rise to a particular set of problems. What should we do, or leave undone, in a day or a lifetime? How much messiness should we accept? What balance of new activities and familiar favorites is the most fulfilling? These may seem like uniquely human quandaries, but they are not: computers, too, face the same constraints, so computer scientists have been grappling with their version of such issues for decades. And the solutions they've found have much to teach us. In a dazzlingly interdisciplinary work, acclaimed author Brian Christian and cognitive scientist Tom Griffiths show how the algorithms used by computers can also untangle very human questions. They explain how to have better hunches and when to leave things to chance, how to deal with overwhelming choices and how best to connect with others. From finding a spouse to finding a parking spot, from organizing one's inbox to understanding the workings of memory, Algorithms to Live By transforms the wisdom of computer science into strategies for human living.",
+                "goodReadsBookId":"25666050",
+                "image":"https://books.google.com/books/content?id=Ydn_CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781627790369",
+                "pageCount":368,
+                "publicationDate":"2016-04-19",
+                "publisher":"Macmillan",
+                "ratingCount":16592,
+                "title":"Algorithms to Live By"
+             },
+             {
+                "author":"Ian I. Mitroff",
+                "averageRating":3.69,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"99995a08-1d94-4be9-8d0d-a017a19122bf",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-27 09:05:09",
+                "description":"A guide to critical thinking and corporate problem solving offers advice on avoiding misdirected thinking and the drain on resources caused by solving the wrong problem",
+                "goodReadsBookId":"491580",
+                "image":"https://books.google.com/books/content?id=ib1mQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781576750209",
+                "pageCount":169,
+                "publicationDate":"1998",
+                "publisher":"Berrett-Koehler Pub",
+                "ratingCount":16,
+                "title":"Smart Thinking for Crazy Times"
+             }
+          ]
+       },
+       {
+          "name":"Negotiation",
+          "books":[
+             {
+                "author":"Deepak Malhotra",
+                "averageRating":4.19,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"ddf5e16f-6faa-4806-943a-c6b7da21c9c5",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:26:37",
+                "description":"Some negotiations are easy. Others are more difficult. And then there are situations that seem completely hopeless. Conflict is escalating, people are getting aggressive, and no one is willing to back down. And to top it off, you have little power or other resources to work with. Harvard professor and negotiation adviser Deepak Malhotra shows how to defuse even the most potentially explosive situations and to find success when things seem impossible. Malhotra identifies three broad approaches for breaking deadlocks and resolving conflicts, and draws out scores of actionable lessons using behind-the-scenes stories of fascinating real-life negotiations, including drafting of the US Constitution, resolving the Cuban Missile Crisis, ending bitter disputes in the NFL and NHL, and beating the odds in complex business situations. But he also shows how these same principles and tactics can be applied in everyday life, whether you are making corporate deals, negotiating job offers, resolving business disputes, tackling obstacles in personal relationships, or even negotiating with children. As Malhotra reminds us, regardless of the context or which issues are on the table, negotiation is always, fundamentally, about human interaction. No matter how high the stakes or how protracted the dispute, the object of negotiation is to engage with other human beings in a way that leads to better understandings and agreements. The principles and strategies in this book will help you do this more effectively in every situation.",
+                "goodReadsBookId":"29279706",
+                "image":"https://books.google.com/books/content?id=9aArCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781626566989",
+                "pageCount":224,
+                "publicationDate":"2016-04-04",
+                "publisher":"Berrett-Koehler Publishers",
+                "ratingCount":408,
+                "title":"Negotiating the Impossible"
+             },
+             {
+                "author":"David A. Lax",
+                "averageRating":3.88,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"ddf5e16f-6faa-4806-943a-c6b7da21c9c5",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:27:31",
+                "description":"When discussing being stuck in a \"win-win vs. win-lose\" debate, most negotiation books focus on face-to-face tactics. Yet, table tactics are only the \"first dimension\" of David A. Lax and James K. Sebenius' pathbreaking 3-D Negotiation (TM) approach, developed from their decades of doing deals and analyzing great dealmakers. Moves in their \"second dimension\"—deal design—systematically unlock economic and noneconomic value by creatively structuring agreements. But what sets the 3-D approach apart is its \"third dimension\": setup. Before showing up at a bargaining session, 3-D Negotiators ensure that the right parties have been approached, in the right sequence, to address the right interests, under the right expectations, and facing the right consequences of walking away if there is no deal. This new arsenal of moves away from the table often has the greatest impact on the negotiated outcome. Packed with practical steps and cases, 3-D Negotiation demonstrates how superior setup moves plus insightful deal designs can enable you to reach remarkable agreements at the table, unattainable by standard tactics.",
+                "goodReadsBookId":"19098635",
+                "image":"https://books.google.com/books/content?id=uKpnhrrWEaUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781422143445",
+                "pageCount":304,
+                "publicationDate":"2006-08-24",
+                "publisher":"Harvard Business Press",
+                "ratingCount":3604,
+                "title":"3-d Negotiation"
+             }
+          ]
+       },
+       {
+          "name":"Various",
+          "books":[
+             {
+                "author":"Robert Greene",
+                "averageRating":4.3,
+                "categories":[
+                   "Psychology"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:32:48",
+                "description":"GREENE/33 STRATEGIES OF WAR",
+                "goodReadsBookId":"2481588",
+                "image":"https://books.google.com/books/content?id=l3GD2EgazCkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780143112785",
+                "pageCount":471,
+                "publicationDate":"2007",
+                "publisher":"Penguin",
+                "ratingCount":9504,
+                "title":"The 33 Strategies of War"
+             },
+             {
+                "author":"Mantak Chia",
+                "averageRating":4.11,
+                "categories":[
+                   "Family & Relationships"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:36:36",
+                "description":"Mantak Chia reveals for the first time to the general public, the ancient sexual secrets of the Taoist sages. These secrets enable men to conserve and transform sexual energy through its circulation in the Microcosmic Orbit, invigorating and rejuvenating the body's vital functions. Hidden for centuries, these esoteric techniques and principles make the process of linking sexual energy and transcendent states of consciousness accessible to the reader. This revolutionary and definitive book teaches: Higher Taoist practices for alchemical transmutation of body, mind and spirit; The secret of achieving and maintaining full sexual potency; The Taoist \"valley orgasm\" -- Pathway to higher bliss; How to conserve and store sperm in the body; The exchange and balancing of male and female energies, within the body and with one's partner; How this practice can fuel higher achievement in career and sports.",
+                "goodReadsBookId":"816271",
+                "image":"https://books.google.com/books/content?id=ieFXCesJXCoC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780943358192",
+                "pageCount":285,
+                "publicationDate":"1984",
+                "publisher":"Ashgate Publishing, Ltd.",
+                "ratingCount":395,
+                "title":"Taoist Secrets of Love"
+             },
+             {
+                "author":"Mikael Krogerus",
+                "averageRating":3.64,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:42:21",
+                "description":"Most of us face the same questions every day: What do I want? And how can I get it? How can I live more happily and work more efficiently?This updated edition of the international bestseller distils into a single volume the fifty best decision-making models used on MBA courses, and elsewhere, that will help you tackle these important questions - from the well known (the Eisenhower matrix for time management) to the less familiar but equally useful (the Swiss Cheese model). It will even show you how to remember everything you will have learned by the end of it. Stylish and compact, this little black book is a powerful asset. Whether you need to plot a presentation, assess someone's business idea or get to know yourself better, this unique guide will help you simplify any problem and take steps towards the right decision.",
+                "goodReadsBookId":"35743035",
+                "image":"https://books.google.com/books/content?id=piB3AQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781781259542",
+                "pageCount":176,
+                "publicationDate":"2017-07-06",
+                "publisher":"",
+                "ratingCount":3669,
+                "title":"The Decision Book"
+             },
+             {
+                "author":"Rolf Dobelli",
+                "averageRating":3.84,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:42:35",
+                "description":"The Art of Thinking Clearly by world-class thinker and entrepreneur Rolf Dobelli is an eye-opening look at human psychology and reasoning - essential reading for anyone who wants to avoid \"cognitive errors\" and make better choices in all aspects of their lives. Have you ever: Invested time in something that, with hindsight, just wasn't worth it? Or continued doing something you knew was bad for you? These are examples of cognitive biases, simple errors we all make in our day-to-day thinking. But by knowing what they are and how to spot them, we can avoid them and make better decisions. Simple, clear, and always surprising, this indispensable book will change the way you think and transform your decision-making-work, at home, every day. It reveals, in 99 short chapters, the most common errors of judgment, and how to avoid them.",
+                "goodReadsBookId":"23511075",
+                "image":"https://books.google.com/books/content?id=b7TlxwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781444794878",
+                "pageCount":336,
+                "publicationDate":"2014-05-02",
+                "publisher":"Sceptre",
+                "ratingCount":18758,
+                "title":"The Art of Thinking Clearly"
+             },
+             {
+                "author":"Gabriel Weinberg",
+                "averageRating":4.06,
+                "categories":[
+                   "Cognition"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:44:46",
+                "description":"You want to make better decisions. You want to be right more of the time-professionally and personally. However, being more right consistently is a hard problem because the world is such a complex, evolving place. How do you navigate this complexity? Mental models are decision making tools that guide our perception of the world and our behaviour in it. They help us understand life, make decisions and solve problems. The best models help us make intelligent investments, develop ground-breaking technologies and even travel to outer space. Building on our knowledge of well-known models such as the Bandwagon Effector Paradigm Shiftand introducing us to the lesser known like theEisenhower Matrixor the Boiling Frog Symbol,this indispensable book distills the most effective mental models into a single, digestible volume. It will make even the most complex models accessible and engaging to enable you to make better, more informed decisions in every part of your life.",
+                "goodReadsBookId":"40664390",
+                "image":"https://books.google.com/books/content?id=NjtguQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780241336359",
+                "pageCount":352,
+                "publicationDate":"2019-05-29",
+                "publisher":"Portfolio",
+                "ratingCount":718,
+                "title":"Super Thinking"
+             },
+             {
+                "author":"Josh Kaufman",
+                "averageRating":4.07,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:54:48",
+                "description":"Sharing the essentials of sales, marketing, negotiation, strategy, and much more, the creator of PersonalMBA.com shows readers how to master the fundamentals, hone their business instincts, and save a fortune in tuition.",
+                "goodReadsBookId":"13586762",
+                "image":"https://books.google.com/books/content?id=NzUMuAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781591845577",
+                "pageCount":446,
+                "publicationDate":"2012",
+                "publisher":"Portfolio Trade",
+                "ratingCount":25049,
+                "title":"The Personal MBA"
+             },
+             {
+                "author":"Buster Benson",
+                "averageRating":3.68,
+                "categories":[
+                   "Debates and debating"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-09-04 13:45:10",
+                "description":"Why Are We Yelling is the essential book about how to turn arguments into a productive and enjoyable dialogue rather than a bad-natured confrontation.The way we argue is broken - whether we're arguing about immigration, the existence of ghosts, the best burger in the city, or who's allowed to sit in your favourite chair. We end up digging in our heels and yelling at one another or choosing to avoid heated topics entirely. Either way, problems continue to fester under the surface and inevitably return as even bigger problems later on. There has to be a better way.Buster Benson, a Silicon Valley entrepreneur with two-decades of experience facilitating hard conversations at some of the biggest and most controversial tech companies in the world, is on a mission to help us see disagreement differently. He recommends 10 things to try in order to make disagreements more productive. The way we talk is laden with old conversational habits that need to be re-examined - and by practicing these 10 new habits we can flip frustrating, unproductive disagreements into ones that bear fruit and bring people closer together. Instead of dreading arguments, or avoiding them at all costs, we'll even start looking forward to them as one of the most rewarding parts of our lives.In this book you'll learn practical skills to make your disagreements more fruitful by:* Learning to see and appreciate four other fruits of disagreements that are more valuable than \"winning\", and easier to harvest.* Identifying the kind of argument you're having so you can know how to best approach it.* Articulating the best possible version of your opponent's argument before attacking it.With this toolkit, we can learn to see the world as a less frustrating and more interesting place. Gone will be the days of mentally gearing up to attack people and defending ourselves from people we disagree with. Instead, we can explore more possibilities and perspectives in the world, simply because we'll no longer be afraid to wade into scary topics of conversation.",
+                "goodReadsBookId":"50347478",
+                "image":"https://books.google.com/books/content?id=v0nDwwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781529004946",
+                "pageCount":288,
+                "publicationDate":"2019-11",
+                "publisher":"Macmillan",
+                "ratingCount":495,
+                "title":"Why Are We Yelling"
+             },
+             {
+                "author":"Igor Ryzov",
+                "averageRating":4.04,
+                "categories":[
+                   "Negotiation"
+                ],
+                "collectionId":"6ce28e5c-fcdf-4bbe-a6a0-c12d4ec03d58",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-11-08 13:33:34",
+                "description":"A comprehensive guide to negotiating successfully in any situation",
+                "goodReadsBookId":"52936482",
+                "image":"https://books.google.com/books/content?id=dFdVvQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781786896070",
+                "pageCount":400,
+                "publicationDate":"2019-06-06",
+                "publisher":"",
+                "ratingCount":79,
+                "title":"The Kremlin School of Negotiation"
+             }
+          ]
+       },
+       {
+          "name":"Soft Skills",
+          "books":[
+             {
+                "author":"Robert Bolton",
+                "averageRating":4.03,
+                "categories":[
+                   "Science"
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:31:42",
+                "description":"A wall of silent resentment shuts you off from someone you love....You listen to an argument in which neither party seems to hear the other....Your mind drifts to other matters when people talk to you.... People Skills is a communication-skills handbook that can help you eliminate these and other communication problems. Author Robert Bolton describes the twelve most common communication barriers, showing how these \"\"roadblocks\"\" damage relationships by increasing defensiveness, aggressiveness, or dependency. He explains how to acquire the ability to listen, assert yourself, resolve conflicts, and work out problems with others. These are skills that will help you communicate calmly, even in stressful emotionally charged situations. People Skills will show you * How to get your needs met using simple assertion techniques * How body language often speaks louder than words * How to use silence as a valuable communication tool * How to de-escalate family disputes, lovers' quarrels, and other heated arguments Both thought-provoking and practical, People Skills is filled with workable ideas that you can use to improve your communication in meaningful ways, every day.",
+                "goodReadsBookId":"13545369",
+                "image":"https://books.google.com/books/content?id=sAAuBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780731811281",
+                "pageCount":324,
+                "publicationDate":"2011-11-29",
+                "publisher":"Simon and Schuster",
+                "ratingCount":1372,
+                "title":"People Skills"
+             },
+             {
+                "author":"Daniel Wendler",
+                "averageRating":3.78,
+                "categories":[
+                   
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:33:07",
+                "description":"Improve Your Social Skills is a comprehensive, practical guide to social skills.It contains 200+ pages of step-by-step, easy-to-understand explanations of social interaction, written by a professional social skills coach whose TEDx talk on overcoming the social challenges of Asperger's Syndrome has been viewed over 180,000 times.You'll learn how to: Make Conversation (and keep conversation flowing smoothly!) Read Body Language (and send positive signals with your own body language!) Meet New People (and make friends with them!) Tell Stories In Conversation (that don't bore your audience!) Combat Shyness And Social Anxiety (a little courage every day adds up!) Date Successfully (without manipulation or sneaky tricks!) And More! (lots more!)Ok, enough with the bullet points.I'm Dan Wendler, and I wrote the book. I wrote it because I believe everyone deserves a place to belong and I didn't want poor social skills to hold anyone back from friendship and community. even if they struggle with social skills. I know firsthand how hard it is to struggle socially. Growing up, I was bullied, harassed, and excluded -- no matter how hard I tried to fit in. It wasn't until I was diagnosed with Asperger's Syndrome that I put the puzzle pieces together. I realized I struggled socially because I didn't have any social skills -- and just like any other skill, social skills can be learned. So I started to learn them. It took hard work, but I soon started to see improvement in my ability to interact with others. Eventually I was able to start making wonderful friends and today I feel comfortable and confident in all sorts of social interactions.On January 1st, 2012, I launched ImproveYourSocialSkills.com to share what I'd learned with the world. Hundreds of thousands of people visit the site every year, and I'm excited to help even more with the Improve Your Social Skills Kindle guide.The guide you're about to read is a compilation of the social principles I've learned during my lifetime of personal social skills study, as well as the techniques I developed while offering hundreds of hours of social skills coaching. These principles led me to a life full of close friendship, satisfying connection, and tender romance.I believe that with these principles, you can live a life full to the brim with friendship, connection, and love. I hope that after reading Improve Your Social Skills, you'll believe that too.",
+                "goodReadsBookId":"27175855",
+                "image":"https://books.google.com/books/content?id=ve1AjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781517309329",
+                "pageCount":218,
+                "publicationDate":"2014-09-12",
+                "publisher":"CreateSpace",
+                "ratingCount":290,
+                "title":"Improve Your Social Skills"
+             },
+             {
+                "author":"Stephen Arnott",
+                "averageRating":3.54,
+                "categories":[
+                   "Humor"
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:48:53",
+                "description":"DO YOU WANT TO HEAR A JOKE? Better yet, do you want to be the person who keeps friends, family and coworkers laughing with a new joke every day? Packed full of THOUSANDS OF JOKES and alphabetically organized into hundreds of topics from ACCOUNTANTS TO ZEBRAS, this book offers you a massive collection of over-the-top jokes that will have everyone LAUGHING OUT LOUD. •Did you hear about the flasher who was thinking of retiring? He finally decided to stick it out for one more year! •A dog with three legs walks into a Wild West bar and says, “I’m looking for the man who shot my paw.” •Where do you get virgin wool from? An ugly sheep! •What did the blonde say when she looked into a box of Cheerios? ”Oh look! Donut seeds! •The police have reported the theft of a shipment of filing cabinets, document folders and labeling machines—it’s believed to have been the work of organized crime.",
+                "goodReadsBookId":"22953000",
+                "image":"https://books.google.com/books/content?id=TDAdAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781612433721",
+                "pageCount":480,
+                "publicationDate":"2007-08-28",
+                "publisher":"Simon and Schuster",
+                "ratingCount":139,
+                "title":"Man Walks into a Bar"
+             },
+             {
+                "author":"Richard D. Lewis",
+                "averageRating":4,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-05-31 13:27:56",
+                "description":"The successful managers for the next century will be the culturally sensitive ones. You can gain competitive advantage from having strategies to deal with the cultural differences you will encounter in any international business setting. Richard Lewis provides a guide to working and communicating across cultures, and explains how your culture and language affect the ways in which you think and respond. This revised and expanded edition in paperback of Richard Lewis's book provides an ever more global and practical guide not just to understanding but also managing in different business cultures. New chapters on more than a dozen countries - from Iraq, Israel and Pakistan to Serbia, Columbia and Venezuela - vastly broaden the range.",
+                "goodReadsBookId":"31385134",
+                "image":"https://books.google.com/books/content?id=9yyfDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781473645196",
+                "pageCount":228,
+                "publicationDate":"2010-11-26",
+                "publisher":"Nicholas Brealey",
+                "ratingCount":421,
+                "title":"When Cultures Collide"
+             },
+             {
+                "author":"Richard D. Lewis",
+                "averageRating":4.05,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-05-31 13:28:21",
+                "description":"\"This book is a MUST for every business team leader who plans to start doing business in a new cross-cultural environment.\" - Markku Vartiainen OBE, President, Finnish-British Chamber of Commerce International teams are rapidly becoming the central operating mode for global enterprises. They are often agile and perceptive, know local markets better than HQ does, lead innovation and exploratory ventures, and are more culturally aware than their parent company. But how much autonomy should they be allowed? How can we get things done with colleagues who have different worldviews? How can we strike a balance between core values and the necessary diversity - and is diversity within the team a strength or a hindrance? What is the role of the team leader in all of this? How do you establish team trust? How important is team humor? Who decides the team's ethics? What misunderstandings can arise in a virtual team, lacking face-to-face contact? In answering these and other questions, Richard D. Lewis draws on 30 years experience mediating with hundreds of international teams in two dozen countries. Generously illustrated with explanatory diagrams, When Teams Collide analyses profiles of 24 different nationalities and suggests how they should be led for best results. Commenting on vital considerations of leadership, team trust, ethics and humor, the author also evaluates the relationship between teams and HQ. Applying the cultural concepts in the bestselling When Cultures Collide specifically to team leadership, this is a wide-ranging and compelling account of how to handle what is a difficult and sensitive task.",
+                "goodReadsBookId":"31385135",
+                "image":"https://books.google.com/books/content?id=RS6fDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781473645202",
+                "pageCount":228,
+                "publicationDate":"2012-04-26",
+                "publisher":"Nicholas Brealey",
+                "ratingCount":21,
+                "title":"When Teams Collide"
+             },
+             {
+                "author":"Marshall B. Rosenberg",
+                "averageRating":4.35,
+                "categories":[
+                   "Psychology"
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-06-23 17:53:59",
+                "description":"What is Violent Communication? If \"violent\" means acting in ways that result in hurt or harm, then much of how we communicate—judging others, bullying, having racial bias, blaming, finger pointing, discriminating, speaking without listening, criticizing others or ourselves, name-calling, reacting when angry, using political rhetoric, being defensive or judging who's \"good/bad\" or what's \"right/wrong\" with people—could indeed be called \"violent communication.\" What is Nonviolent Communication? Nonviolent Communication is the integration of four things: • Consciousness: a set of principles that support living a life of compassion, collaboration, courage, and authenticity • Language: understanding how words contribute to connection or distance • Communication: knowing how to ask for what we want, how to hear others even in disagreement, and how to move toward solutions that work for all • Means of influence: sharing \"power with others\" rather than using \"power over others\" Nonviolent Communication serves our desire to do three things: • Increase our ability to live with choice, meaning, and connection • Connect empathically with self and others to have more satisfying relationships • Sharing of resources so everyone is able to benefit",
+                "goodReadsBookId":"27793211",
+                "image":"https://books.google.com/books/content?id=A3qACgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781892005540",
+                "pageCount":280,
+                "publicationDate":"2015-09-01",
+                "publisher":"PuddleDancer Press",
+                "ratingCount":17135,
+                "title":"Nonviolent Communication: A Language of Life"
+             },
+             {
+                "author":"Albert J. Bernstein",
+                "averageRating":3.6,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"5559be0d-3b70-45de-8d3a-e6c3c5d0e549",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-07-08 10:15:51",
+                "description":"Discover how to cope with instinct, emotion, and irrationality--the dinosaur brain--that disrupts any business enivronment, with a step-by-step process that helps you reason your way through turf wars and power struggles, surly subordinates, temperamental bosses, and more.... \"The key to thriving in the corporate jungle is understanding dinosaurs.\" TIME From the Paperback edition.",
+                "goodReadsBookId":"907137",
+                "image":"https://books.google.com/books/content?id=wBRvPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780345410214",
+                "pageCount":272,
+                "publicationDate":"1996",
+                "publisher":"Ballantine Books",
+                "ratingCount":122,
+                "title":"Dinosaur Brains"
+             }
+          ]
+       },
+       {
+          "name":"Persuassion",
+          "books":[
+             {
+                "author":"Scott Adams",
+                "averageRating":3.75,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"0fd24d9d-48d3-431c-a9ff-3d645e3bb840",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:54:04",
+                "description":"Scott Adams -- a trained hypnotist and a lifelong student of persuasion -- was one of the earliest public figures to predict Trump's win, doing so a week after Nate Silver put Trump's odds at 2 percent in his FiveThirtyEight.com blog. The mainstream media regarded Trump as a novelty and a sideshow. But Adams recognized in Trump a level of persuasion you only see once in a generation. Trump triggered massive cognitive dissonance and confirmation bias on both the left and the right. We're hardwired to respond to emotion, not reason. We might listen to 10 percent of a speech -- a hand gesture here, a phrase there -- and if the right buttons are pushed, we irrationally agree with the speaker and invent reasons to justify that decision after the fact. The point isn't whether Trump was right or wrong, good or bad. Win Bigly goes beyond politics to look at persuasion tools that can work in any setting -- the same ones Adams saw in Steve Jobs when he invested in Apple decades ago.",
+                "goodReadsBookId":"34427205",
+                "image":"https://books.google.com/books/content?id=BeY3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":true,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780735219717",
+                "pageCount":304,
+                "publicationDate":"2017",
+                "publisher":"Penguin",
+                "ratingCount":3371,
+                "title":"Win Bigly"
+             },
+             {
+                "author":"Daniel H. Pink",
+                "averageRating":4.14,
+                "categories":[
+                   
+                ],
+                "collectionId":"0fd24d9d-48d3-431c-a9ff-3d645e3bb840",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:57:56",
+                "description":"We're all in Sales nowParents sell their kids on going to bed. Spouses sell their partners on mowing the lawn. We sell our bosses on giving us more money and more time off. And in astonishing numbers we go online to sell ourselves on Facebook, Twitter and online dating profiles. Relying on science, analysis and his trademark clarity of thought, Daniel Pink shows that sales isn't what it used to be. Then he provides a set of tools, tips, and exercises for succeeding on each new terrain: six new ways to pitch your idea, three ways to understand another's perspective, five frames that can make your message clearer, and much more.",
+                "goodReadsBookId":"42142398",
+                "image":"https://books.google.com/books/content?id=WaV2vgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781786891716",
+                "pageCount":272,
+                "publicationDate":"2018-06-21",
+                "publisher":"",
+                "ratingCount":35,
+                "title":"To Sell is Human"
+             },
+             {
+                "author":"Richard Bandler",
+                "averageRating":3.96,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"0fd24d9d-48d3-431c-a9ff-3d645e3bb840",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:28:30",
+                "description":"Explains how we use our communicating processes to generate behaviours which unconsciously stand out on their own and speak for themselves. Covering everything from the sales process through to the close, the text considers the human communication processes present in a wide range of situations.",
+                "goodReadsBookId":"62114",
+                "image":"https://books.google.com/books/content?id=tyrZMgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780916990367",
+                "pageCount":208,
+                "publicationDate":"1996",
+                "publisher":"",
+                "ratingCount":258,
+                "title":"Persuasion Engineering"
+             }
+          ]
+       },
+       {
+          "name":"Politics",
+          "books":[
+             {
+                "author":"Mauricio Rojas",
+                "averageRating":3.67,
+                "categories":[
+                   "Sweden"
+                ],
+                "collectionId":"d1ece62e-94f2-4b89-9055-e4476b3215c1",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:37:56",
+                "description":"",
+                "goodReadsBookId":"3053471",
+                "image":"https://books.google.com/books/content?id=SoGKQAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781874097235",
+                "pageCount":194,
+                "publicationDate":"1998",
+                "publisher":"",
+                "ratingCount":6,
+                "title":"The Rise and Fall of the Swedish Model"
+             },
+             {
+                "author":"Neil Postman",
+                "averageRating":3.96,
+                "categories":[
+                   "Education"
+                ],
+                "collectionId":"d1ece62e-94f2-4b89-9055-e4476b3215c1",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:44:07",
+                "description":"In this comprehensive response to the education crisis, the author of Teaching as a Subversive Activity returns to the subject that established his reputation as one of our most insightful social critics. Postman presents useful models with which schools can restore a sense of purpose, tolerance, and a respect for learning.",
+                "goodReadsBookId":"11364184",
+                "image":"https://books.google.com/books/content?id=KFljenItiIAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780307797209",
+                "pageCount":224,
+                "publicationDate":"2011-06-01",
+                "publisher":"Vintage",
+                "ratingCount":1430,
+                "title":"The End of Education"
+             },
+             {
+                "author":"Kevin Carey",
+                "averageRating":0,
+                "categories":[
+                   "Education"
+                ],
+                "collectionId":"d1ece62e-94f2-4b89-9055-e4476b3215c1",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:44:46",
+                "description":"From a renowned education writer comes a paradigm-shifting examination of the rapidly changing world of college that every parent, student, educator, and investor needs to understand. Over the span of just nine months in 2011 and 2012, the world’s most famous universities and high-powered technology entrepreneurs began a race to revolutionize higher education. College courses that had been kept for centuries from all but an elite few were released to millions of students throughout the world—for free. Exploding college prices and a flagging global economy, combined with the derring-do of a few intrepid innovators, have created a dynamic climate for a total rethinking of an industry that has remained virtually unchanged for a hundred years. In The End of College, Kevin Carey, an education researcher and writer, draws on years of in-depth reporting and cutting-edge research to paint a vivid and surprising portrait of the future of education. Carey explains how two trends—the skyrocketing cost of college and the revolution in information technology—are converging in ways that will radically alter the college experience, upend the traditional meritocracy, and emancipate hundreds of millions of people around the world. Insightful, innovative, and accessible, The End of College is a must-read, and an important contribution to the developing conversation about education in this country.",
+                "goodReadsBookId":"",
+                "image":"https://books.google.com/books/content?id=FCh-BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781101634592",
+                "pageCount":288,
+                "publicationDate":"2015-03-03",
+                "publisher":"Penguin",
+                "ratingCount":0,
+                "title":"The End of College"
+             },
+             {
+                "author":"Darrell Huff",
+                "averageRating":3.87,
+                "categories":[
+                   "Mathematics"
+                ],
+                "collectionId":"d1ece62e-94f2-4b89-9055-e4476b3215c1",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:46:55",
+                "description":"If you want to outsmart a crook, learn his tricks—Darrell Huff explains exactly how in the classic How to Lie with Statistics. From distorted graphs and biased samples to misleading averages, there are countless statistical dodges that lend cover to anyone with an ax to grind or a product to sell. With abundant examples and illustrations, Darrell Huff’s lively and engaging primer clarifies the basic principles of statistics and explains how they’re used to present information in honest and not-so-honest ways. Now even more indispensable in our data-driven world than it was when first published, How to Lie with Statistics is the book that generations of readers have relied on to keep from being fooled.",
+                "goodReadsBookId":"8144601",
+                "image":"https://books.google.com/books/content?id=5oSU5PepogEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780393070873",
+                "pageCount":144,
+                "publicationDate":"2010-12-07",
+                "publisher":"W. W. Norton & Company",
+                "ratingCount":9764,
+                "title":"How to Lie with Statistics"
+             },
+             {
+                "author":"Roy Calley",
+                "averageRating":0,
+                "categories":[
+                   "History"
+                ],
+                "collectionId":"d1ece62e-94f2-4b89-9055-e4476b3215c1",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-27 14:03:16",
+                "description":"'North Korea faded to black in the early 1990s. With the collapse of the Soviet Union, her creakily inefficient economy collapsed. Power stations rusted into ruin.' (Barbara Demick.) But what do we in the West really know about that dark interior? A journalist who knows the country, her history and her people intimately sheds some real light.",
+                "goodReadsBookId":"",
+                "image":"https://books.google.com/books/content?id=bc6vDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781445687957",
+                "pageCount":304,
+                "publicationDate":"2019-09-15",
+                "publisher":"Amberley Publishing Limited",
+                "ratingCount":0,
+                "title":"Look with your Eyes and Tell the World"
+             },
+             {
+                "author":"Fanny Härgestam",
+                "averageRating":4.34,
+                "categories":[
+                   "Social Science"
+                ],
+                "collectionId":"d1ece62e-94f2-4b89-9055-e4476b3215c1",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-05-28 07:00:51",
+                "description":"\"Det här är en bok som innehåller ytterst få siffror. Istället handlar den om möten med människor som öppnat mina ögon.\" - Hans Rosling Det var fakta som hjälpte honom att förklara hur världen fungerar. Men det var nyfikenhet och engagemang som gjorde Hans Rosling till vår tids mest folkkära forskare. Hur jag lärde mig förstå världen är Hans Roslings egen berättelse om hur en ung man från enkla omständigheter kunde använda vetenskapen för att ta sig ut i världen och förklara den på nytt. Han skriver öppet och personligt om sitt liv och sina svåraste beslut - oavsett om de fattades på akutmottagningen i Moçambique, med makthavarna i Davos eller i den egna familjevardagen. I samarbete med journalisten Fanny Härgestam har Hans Rosling skrivit sina memoarer med samma berättarglädje som fick en hel värld att lyssna när han talade. UR HANS ROSLINGS FÖRORD Ett telefonsamtal den 5 februari 2016 gjorde det bråttom att skriva böcker. Min läkare ringde och berättade att jag hade bukspottkörtelcancer. Jag var förberedd på de dåliga nyheterna. Samtalet den eftermiddagen var bara bekräftelsen på vad som gradvis blivit uppenbart för mig under de senaste dagarnas läkarundersökningar. Prognosen var dålig. Jag hade ungefär ett år kvar att leva. Jag grät största delen av den fredagskvällen. Som tur var hade jag Agneta, min ungdomskärlek och fru. Med henne som tröst, och med våra barns och vänners stöd, kunde jag anpassa mig till den nya verkligheten. Jag skulle inte dö kommande månad. Livet skulle fortsätta trots den dödliga sjukdomen. Jag skulle kunna njuta av livet åtminstone under våren och sommaren. Cancern har gjort min dagsform oförutsägbar. Därför har också mitt arbete förändrats. Bara några dagar efter sjukdomsbeskedet ställde jag in samtliga föreläsningar samt film- och TV-produktioner. Detta var ledsamt att göra, men jag hade inget val. Dessutom kunde jag stå ut med den dramatiska förändringen av en specifik anledning. Någonting annat stod nämligen överst på min önskelista: att få skriva boken Factfulness tillsammans med min son Ola och hans fru Anna. Vi har jobbat ihop med folkbildning i 18 år och tillsammans grundat stiftelsen Gapminder. Det var under hösten 2015 som Anna och Ola kom på bokkonceptet och titeln. Boken var redan tänkt att skrivas av oss tre under kommande år, parallellt med vårt pågående arbete för Gapminder. Min cancer gjorde det bara än mer brådskande för mig. Snart visade det sig att materialet skulle räcka till två böcker. Medan Factfulness handlar om varför vi människor har så svårt att förstå utvecklingen i världen, handlar den här boken om mig och hur jag kom att förstå världen. Det här är alltså en bok som innehåller ytterst få siffror. Istället handlar den om möten med människor som öppnat mina ögon. Fått mig att tänka om. Hans Rosling, januari 2017",
+                "goodReadsBookId":"36654530",
+                "image":"https://books.google.com/books/content?id=A909DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9789127154889",
+                "pageCount":0,
+                "publicationDate":"2017-11-09",
+                "publisher":"Natur & Kultur",
+                "ratingCount":1465,
+                "title":"Hur jag lärde mig förstå"
+             }
+          ]
+       },
+       {
+          "name":"Questions",
+          "books":[
+             {
+                "author":"Warren Berger",
+                "averageRating":4.04,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"0b2c9bc4-55c3-4bdc-8872-c8fa8b307460",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:48:18",
+                "description":"To get the right answer--in business, in life--you have to ask the right question. Innovation expert Warren Berger shows it's both an art and a science.",
+                "goodReadsBookId":"42626101",
+                "image":"https://books.google.com/books/content?id=CyLBAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781620401453",
+                "pageCount":272,
+                "publicationDate":"2014-03-04",
+                "publisher":"Bloomsbury Publishing USA",
+                "ratingCount":3785,
+                "title":"A More Beautiful Question"
+             },
+             {
+                "author":"M. Neil Browne",
+                "averageRating":3.92,
+                "categories":[
+                   "Education"
+                ],
+                "collectionId":"0b2c9bc4-55c3-4bdc-8872-c8fa8b307460",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-03-24 09:17:27",
+                "description":"This highly popular text helps students to bridge the gap between simply memorizing or blindly accepting information and the greater challenge of critical analysis and synthesis. It teaches them to respond to alternative points of view and develop a solid foundation for making personal choices about what to accept and what to reject. While the structure of this new edition remains the same, for the sake of currency and relevance about two-thirds of the practice passages are new, as well as many of the longer illustrations and the final critical thinking case. Also, this eighth edition has been revised to emphasize the positive value of critical thinking as a means to autonomy, curiousity, reasonableness, openness, and better decisions.",
+                "goodReadsBookId":"394398",
+                "image":"https://books.google.com/books/content?id=2OuzQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780132203043",
+                "pageCount":212,
+                "publicationDate":"2007",
+                "publisher":"Prentice Hall",
+                "ratingCount":1176,
+                "title":"Asking the Right Questions"
+             },
+             {
+                "author":"Andrew Sobel",
+                "averageRating":3.84,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"0b2c9bc4-55c3-4bdc-8872-c8fa8b307460",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-05-31 15:14:48",
+                "description":"An arsenal of powerful questions that will transform every conversation Skillfully redefine problems. Make an immediate connection with anyone. Rapidly determine if a client is ready to buy. Access the deepest dreams of others. Power Questions sets out a series of strategic questions that will help you win new business and dramatically deepen your professional and personal relationships. The book showcases thirty-five riveting, real conversations with CEOs, billionaires, clients, colleagues, and friends. Each story illustrates the extraordinary power and impact of a thought-provoking, incisive power question. To help readers navigate a variety of professional challenges, over 200 additional, thought-provoking questions are also summarized at the end of the book. In Power Questions you’ll discover: The question that stopped an angry executive in his tracks The sales question CEOs expect you to ask versus the questions they want you to ask The question that will radically refocus any meeting The penetrating question that can transform a friend or colleague’s life A simple question that helped restore a marriage When you use power questions, you magnify your professional and personal influence, create intimate connections with others, and drive to the true heart of the issue every time.",
+                "goodReadsBookId":"16472848",
+                "image":"https://books.google.com/books/content?id=iOKspNvw3M8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781118218495",
+                "pageCount":224,
+                "publicationDate":"2012-01-05",
+                "publisher":"John Wiley & Sons",
+                "ratingCount":1069,
+                "title":"Power Questions"
+             }
+          ]
+       },
+       {
+          "name":"Investing",
+          "books":[
+             {
+                "author":"Ken McElroy",
+                "averageRating":0,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-02 12:03:07",
+                "description":"Many Americans dream of financial freedom, but they're stuck in dead-end jobs and don't know how to get there. You don't need to be one of them. If you invested $35,000 in the stock market today, it could take 52 years for that investment to grow to $1 million. But if you invested that same amount into one single-family $140,000 rental property, it would only take 19 years. With just two rental properties, you could generate $417,000 in profit in just 10 years. Skeptical? Good, because that's the first sign of a smart investor. This book will tackle that skepticism head on... and give you confidence and a path to financial freedom. THIS BOOK WILL TEACH YOU HOW TO: - Secure your investment money - Find your ideal market--and a positive-cash-flow property - Efficiently manage your property - Handle your record keeping - Boost revenues and cut costs - File your taxes using a step-by-step process - Build your real estate portfolio",
+                "goodReadsBookId":"54555961",
+                "image":"https://books.google.com/books/content?id=lLN5zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781947588127",
+                "pageCount":208,
+                "publicationDate":"2020-09-29",
+                "publisher":"RDA Press, LLC",
+                "ratingCount":0,
+                "title":"ABCs of Buying Rental Property"
+             },
+             {
+                "author":"Ken McElroy",
+                "averageRating":4.08,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-02 12:03:28",
+                "description":"This book will teach you how to: • Achieve wealth and cash flow through real estate • Find property with real potential • Show you how to unlock the myths that are holding you back • Negotiating the deal based on the numbers • Evaluate property and purchase price • Increase your income through proven property management tools",
+                "goodReadsBookId":"19100553",
+                "image":"https://books.google.com/books/content?id=Z7aaAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781937832384",
+                "pageCount":220,
+                "publicationDate":"2013-02-28",
+                "publisher":"RDA Press, LLC",
+                "ratingCount":5006,
+                "title":"The ABCs of Real Estate Investing"
+             },
+             {
+                "author":"Ken McElroy",
+                "averageRating":4.09,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-02 12:03:42",
+                "description":"If you're interested in real estate investing, you may have noticed the lack of coverage it gets in mainstream financial media, while stocks, bonds, and mutual funds are consistently touted as the safest and most profitable ways to invest. According to real estate guru Ken McElroy, that's because financial publications, tv and radio programs make the bulk of their money from advertising paid for by the very companies who provide such mainstream financial services. On the other hand, real estate investment is something you can do on your own--without a large amount of money up front. Picking up where he left off in the bestselling ABC's of Real Estate Investing, McElroy reveals the next essential lessons and information that no serious investor can afford to miss. Building on the foundation of real estate investment 101, McElroy tells readers: How to think--and operate--like a real estate mogul How to identify and close expert deals Why multifamily housing is the best real estate investment out there How to surround yourself with a team that will help maximize your money How to avoid paying thousands in taxes by structuring property sales wisely Important projections about the future of real estate investment",
+                "goodReadsBookId":"23230382",
+                "image":"https://books.google.com/books/content?id=OzMkAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781937832520",
+                "pageCount":175,
+                "publicationDate":"2013-11-05",
+                "publisher":"RDA Press, LLC",
+                "ratingCount":398,
+                "title":"The Advanced Guide to Real Estate Investing"
+             },
+             {
+                "author":"Tom Wheelwright",
+                "averageRating":4.25,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-02 12:10:14",
+                "description":"Do you hate taxes? Dread tax season each year? Wheelwright teaches you in plain English how to use the tax code to make you richer. From paying less taxes to surviving an audit, you'll learn to use your tax savings to build tremendous wealth.",
+                "goodReadsBookId":"13238716",
+                "image":"https://books.google.com/books/content?id=5E0GywAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781937832056",
+                "pageCount":320,
+                "publicationDate":"2012",
+                "publisher":"RDA Press, LLC",
+                "ratingCount":949,
+                "title":"Tax-Free Wealth"
+             },
+             {
+                "author":"Robert Kiyosaki",
+                "averageRating":3.38,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-02 17:25:23",
+                "description":"It's estimated that there are over 50 million pensioners--in the United States alone. Like the United States, the United Kingdom, Japan, Italy, Germany and many other countries around the world are all in big trouble when it comes to the solvency of their pension funds. Who Stole My Pension? was written to give them guidance, resources, and tools so they can take action... and stop the looting. We are in the early stages of the greatest retirement crisis in the history of our nation and, indeed, the entire world. According to the World Health Organization, nearly two billion people around the world are expected to be over age 60 by 2050, a figure that's more than triple what it was in 2000. For better or for worse, never before have there been more elderly people living on planet Earth. One thing is. certain: Doing nothing--sitting back, confident your pension check is \"in the mail\"--is not an option. That's a risk you can't afford to take. According to Edward Siedle, a former attorney with the United States Securities and Exchange Commission and America's leading expert in pension looting, \"In the decades to come, we will witness hundreds of millions of elders worldwide, including America's Baby Boomers, slipping into poverty. Too frail to work, too poor to retire will become the \"new normal\" for many of the aged.\" Kiyosaki, who like Siedle saw this crisis looming years ago, complements the facts and stats Siedle puts forth with strategies on how retirees can take control--not only their pensions, but their financial futures. Kiyosaki writes about the fact that his father, a highly educated man he calls his poor dad, wasn't poor until he lost his job, his paycheck--and his pension. \"His PHD couldn't save him,\" says Kiyosaki, who has dedicated his life to teaching and financial literacy advocacy. In Who Stole My Pension? the authors focus on the most misunderstood and ignored cause of the pension crisis: mismanagement of pensions and investments. The culprits that are looting the pensions of public school teachers, firefighters, police, as well as private sector workers, are on Wall Street. The Wall Street casinos charging high fees for gambling in risky hedge funds and other speculative investments, outrageous investment-industry conflicts of interest, and outright violations of the law. Who Stole My Pension? is an in-depth assessment of the pension crisis that the world is facing today and what millions around the world--employees who expected to have pension income at retirement--can do about it. The authors recount a history of pension failures, inexperienced boards, gambling, looting and other horror stories--with a focus on action steps workers and retirees can take to quickly determine if a pension is being mismanaged as well as the concrete steps they can take to end decades of pension mismanagement. They detail critical questions retirees can ask--and guidance regarding how to act on what they learn.",
+                "goodReadsBookId":"50252196",
+                "image":"https://books.google.com/books/content?id=Pk4nzAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781612681030",
+                "pageCount":240,
+                "publicationDate":"2020-01-14",
+                "publisher":"",
+                "ratingCount":24,
+                "title":"Who Stole My Pension?"
+             },
+             {
+                "author":"Bert Dohmen",
+                "averageRating":5,
+                "categories":[
+                   "International finance"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-02 17:42:21",
+                "description":"",
+                "goodReadsBookId":"3233840",
+                "image":"https://mobileappresources.s3.eu-north-1.amazonaws.com/BookReviewApp/cover_image.jpg",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780615196596",
+                "pageCount":239,
+                "publicationDate":"2007",
+                "publisher":"",
+                "ratingCount":1,
+                "title":"Prelude to Meltdown"
+             },
+             {
+                "author":"Buckminster Fuller",
+                "averageRating":5,
+                "categories":[
+                   
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-05 12:05:10",
+                "description":"Buckminster Fuller takes on the gigantic corporate megaliths that exert increasing control over every aspect of daily life. In the form of a modern allegory, he traces the evolution of these multinational giants from the post-World War II military-industrial complex to the current army of abstract legal entities known as the corporate world. GRUNCH stands for Gross Universal Cash Heist.",
+                "goodReadsBookId":"45944781",
+                "image":"https://books.google.com/books/content?id=qYN4xQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781096795766",
+                "pageCount":130,
+                "publicationDate":"2019-05-03",
+                "publisher":"Independently Published",
+                "ratingCount":1,
+                "title":"Grunch of Giants"
+             },
+             {
+                "author":"Michael Crichton",
+                "averageRating":3.64,
+                "categories":[
+                   "Fiction"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-06 11:50:11",
+                "description":"From the author of Jurassic Park, Timeline, and Sphere comes this riveting thriller of corporate intrigue and cutthroat competition between American and Japanese business interests. #1 NEW YORK TIMES BESTSELLER “As well built a thrill machine as a suspense novel can be.”—The New York Times Book Review On the forty-fifth floor of the Nakamoto tower in downtown Los Angeles—the new American headquarters of the immense Japanese conglomerate—a grand opening celebration is in full swing. On the forty-sixth floor, in an empty conference room, the corpse of a beautiful young woman is discovered. The investigation immediately becomes a headlong chase through a twisting maze of industrial intrigue, a no-holds-barred conflict in which control of a vital American technology is the fiercely coveted prize—and in which the Japanese saying “Business is war” takes on a terrifying reality. “A grand maze of plot twists . . . Crichton’s gift for spinning a timely yarn is going to be enough, once again, to serve a current tenant of the bestseller list with an eviction notice.”—New York Daily News “The action in Rising Sun unfolds at a breathless pace.”—Business Week",
+                "goodReadsBookId":"13641856",
+                "image":"https://books.google.com/books/content?id=QwJJghkMkmUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780307763068",
+                "pageCount":416,
+                "publicationDate":"2012-05-14",
+                "publisher":"Ballantine Books",
+                "ratingCount":48889,
+                "title":"Rising Sun: A Novel"
+             },
+             {
+                "author":"Robert T. Kiyosaki",
+                "averageRating":4.26,
+                "categories":[
+                   
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-10-09 21:52:54",
+                "description":"-",
+                "goodReadsBookId":"81922",
+                "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483023081l/81922._SX98_.jpg",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780446677479",
+                "pageCount":376,
+                "publicationDate":"-",
+                "publisher":"-",
+                "ratingCount":109204,
+                "title":"Rich Dad's Cashflow Quadrant: Rich Dad's Guide to Financial Freedom"
+             },
+             {
+                "author":"John MacGregor",
+                "averageRating":4.24,
+                "categories":[
+                   
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-11-22 14:00:04",
+                "description":"Learning from your mistakes makes you smart. Learning from other people's mistakes makes you a genius. There are two ways to share knowledge, you can push information out or you can pull them in with story. A good story well told, can change the world. After 25 years in the trenches working with thousands of individuals and small business owners, John MacGregor opens the vault on 10 incredible stories that have the power to transform your financial life forever. In this book MacGregor reveals 10 real-life stories of people he encountered who had everythng and lost it all. It is here, MacGreogor reveals for the first time \"The B.E.A.R Trap\", THE four underlying reasons why so many people go and stay broke. Using jaw dropping stories, this book answers and solves why:* 78% of people are living paycheck to paycheck* 65% of people could not come up with $400 today for an emergency expense* Why money is the #1 source of stress in our society* AND, why this problem is getting worse - not better - despite the thousands of how-to-books, DVD, and online resources available. Unlike the thousands of traditional \"how-to\" personal finance books that use traditional methods that rarely elicit change in people, these stories elicit something deep within the reader that allows people to make meaningful transformations in their life. The BEAR Trap formula is not only effective in your financial decision making, you can use it anywhere in your life to avoid painful outcomes and pitfalls. Though this is about the rich going broke, the amount of money doesn't matter as everyone of these stories can pertain to you and your family",
+                "goodReadsBookId":"46139461",
+                "image":"https://books.google.com/books/content?id=cclyvgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781947588097",
+                "pageCount":240,
+                "publicationDate":"2020-05-26",
+                "publisher":"RDA Press, LLC",
+                "ratingCount":21,
+                "title":"The Top 10 Reasons the Rich Go Broke"
+             },
+             {
+                "author":"Thomas C. Corley",
+                "averageRating":3.73,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-12-05 18:41:51",
+                "description":"Offers a step-by-step financial success program that is concise, easy to understand and apply.",
+                "goodReadsBookId":"14642813",
+                "image":"https://books.google.com/books/content?id=Qq8wlw-BvlwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781934938935",
+                "pageCount":89,
+                "publicationDate":"2010-03-01",
+                "publisher":"Hillcrest Publishing Group",
+                "ratingCount":1164,
+                "title":"Rich Habits"
+             },
+             {
+                "author":"Eric Tyson",
+                "averageRating":3.85,
+                "categories":[
+                   "Business & Economics"
+                ],
+                "collectionId":"cfcb25c8-423d-4f85-819d-b4bc0b298a2a",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2021-03-17 09:59:47",
+                "description":"Everything you need to confidently make real estate part of your investing plan Do you want to get involved in real estate investing, but aren't quite sure where to start? Real Estate Investing For Dummies is your go-to resource for making sense of the subject, offering plain-English, step-by-step explanations of everything you need to know to keep yourself one step ahead of the competition. Inside, you'll discover how to overcome the challenges of the market, take advantage of the opportunities in any real estate environment—including a down market—and so much more. Written by industry experts Eric Tyson and Robert Griswold, this new edition of Real Estate Investing For Dummies offers proven, practical, and actionable advice for anyone who wants to invest in income-producing properties. With the help of this straightforward and time-tested information, you'll get the know-how to wisely and confidently make smart, sound, and informed real estate investing decisions that will reap big rewards. Shows you how to make real estate part of your long-term investment plan Provides tips on getting the best deals on financing Offers trusted guidance on mastering the art of property valuation Gives you access to unprecedented information on how to build wealth in any market If you want to jump into the real estate market as a first-time investor or just want to brush up on recent changes that have occurred in the field, Real Estate Investing For Dummies is an essential resource you'll turn to again and again.",
+                "goodReadsBookId":"22775500",
+                "image":"https://books.google.com/books/content?id=9JBxBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781118948217",
+                "pageCount":416,
+                "publicationDate":"2015-02-23",
+                "publisher":"John Wiley & Sons",
+                "ratingCount":370,
+                "title":"Real Estate Investing For Dummies"
+             }
+          ]
+       },
+       {
+          "name":"Relationships",
+          "books":[
+             {
+                "author":"Ezequiel López Peralta",
+                "averageRating":0,
+                "categories":[
+                   
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:37:38",
+                "description":"",
+                "goodReadsBookId":"",
+                "image":"https://mobileappresources.s3.eu-north-1.amazonaws.com/BookReviewApp/cover_image.jpg",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9789588870007",
+                "pageCount":251,
+                "publicationDate":"2014",
+                "publisher":"",
+                "ratingCount":0,
+                "title":"El placer de seducir"
+             },
+             {
+                "author":"Esther Perel",
+                "averageRating":4.34,
+                "categories":[
+                   "Psychology"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:38:46",
+                "description":"Iconic couples’ therapist and bestselling author of Mating in Captivity Esther Perel returns with a provocative look at relationships through the lens of infidelity. An affair: it can rob a couple of their relationship, their happiness, their very identity. And yet, this extremely common human experience is so poorly understood. What are we to make of this time-honored taboo—universally forbidden yet universally practiced? Why do people cheat—even those in happy marriages? Why does an affair hurt so much? When we say infidelity, what exactly do we mean? Do our romantic expectations of marriage set us up for betrayal? Is there such a thing as an affair-proof marriage? Is it possible to love more than one person at once? Can an affair ever help a marriage? Perel weaves real-life case stories with incisive psychological and cultural analysis in this fast-paced and compelling book. For the past ten years, Perel has traveled the globe and worked with hundreds of couples who have grappled with infidelity. Betrayal hurts, she writes, but it can be healed. An affair can even be the doorway to a new marriage—with the same person. With the right approach, couples can grow and learn from these tumultuous experiences, together or apart. Affairs, she argues, have a lot to teach us about modern relationships—what we expect, what we think we want, and what we feel entitled to. They offer a unique window into our personal and cultural attitudes about love, lust, and commitment. Through examining illicit love from multiple angles, Perel invites readers into an honest, enlightened, and entertaining exploration of modern marriage in its many variations. Fiercely intelligent, The State of Affairs provides a daring framework for understanding the intricacies of love and desire. As Perel observes, “Love is messy; infidelity more so. But it is also a window, like no other, into the crevices of the human heart.”",
+                "goodReadsBookId":"34017010",
+                "image":"https://books.google.com/books/content?id=9LDnDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780062322609",
+                "pageCount":336,
+                "publicationDate":"2017-10-10",
+                "publisher":"HarperCollins",
+                "ratingCount":6436,
+                "title":"The State of Affairs"
+             },
+             {
+                "author":"Ian Kerner",
+                "averageRating":4.12,
+                "categories":[
+                   "Female orgasm"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:53:32",
+                "description":"Fun, informative, and easy to read, this virtual encyclopedia of female pleasure details dozens of tried-and-true techniques for satisfying a woman and illustrated step-by-step instructions to ensure success.",
+                "goodReadsBookId":"466838",
+                "image":"https://books.google.com/books/content?id=sGBhPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":true,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780285637221",
+                "pageCount":228,
+                "publicationDate":"2005-04-01",
+                "publisher":"Souvenir Press",
+                "ratingCount":4859,
+                "title":"She Comes First"
+             },
+             {
+                "author":"Bruce Bryans",
+                "averageRating":4.19,
+                "categories":[
+                   
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 10:56:51",
+                "description":"Discover What Women Want in a Man and How They Secretly Test You For it If you pay close enough attention to what really attracts women, you'll find that what women want is a man with a backbone. Women want to be with a man who knows how to take the lead and make decisions; one who has strong personal boundaries and knows how to love her like...a man. Unfortunately, a lot of men have difficulty accepting the truth that many women prefer to be with a man who isn't afraid to stand up to them, who challenges them, and who refuses to be pushed around by women (or anything else for that matter). This is especially true of women who seek a more traditional male-female gender role dynamic in their romantic relationships. Even if a man knows how to attract women, cultivating a mind-blowing relationship with one requires a different set of skills entirely. Women want men who can make them feel secure - men with strong boundaries and unwavering commitment. Sadly, most dating and relationship books rarely show men how to keep a woman happy without them having to sacrifice their manhood in the process. How to Understand Women and Pass Their Tests With Unshakeable Confidence Men around the world have no idea that the women they know and love are testing them. These men go about their lives interacting with the opposite sex in absolute darkness, ignorant to the fact that they're being judged, appraised, approved, and rejected based on their subconscious reactions to female testing. If you had no idea that women test men and why they have to, you're about to take a journey onto a road less traveled - the more mysterious side of female psychology and how women think. Attract Women Through Authenticity and Be the Strong Man a Woman Wants For a Relationship It's important for a man to learn how to walk that thin line between caring, thoughtful lover and firm, assertive leader. The man who masters the art of being the perfect gentleman and a strong alpha male is the ideal specimen to a high-quality woman. This is what you're going to learn in this book. So if you're dating or in a relationship and women constantly create drama, lose interest in you, or manipulate you, it's time you finally got some advice from one of the only relationship books for men that won't turn you into a doormat. Here's what you're going to learn inside: How to be radically honest with a woman and why this makes her MORE attracted to you. The reason why women test men CONSISTENTLY and how to use this knowledge to deepen a woman's desire. (Hint: This is the key to female psychology and how women think.) How to be confident with difficult women. What women want in a man and how to give it to them. How to make a woman happy without becoming a complete doormat of a man. How to seduce your wife and get her in the mood by responding like a MAN whenever she \"pokes the bear.\" How to be firm and say \"No\" to the woman you love without destroying intimacy. How to keep a woman interested in you by doing the ONE thing MOST men are deathly afraid of doing. How to avoid unnecessary arguments, fights, and drama with a woman by using a simple communication technique. The best way to secretly test a woman's level of romantic interest in you (as well as her emotional maturity) before making a long-term commitment. How to stop living in fear of what a woman might think, say, or do if she disagrees with or disapproves of you in any way. And much, much more... Would You Like to Know More? Get started right away and learn how to become the attractive man that has zero difficulty keeping a woman's respect, desire, and unwavering support. Scroll to the top of the page and select the 'buy button' now.",
+                "goodReadsBookId":"26476060",
+                "image":"https://books.google.com/books/content?id=Fe8CswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":true,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781515234043",
+                "pageCount":180,
+                "publicationDate":"2015-08-13",
+                "publisher":"CreateSpace",
+                "ratingCount":269,
+                "title":"What Women Want When They Test Men"
+             },
+             {
+                "author":"Christie Hartman",
+                "averageRating":3.75,
+                "categories":[
+                   "Dating (Social customs)"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 11:19:54",
+                "description":"Success with women is something any man can achieve. However, achieving this success isn't about tactics, games, or trolling bars to get women into the sack - it's about the right mindset. Men who succeed with women - whether for an evening or a lifetime - think differently about women and dating. In Changing Your Game: A Man's Guide to Success with Women, dating expert Dr. Christie Hartman offers men the research-based truth on what it takes to succeed with women. Christie shows men: The #1 predictor of success with women (it's not what you think ) Why some men succeed with women... while others struggle How to handle - and even prevent - rejection Secrets to approaching women... without annoying them The best (and worst) places to meet women Changing Your Game also recognizes that dating in the 21st century is a whole new ballgame and covers such topics as: Succeeding with women online Tips for dating older women and single moms How to successfully seek NSA (No Strings Attached) with women Filled with plenty of straightforward advice and real-life examples, Changing Your Game gives men the tools to succeed with women.",
+                "goodReadsBookId":"13829231",
+                "image":"https://books.google.com/books/content?id=CImruAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":true,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9780984826216",
+                "pageCount":242,
+                "publicationDate":"2012-03-01",
+                "publisher":"",
+                "ratingCount":24,
+                "title":"Changing Your Game"
+             },
+             {
+                "author":"Mark Manson",
+                "averageRating":4.39,
+                "categories":[
+                   "Family & Relationships"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 11:20:12",
+                "description":"Models is the first book ever written on seduction as an emotional process rather than a logical one, a process of connecting with women rather than impressing them. It's the most mature and honest guide on how a man can attract women without faking behavior, without lying and without emulating others. A game-changer. Inside, you'll learn: The root behavior that causes all female attraction. Why typical dating advice and pick up theory is counter-productive in the long-run. How to overcome nervousness and anxiety around attractive women. How any man can make himself appear attractive with a little time and effort. The three keys to keeping conversations with women interesting and engaging. How to discover the beliefs and attitudes that are sabotaging your success with women. How to develop a genuine and joyful sense of humor. And much more... \"I want to tell you that you're probably one of the few people who really got \"it\" figured out. I'm only half-way through your book, and it's unbelievable how everything is making so much sense to me. Everytime I read something in your book I can relate it to some encounter I had with a girl, I now understand why I succeeded at times and failed at another. Especially the part about vulnerability. Even if I did not read the rest of the book, I already got what I paid for. Thank you Mark.\" - Yousif \"I just finished your book today, \"Models,\" and wanted to tell you that your presentation of the subject is far to superior to anything else I've read. I've been involved with seduction since 2006 and I've consumed a lot dating products. Many try to make their readers into \"pickup artists\" - today I gag at the term. But you don't do that. I like how spend so much time in the book reinforcing the fact that we are good human beings at our core and it's a matter of presenting ourselves honestly, without apology to everyone we encounter. And you give the reader the tools to strip away all the disguises that other seduction gurus have said we need to wear at all times. Thanks. Can't wait to meet women today with these new eyes.\" - Robert",
+                "goodReadsBookId":"12633800",
+                "image":"https://books.google.com/books/content?id=whBSXwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781463750350",
+                "pageCount":296,
+                "publicationDate":"2011",
+                "publisher":"CreateSpace",
+                "ratingCount":8463,
+                "title":"Models"
+             },
+             {
+                "author":"W. Anton",
+                "averageRating":4.22,
+                "categories":[
+                   "Dating (Social customs)"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"",
+                "dateAddedToLocalDB":"2020-03-07 11:20:28",
+                "description":"Describes what women seek in a man and the steps a man needs to take to win women over.",
+                "goodReadsBookId":"11797879",
+                "image":"https://books.google.com/books/content?id=tWNiYgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":true,
+                "isbn":"9781456494551",
+                "pageCount":346,
+                "publicationDate":"2010-12-23",
+                "publisher":"",
+                "ratingCount":725,
+                "title":"The Manual"
+             },
+             {
+                "author":"Amir Levine",
+                "averageRating":4.13,
+                "categories":[
+                   "Family & Relationships"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:39:26",
+                "description":"Is there a science to love? In this groundbreaking book, psychiatrist and neuroscientist Amir Levine and psychologist Rachel S. F. Heller reveal how an understanding of attachment theory-the most advanced relationship science in existence today-can help us find and sustain love. Attachment theory forms the basis for many bestselling books on the parent/child relationship, but there has yet to be an accessible guide to what this fascinating science has to tell us about adult romantic relationships-until now. Attachment theory owes its inception to British psychologist and psychoanalyst John Bowlby, who in the 1950s examined the tremendous impact that our early relationships with our parents or caregivers has on the people we become. Also central to attachment theory is the discovery that our need to be in a close relationship with one or more individuals is embedded in our genes. In Attached, Levine and Heller trace how these evolutionary influences continue to shape who we are in our relationships today. According to attachment theory, every person behaves in relationships in one of three distinct ways: *ANXIOUS people are often preoccupied with their relationships and tend to worry about their partner's ability to love them back. *AVOIDANT people equate intimacy with a loss of independence and constantly try to minimize closeness. *SECURE people feel comfortable with intimacy and are usually warm and loving. Attached guides readers in determining what attachment style they and their mate (or potential mates) follow. It also offers readers a wealth of advice on how to navigate their relationships more wisely given their attachment style and that of their partner. An insightful look at the science behind love, Attached offers readers a road map for building stronger, more fulfilling connections.",
+                "goodReadsBookId":"9905001",
+                "image":"https://books.google.com/books/content?id=vCh9fXUiUjwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781101475164",
+                "pageCount":304,
+                "publicationDate":"2010-12-30",
+                "publisher":"Penguin",
+                "ratingCount":15055,
+                "title":"Attached"
+             },
+             {
+                "author":"Sue Johnson",
+                "averageRating":4.12,
+                "categories":[
+                   "Family & Relationships"
+                ],
+                "collectionId":"53ac73a4-b672-480c-a43d-3e0a2237b982",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:40:41",
+                "description":"Developed over 20 years ago and practiced all over the world, Emotionally Focused Therapy has been heralded by Time magazine and the New York Times as one of the only types of therapy to actually work. Couples who practice EFT see a 75% success rate (compared to 30% for other forms of relationship therapy). EFT focuses on the emotional connection of every relationship by de-escalating conflict, creating a safe emotional connection, and strengthening bonds between partners. Now in paperback, HOLD ME TIGHT introduces readers to EFT and illustrates a program they can use in their own relationships. Part I introduces the view of love as an attachment bond and applies this view to relationship problems. Part II offers seven 'conversations' that focus on key moments. Readers can use these to understand their responses and relationships better. Included are exercises to help couples work through the process.",
+                "goodReadsBookId":"19312001",
+                "image":"https://books.google.com/books/content?id=zDjCKtjP__4C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9780748126323",
+                "pageCount":320,
+                "publicationDate":"2011-02-03",
+                "publisher":"Hachette UK",
+                "ratingCount":7055,
+                "title":"Hold Me Tight"
+             }
+          ]
+       },
+       {
+          "name":"Reputation",
+          "books":[
+             {
+                "author":"David Waller",
+                "averageRating":3.35,
+                "categories":[
+                   "BUSINESS & ECONOMICS"
+                ],
+                "collectionId":"004c214c-b95d-4bf8-8b61-a3d2e2949ac5",
+                "dateAddedToFirebase":"2020-01-01",
+                "dateAddedToLocalDB":"2020-04-19 16:41:43",
+                "description":"Your reputation affects everything, the opportunities that come your way in business and in life - learn the rules to life's most important game...",
+                "goodReadsBookId":"39987608",
+                "image":"https://books.google.com/books/content?id=k1q2tAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+                "isFavorite":false,
+                "isLent":false,
+                "isRead":false,
+                "isbn":"9781786073518",
+                "pageCount":304,
+                "publicationDate":"2018-06-07",
+                "publisher":"Oneworld",
+                "ratingCount":108,
+                "title":"The Reputation Game"
+             }
+          ]
+       },
+       {
+          "name":"Fashion",
+          "books":[
+             
+          ]
+       }
+    ]
+ }
