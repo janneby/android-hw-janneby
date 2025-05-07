@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:paddingHorizontal="25dp"
-    tools:context=".UserInfoActivity">
+    tools:context=".user.UserInfoActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -19,7 +19,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:titleTextAppearance="@style/AppTheme.Toolbar" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
     <LinearLayout
+        android:id="@+id/linearLayoutMainBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -27,14 +38,8 @@
         android:layout_marginBottom="40dp"
         android:gravity="center"
         android:orientation="vertical"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:visibility="gone" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/infoCardView"
@@ -58,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Placeholder Name"
+            android:text="@string/placeholder_name"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -66,7 +71,7 @@
             android:id="@+id/textViewUserCountry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Country"
+            android:text="@string/country"
             android:textColor="@color/gray"
             android:textSize="20sp" />
 
@@ -77,8 +82,10 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/linearLayoutFollowers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -93,16 +100,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Followers"
+                    android:text="@string/followers"
                     android:textColor="@color/gray"
                     android:textSize="15sp" />
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/linearLayoutFollowing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="45dp"
+                android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -117,15 +126,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Following"
+                    android:text="@string/following"
                     android:textColor="@color/gray"
                     android:textSize="15sp" />
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/linearLayoutRepositories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -140,12 +151,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Repositories"
+                    android:text="@string/repositories"
                     android:textColor="@color/gray"
                     android:textSize="15sp" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -154,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
-            android:text="About"
+            android:text="@string/about"
             android:textColor="#FF9701"
             android:textSize="20dp" />
 
@@ -162,14 +172,14 @@
             android:id="@+id/textViewAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text. About text." />
+            android:text="@string/about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text_about_text" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
-            android:text="Basics"
+            android:text="@string/basics"
             android:textColor="#FF9701"
             android:textSize="20dp" />
 
@@ -211,9 +221,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayoutHireable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="visible">
 
             <ImageView
                 android:layout_width="20dp"
@@ -225,13 +237,15 @@
                 android:id="@+id/textViewHireStatus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="hireable or not" />
+                android:text="@string/hireable_or_not" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayoutCompany"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="visible">
 
             <ImageView
                 android:layout_width="20dp"
@@ -243,7 +257,27 @@
                 android:id="@+id/textViewCompanyName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sometech AB" />
+                android:text="@string/sometech_ab" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/email_icon" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="info@sometech.se" />
         </LinearLayout>
 
         <TextView
@@ -251,7 +285,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
-            android:text="Top 3 Languages"
+            android:text="@string/top_3_languages"
             android:textColor="#FF9701"
             android:textSize="20dp" />
 

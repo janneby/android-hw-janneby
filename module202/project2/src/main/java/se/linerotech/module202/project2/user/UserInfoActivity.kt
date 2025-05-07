@@ -1,17 +1,21 @@
-package se.linerotech.module202.project2
+package se.linerotech.module202.project2.user
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import se.linerotech.module202.project2.R
 import se.linerotech.module202.project2.api.RetroFitClient
 import se.linerotech.module202.project2.api.UserResultDto
+import se.linerotech.module202.project2.common.PopularItem
 import se.linerotech.module202.project2.databinding.ActivityUserInfoBinding
+import se.linerotech.module202.project2.follow.FollowActivity
 
 class UserInfoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityUserInfoBinding
@@ -23,21 +27,24 @@ class UserInfoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         configureToolbar()
+        showProgressBar(true)
         retrieveUserInformation()
     }
 
     private fun retrieveUserInformation() {
         RetroFitClient.instance.userInformation(
-            user = popularUser()?.id ?: "No Username"
+            user = popularUser()?.id ?: getString(R.string.no_username)
         ).enqueue(object : Callback<UserResultDto> {
             override fun onResponse(call: Call<UserResultDto>, response: Response<UserResultDto>) {
                 if (response.isSuccessful && response.body() != null) {
+                    showProgressBar(false)
                     val currentUser = response.body()!!
                     showUserInformation(currentUser)
+                    setClickListeners()
                 } else {
                     Toast.makeText(
                         this@UserInfoActivity,
-                        "UserInfoActivity - onResponse error",
+                        getString(R.string.userinfoactivity_onresponse_error),
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -46,7 +53,7 @@ class UserInfoActivity : AppCompatActivity() {
             override fun onFailure(call: Call<UserResultDto>, t: Throwable) {
                 Toast.makeText(
                     this@UserInfoActivity,
-                    "UserInfoActivity - onFailure error",
+                    getString(R.string.userinfoactivity_onfailure_error),
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -57,7 +64,7 @@ class UserInfoActivity : AppCompatActivity() {
         setSupportActionBar((binding.toolbar))
         supportActionBar?.apply {
             val user = popularUser()
-            title = user?.id ?: "Unknown User" // Fallback title
+            title = user?.id ?: getString(R.string.unknown_user) // Fallback title
             setDisplayHomeAsUpEnabled(true)
             setHomeAsUpIndicator(R.drawable.arrow_back)
         }
@@ -76,13 +83,20 @@ class UserInfoActivity : AppCompatActivity() {
 
         binding.textViewTwitterUserName.text = getString(R.string.at) + userInfo.twitterUsername
         binding.textViewWebpage.text = userInfo.blog
-        if (userInfo.hireable == null) {
-            binding.textViewHireStatus.text = "Not hireable"
-        } else {
-            binding.textViewHireStatus.text = userInfo.hireable.toString()
-        }
 
-        binding.textViewCompanyName.text = userInfo.company
+        if (userInfo.type == getString(R.string.user)) {
+            if (userInfo.hireable == null) {
+                binding.textViewHireStatus.text = getString(R.string.not_hireable)
+            } else {
+                binding.textViewHireStatus.text = userInfo.hireable.toString()
+            }
+            binding.textViewCompanyName.text = userInfo.company
+        } else {
+            binding.linearLayoutHireable.visibility = View.GONE
+            binding.linearLayoutCompany.visibility = View.GONE
+            binding.linearLayoutEmail.visibility = View.VISIBLE
+            binding.textViewEmail.text = userInfo.email.toString()
+        }
     }
 
     private fun loadImage(url: String?) {
@@ -98,13 +112,52 @@ class UserInfoActivity : AppCompatActivity() {
         return intent.getParcelableExtra(KEY_USER)
     }
 
-//    private fun showProgressBar() {
-//        binding.progressBar.visibility = View.VISIBLE
-//    }
-//
+    private fun showProgressBar(status: Boolean) {
+        if (status == true) {
+            binding.progressBar.visibility = View.VISIBLE
+        } else {
+            binding.progressBar.visibility = View.GONE
+            binding.linearLayoutMainBody.visibility = View.VISIBLE
+        }
+    }
+
 //    private fun showErrorMessage() {
 //        Toast.makeText(this, "UserInfo - error", Toast.LENGTH_LONG).show()
 //    }
+
+    private fun setClickListeners() {
+        binding.linearLayoutFollowers.setOnClickListener {
+            val intent = FollowActivity.intent(
+                this,
+                PopularItem(
+                    popularUser()?.id ?: "",
+                    type = getString(
+                        R.string.followers
+                    )
+                )
+            )
+            startActivity(intent)
+        }
+
+        binding.linearLayoutFollowing.setOnClickListener {
+            val intent = FollowActivity.intent(
+                this,
+                PopularItem(
+                    popularUser()?.id ?: "",
+                    type = getString(
+                        R.string.following
+                    )
+                )
+            )
+            startActivity(intent)
+        }
+
+        binding.linearLayoutRepositories.setOnClickListener {
+            val user = PopularItem(popularUser()?.id ?: getString(R.string.unknown_user))
+            val intent = UserRepositoryActivity.intent(this@UserInfoActivity, user)
+            startActivity(intent)
+        }
+    }
 
     override fun onSupportNavigateUp(): Boolean {
         finish()

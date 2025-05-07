@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomework">
         <activity
-            android:name=".UserInfoActivity"
+            android:name=".user.UserRepositoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".following.FollowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".follow.FollowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".languageRepository.LanguageRepositoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserInfoActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

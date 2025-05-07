@@ -1,4 +1,6 @@
-package se.linerotech.module202.project2
+package se.linerotech.module202.project2.user
+
+import se.linerotech.module202.project2.common.User
 
 sealed class UserInfoState {
     data object Loading : UserInfoState()

@@ -5,8 +5,11 @@ import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.chip.Chip
 import se.linerotech.module202.project2.R.color.white
+import se.linerotech.module202.project2.common.PopularItem
 import se.linerotech.module202.project2.databinding.ActivityMainBinding
 import se.linerotech.module202.project2.databinding.LayoutChipBinding
+import se.linerotech.module202.project2.languageRepository.LanguageRepositoryActivity
+import se.linerotech.module202.project2.user.UserInfoActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -24,10 +27,10 @@ class MainActivity : AppCompatActivity() {
     private fun showPopularItems() {
         showPopularLanguages(
             listOf(
-                PopularItem(id = "Kotlin"),
-                PopularItem(id = "Python"),
-                PopularItem(id = "Java"),
-                PopularItem(id = "C++"),
+                PopularItem(id = "Kotlin", type = "language"),
+                PopularItem(id = "Python", type = "language"),
+                PopularItem(id = "Java", type = "language"),
+                PopularItem(id = "C++", type = "language"),
             )
         )
         showPopularOrgs(
@@ -86,9 +89,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showUserInfoScreen(popularItem: PopularItem) {
-        val user = PopularItem(popularItem.id)
-        val intent = UserInfoActivity.intent(this@MainActivity, user)
-        startActivity(intent)
+        if (popularItem.type == "language") {
+            val language = PopularItem(popularItem.id)
+            val intent = LanguageRepositoryActivity.intent(this@MainActivity, language)
+            startActivity(intent)
+        } else {
+            val user = PopularItem(popularItem.id)
+            val intent = UserInfoActivity.intent(this@MainActivity, user)
+            startActivity(intent)
+        }
     }
 
     private fun configureToolbar() {

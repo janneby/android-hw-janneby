@@ -12,21 +12,21 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:titleTextAppearance="@style/AppTheme.Toolbar" />
 
     <LinearLayout
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="40dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -40,16 +40,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
+            android:hint="@string/enter_a_github_username"
             android:imeOptions="actionSend"
             android:inputType="text"
-            android:hint="@string/enter_a_github_username"
             android:tooltipText="@string/enter_a_github_username" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
-            android:text="Popular Languages"
+            android:text="@string/popular_languages"
             android:textColor="#FF9701"
             android:textSize="15sp" />
 
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
-            android:text="Popular Organizations"
+            android:text="@string/popular_organizations"
             android:textColor="#FF9701"
             android:textSize="15sp" />
 
@@ -88,7 +88,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/montserrat"
-            android:text="Popular Users"
+            android:text="@string/popular_users"
             android:textColor="#FF9701"
             android:textSize="15sp" />
 
