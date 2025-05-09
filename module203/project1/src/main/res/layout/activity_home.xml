@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".home.HomeActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -18,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/white"
-            app:titleTextAppearance="@style/Apptheme.Toolbar" />
+            app:titleTextAppearance="@style/Apptheme.Toolbar"
+            app:theme="@style/Apptheme.Toolbar" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
