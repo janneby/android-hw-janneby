@@ -23,23 +23,59 @@
         android:id="@+id/libraryFragment"
         android:name="se.linerotech.module203.project1.library.LibraryFragment"
         android:label="@string/library"
-        tools:layout="@layout/fragment_library" />
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/libraryDetailsAction"
+            app:destination="@id/libraryDetailsFragment">
+            <argument
+                android:name="library"
+                app:argType="se.linerotech.module203.project1.library.Library" />
+        </action>
+
+    </fragment>
 
     <fragment
         android:id="@+id/profileFragment"
         android:name="se.linerotech.module203.project1.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/profileDetailsAction"
+            app:destination="@id/bookDetailsFragment">
+            <argument
+                android:name="book"
+                app:argType="se.linerotech.module203.project1.common.Book" />
+        </action>
     </fragment>
 
     <fragment
         android:id="@+id/discoverDetailFragment"
-        android:name="se.linerotech.module203.project1.discover.DiscoverFragment"
+        android:name="se.linerotech.module203.project1.discover.DiscoverDetailsFragment"
         android:label="@string/discover"
         tools:layout="@layout/fragment_discover_details">
         <argument
             android:name="discover"
             app:argType="se.linerotech.module203.project1.discover.Discover" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/libraryDetailsFragment"
+        android:name="se.linerotech.module203.project1.library.LibraryDetailsFragment"
+        android:label="@string/library"
+        tools:layout="@layout/fragment_library_details">
+        <argument
+            android:name="library"
+            app:argType="se.linerotech.module203.project1.library.Library" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="se.linerotech.module203.project1.common.BookDetailsFragment"
+        android:label="Book Details"
+        tools:layout="@layout/fragment_book_details">
+        <argument
+            android:name="book"
+            app:argType="se.linerotech.module203.project1.common.Book" />
     </fragment>
 
 </navigation>

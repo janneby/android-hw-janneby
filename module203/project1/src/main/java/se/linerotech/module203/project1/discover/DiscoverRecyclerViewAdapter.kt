@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
+import se.linerotech.module203.project1.R
 import se.linerotech.module203.project1.databinding.RecyclerCellDiscoverBinding
 
 class DiscoverRecyclerViewAdapter(
@@ -33,12 +34,15 @@ class DiscoverRecyclerViewAdapter(
         private val onCellClicked: (Discover) -> Unit,
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(discover: Discover) {
-            binding.textViewTitle.text = discover.title.toString()
-//            binding.cost.text = context.getString(R.string.sek, tour.cost)
-//            binding.days.text = context.resources.getQuantityString(R.plurals.days, tour.days, tour.days)
-//            binding.location.text = tour.location
-//            binding.tourCard.setOnClickListener { onCellClicked(tour) }
-//            loadImage(tour.image)
+            binding.root.setOnClickListener {
+                onCellClicked(discover)
+            }
+            binding.textViewTitle.text = discover.title
+            binding.textViewAuthor.text = discover.author
+            binding.textViewAverageRating.text = discover.averageRating.toString()
+            binding.textViewRatingCount.text = context.getString(R.string.ratings, discover.ratingCount)
+            binding.discoverCard.setOnClickListener { onCellClicked(discover) }
+            loadImage(discover.image)
         }
 
         private fun loadImage(url: String) {
@@ -50,7 +54,7 @@ class DiscoverRecyclerViewAdapter(
         }
 
         companion object {
-            private const val CORNER_RADIUS = 10
+            const val CORNER_RADIUS = 10
             fun create(parent: ViewGroup, onCellClicked: (Discover) -> Unit): DiscoverViewHolder {
                 val binding = RecyclerCellDiscoverBinding.inflate(
                     LayoutInflater.from(parent.context),

@@ -1,6 +1,5 @@
 package se.linerotech.module203.project1.discover.dto
 
-
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 

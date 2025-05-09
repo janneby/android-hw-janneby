@@ -1,15 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="20dp"
     tools:context=".discover.DiscoverDetailsFragment">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageViewBlurredBook"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Discover Details Fragment" />
+        android:layout_marginBottom="55dp"
+        android:scaleType="centerInside" />
 
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_back_arrow" />
+
+    <ImageView
+        android:id="@+id/imageViewBook"
+        android:layout_width="124dp"
+        android:layout_height="161dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_corners" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbarSize="12dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bookDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_top_only"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewBookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    tools:text="Clean Code" />
+
+                <TextView
+                    android:id="@+id/textViewBookAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewBookTitle"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    tools:text="Robert C. Martin" />
+
+                <TextView
+                    android:id="@+id/textViewAverageRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewBookAuthor"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#F5A623"
+                    android:textSize="14sp"
+                    tools:text="★★★☆☆" />
+
+                <TextView
+                    android:id="@+id/textViewRatingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/textViewAverageRating"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@id/textViewAverageRating"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/monsoon"
+                    android:textSize="14sp"
+                    tools:text="(200)" />
+
+                <TextView
+                    android:id="@+id/textViewPages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewAverageRating"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/monsoon"
+                    android:textSize="14sp"
+                    tools:text="431 pages" />
+
+                <TextView
+                    android:id="@+id/textViewYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPages"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/monsoon"
+                    android:textSize="14sp"
+                    tools:text="2009" />
+
+                <TextView
+                    android:id="@+id/textViewISBN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewYear"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/monsoon"
+                    android:textSize="14sp"
+                    tools:text="9780132350884" />
+
+                <TextView
+                    android:id="@+id/textViewDescriptionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewISBN"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/about_the_book"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescriptionTitle"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of …" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonContinueReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/mediumvioletred"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Continue Reading"
+            android:textAllCaps="false"
+            android:textColor="@color/porceline" />
+
+    </LinearLayout>
 </FrameLayout>
