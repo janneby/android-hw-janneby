@@ -19,4 +19,19 @@
     <string name="hotels">Hotels</string>
     <string name="unable_to_get_your_data_please_try_again_later">Unable to get your data. Please try again later</string>
     <string name="nothing_was_discovered">Nothing was discovered</string>
+    <string name="clean_code">Clean Code</string>
+    <string name="ratings">%1$d ratings</string>
+    <string name="books">%1$d books</string>
+    <string name="pages">%1$d pages</string>
+    <string name="raters">(%1$d)</string>
+    <string name="recently_added">Recently Added</string>
+    <string name="recently_read">Recently Read</string>
+    <string name="collections">Collections</string>
+    <string name="books_">Books</string>
+    <string name="about_the_book">About the book</string>
+    <string name="https_www_google_se_search_q">https://www.google.se/search?q=</string>
+    <string name="space">" "</string>
+    <string name="library_view_model">LibraryViewModel</string>
+    <string name="json_parsing_error">JSON parsing error</string>
+    <string name="io_error_loading_data">IO error loading data</string>
 </resources>
