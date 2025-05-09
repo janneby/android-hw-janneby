@@ -1,8 +1,8 @@
 package se.linerotech.module203.project1.profile
 
-
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import se.linerotech.module203.project1.common.Book
 
 @JsonClass(generateAdapter = true)
 data class ProfileDTO(
@@ -139,5 +139,47 @@ data class ProfileDTO(
         val ratingCount: Int? = 0,
         @Json(name = "title")
         val title: String? = ""
+    )
+}
+
+fun ProfileDTO.RecentlyAdded.toBook(): Book {
+    return Book(
+        image = this.image ?: "Unknown image",
+        title = this.title ?: "Unknown Title",
+        author = this.author ?: "Unknown Author",
+        averageRating = this.averageRating ?: 0.0,
+        ratingCount = this.ratingCount ?: 0,
+        pageCount = this.pageCount ?: 0,
+        publicationDate = this.publicationDate ?: "Unknown Date",
+        isbn = this.isbn ?: "Unknown ISBN",
+        description = this.description ?: "Unknown Description"
+    )
+}
+
+fun ProfileDTO.RecentlyRead.toBook(): Book {
+    return Book(
+        image = this.image ?: "Unknown image",
+        title = this.title ?: "Unknown Title",
+        author = this.author ?: "Unknown Author",
+        averageRating = this.averageRating ?: 0.0,
+        ratingCount = this.ratingCount ?: 0,
+        pageCount = this.pageCount ?: 0,
+        publicationDate = this.publicationDate ?: "Unknown Date",
+        isbn = this.isbn ?: "Unknown ISBN",
+        description = this.description ?: "Unknown Description"
+    )
+}
+
+fun ProfileDTO.Favorite.toBook(): Book {
+    return Book(
+        image = this.image ?: "Unknown image",
+        title = this.title ?: "Unknown Title",
+        author = this.author ?: "Unknown Author",
+        averageRating = this.averageRating ?: 0.0,
+        ratingCount = this.ratingCount ?: 0,
+        pageCount = this.pageCount ?: 0,
+        publicationDate = this.publicationDate ?: "Unknown Date",
+        isbn = this.isbn ?: "Unknown ISBN",
+        description = this.description ?: "Unknown Description"
     )
 }
