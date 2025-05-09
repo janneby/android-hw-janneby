@@ -1,5 +1,6 @@
 package se.linerotech.module203.project1.onboarding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
 import se.linerotech.module203.project1.R
 import se.linerotech.module203.project1.databinding.ActivityOnboardingBinding
+import se.linerotech.module203.project1.home.HomeActivity
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
@@ -57,7 +59,7 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     private fun openHomeScreen() {
-//        startActivity(Intent(this, HomeActivity::class.java))
-//        finish()
+        startActivity(Intent(this, HomeActivity::class.java))
+        finish()
     }
 }

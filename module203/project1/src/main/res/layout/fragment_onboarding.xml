@@ -47,6 +47,6 @@
         android:fontFamily="@font/montserrat_medium"
         android:text="@string/get_started"
         android:textAllCaps="false"
-        android:textColor="@color/mediumvioletred" />
+        android:textColor="@color/white" />
 
 </LinearLayout>
