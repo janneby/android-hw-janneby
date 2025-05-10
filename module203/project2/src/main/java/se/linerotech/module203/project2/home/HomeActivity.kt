@@ -49,7 +49,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setDestinationListener(navController: NavController) {
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            binding.bottomNavBar.visibility = if (destination.id == R.id.testFragment) {
+            binding.bottomNavBar.visibility = if (destination.id == R.id.mapFragment) {
                 View.GONE
             } else {
                 View.VISIBLE

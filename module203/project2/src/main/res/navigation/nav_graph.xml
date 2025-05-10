@@ -7,26 +7,26 @@
 
     <fragment
         android:id="@+id/incidentsFragment"
-        android:name="se.linerotech.module203.project2.IncidentsFragment"
+        android:name="se.linerotech.module203.project2.incidents.IncidentsFragment"
         android:label="@string/incidents"
         tools:layout="@layout/fragment_incidents" />
 
     <fragment
         android:id="@+id/stationsFragment"
-        android:name="se.linerotech.module203.project2.StationsFragment"
+        android:name="se.linerotech.module203.project2.stations.StationsFragment"
         android:label="@string/stations"
         tools:layout="@layout/fragment_stations" />
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="se.linerotech.module203.project2.AboutFragment"
+        android:name="se.linerotech.module203.project2.about.AboutFragment"
         android:label="@string/about"
         tools:layout="@layout/fragment_about" />
 
     <fragment
-        android:id="@+id/testFragment"
-        android:name="se.linerotech.module203.project2.MapFragment"
-        android:label="@string/test"
+        android:id="@+id/mapFragment"
+        android:name="se.linerotech.module203.project2.map.MapFragment"
+        android:label="@string/map"
         tools:layout="@layout/fragment_map" />
 
 </navigation>
