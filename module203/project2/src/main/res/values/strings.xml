@@ -7,4 +7,8 @@
     <string name="about">About</string>
     <string name="test">Test</string>
     <string name="map">Map</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="unable_to_get_your_data_please_try_again_later">Unable to get your data. Please try again later</string>
+    <string name="https_polisen_se">https://polisen.se/</string>
+    <string name="http">http</string>
 </resources>
