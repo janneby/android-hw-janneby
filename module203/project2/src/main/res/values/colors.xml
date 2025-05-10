@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="deepskyblue">#64AFE9</color>
     <color name="monsoon">#898989</color>
+    <color name="darkslategray">#212D3B</color>
+    <color name="aliceblue">#E9EEF4</color>
+    <color name="blacky">#0D1117</color>
+    <color name="blackier_cell">#1D2733</color>
 </resources>
