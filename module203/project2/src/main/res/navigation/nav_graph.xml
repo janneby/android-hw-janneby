@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/incidentsFragment">
+
+    <fragment
+        android:id="@+id/incidentsFragment"
+        android:name="se.linerotech.module203.project2.IncidentsFragment"
+        android:label="@string/incidents"
+        tools:layout="@layout/fragment_incidents" />
+
+    <fragment
+        android:id="@+id/stationsFragment"
+        android:name="se.linerotech.module203.project2.StationsFragment"
+        android:label="@string/stations"
+        tools:layout="@layout/fragment_stations" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="se.linerotech.module203.project2.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="se.linerotech.module203.project2.TestFragment"
+        android:label="@string/test"
+        tools:layout="@layout/fragment_test" />
+
+</navigation>
