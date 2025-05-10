@@ -11,14 +11,15 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/deepskyblue"
+        android:background="@color/darkslategray"
+        android:backgroundTint="@color/darkslategray"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
+            android:background="@color/darkslategray"
             app:titleTextAppearance="@style/Apptheme.Toolbar"
             app:titleTextColor="@color/deepskyblue" />
 
@@ -40,6 +41,8 @@
         android:id="@+id/bottomNavBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/darkslategray"
+        android:backgroundTint="@color/darkslategray"
         app:itemIconTint="@drawable/bottom_nav_selector"
         app:itemTextAppearanceActive="@style/Item.BottomNavigationView"
         app:itemTextAppearanceInactive="@style/Item.BottomNavigationView"
