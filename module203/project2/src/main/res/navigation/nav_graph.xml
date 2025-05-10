@@ -25,8 +25,8 @@
 
     <fragment
         android:id="@+id/testFragment"
-        android:name="se.linerotech.module203.project2.TestFragment"
+        android:name="se.linerotech.module203.project2.MapFragment"
         android:label="@string/test"
-        tools:layout="@layout/fragment_test" />
+        tools:layout="@layout/fragment_map" />
 
 </navigation>
