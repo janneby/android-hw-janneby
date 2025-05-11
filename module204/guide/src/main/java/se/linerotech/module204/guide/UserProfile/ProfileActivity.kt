@@ -1,22 +1,31 @@
-package se.linerotech.module204.guide.UserProfile
+package se.linerotech.module204.guide.userProfile
 
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityProfileBinding
+import se.linerotech.module204.guide.home.HomeActivity
+import se.linerotech.module204.guide.repository.UserDetails
+import se.linerotech.module204.guide.repository.UserDetailsRepository
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileBinding
+    private lateinit var userDetailsRepository: UserDetailsRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        userDetailsRepository = UserDetailsRepository(this)
         configureToolbar()
         configureClickListener()
     }
@@ -35,48 +44,45 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun validateCredentials() {
-        if (!isNameValid()) {
-            notifyInvalidName()
+        var isValid = true
+
+        if (!binding.editTextName.text.trim().isNotEmpty()) {
+            binding.editTextName.error = getString(R.string.name_cannot_be_empty)
+            isValid = false
         }
 
-        if (!isUsernameValid()) {
-            notifyInvalidUsername()
+        if (!binding.editTextUsername.text.trim().isNotEmpty()) {
+            binding.editTextUsername.error = getString(R.string.username_cannot_be_empty)
+            isValid = false
         }
 
-        if (!isEmailValid()) {
-            notifyInvalidEmail()
+        if (!Patterns.EMAIL_ADDRESS.matcher(binding.editTextEmail.text).matches()) {
+            binding.editTextEmail.error = getString(R.string.invalid_email_format)
+            isValid = false
         }
 
-        if (isNameValid() && isUsernameValid() && isEmailValid()) {
-            sendMessage(message = R.string.sucessful_login)
+        if (isValid) {
+            saveUserDetails()
         }
     }
 
-    private fun isNameValid(): Boolean {
-        return binding.editTextName.text.trim().isNotEmpty()
-    }
-
-    private fun isUsernameValid(): Boolean {
-        return binding.editTextUsername.text.trim().isNotEmpty()
-    }
-
-    private fun isEmailValid(): Boolean {
-        return Patterns.EMAIL_ADDRESS.matcher(binding.editTextEmail.text).matches()
-    }
-
-    private fun notifyInvalidName() {
-        binding.editTextName.error = getString(R.string.name_cannot_be_empty)
-    }
-
-    private fun notifyInvalidUsername() {
-        binding.editTextUsername.error = getString(R.string.username_cannot_be_empty)
-    }
-
-    private fun notifyInvalidEmail() {
-        binding.editTextEmail.error = getString(R.string.invalid_email_format)
-    }
-
-    private fun sendMessage(@StringRes message: Int) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    private fun saveUserDetails() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
+                val saveResult = userDetailsRepository.put(
+                    userDetails = UserDetails(
+                        binding.editTextName.text.toString(),
+                        binding.editTextName.text.toString(),
+                        binding.editTextUsername.text.toString(),
+                    )
+                )
+                if (saveResult) {
+                    startActivity(HomeActivity.intent(this@ProfileActivity))
+                    finish()
+                } else {
+                    Toast.makeText(this@ProfileActivity, R.string.unable_to_save_data, Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }
