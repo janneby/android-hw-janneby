@@ -8,11 +8,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHomework">
         <activity
-            android:name=".home.HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".userProfile.ProfileActivity"
-            android:exported="true">
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".routing.RoutingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
