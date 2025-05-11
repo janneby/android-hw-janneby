@@ -11,6 +11,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import se.linerotech.module203.project2.R
+import se.linerotech.module203.project2.common.GeoJsonUtils
 import se.linerotech.module203.project2.databinding.FragmentStationsBinding
 
 class StationsFragment : Fragment() {
@@ -36,7 +37,11 @@ class StationsFragment : Fragment() {
             stationsViewModel.state.collect { state ->
                 when (state) {
                     StationsState.Loading -> showProgressBar()
-                    is StationsState.Success -> showStations(state.stations)
+                    is StationsState.Success -> {
+                        val stations = state.stations
+                        showStations(state.stations)
+                        GeoJsonUtils.saveStationsToGeoJson(stations, requireContext())
+                    }
                     StationsState.Failure -> showError()
                 }
             }

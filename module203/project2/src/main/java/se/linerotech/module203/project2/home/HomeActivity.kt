@@ -1,5 +1,6 @@
 package se.linerotech.module203.project2.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -14,6 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import se.linerotech.module203.project2.R
 import se.linerotech.module203.project2.databinding.ActivityHomeBinding
+import se.linerotech.module203.project2.map.MapActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
@@ -63,8 +65,17 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val navController = findNavController(R.id.navController)
-        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+        return when (item.itemId) {
+            R.id.map_menu_item -> {
+                val intent = Intent(this, MapActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> {
+                val navController = findNavController(R.id.navController)
+                item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
