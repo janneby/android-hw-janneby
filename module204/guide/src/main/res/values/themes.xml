@@ -15,4 +15,11 @@
         <!-- Customize your theme here. -->
         <item name="fontFamily">@font/montserrat</item>
     </style>
+
+    <style name="Theme.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/dark_grey</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.AndroidHomework</item>
+    </style>
+
 </resources>
