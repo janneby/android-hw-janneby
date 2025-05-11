@@ -58,15 +58,15 @@
         tools:text="@string/username" />
 
     <Button
-        android:id="@+id/buttonCreateProfile"
+        android:id="@+id/buttonProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
         android:layout_marginBottom="140dp"
         android:backgroundTint="@color/licorice"
         android:fontFamily="@font/montserrat_medium"
-        android:text="@string/create_profile"
         android:textColor="@color/porcelain"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        tools:text="@string/create_profile" />
 
 </LinearLayout>

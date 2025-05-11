@@ -1,7 +1,5 @@
 package se.linerotech.module204.guide.userprofile
 
-import android.content.Context
-import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Patterns
@@ -11,13 +9,17 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityProfileBinding
-import se.linerotech.module204.guide.home.HomeActivity
 import se.linerotech.module204.guide.repository.UserDetails
 import se.linerotech.module204.guide.repository.UserDetailsRepository
 
-class ProfileActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityProfileBinding
-    private lateinit var userDetailsRepository: UserDetailsRepository
+abstract class ProfileActivity : AppCompatActivity() {
+    protected lateinit var binding: ActivityProfileBinding
+    protected lateinit var userDetailsRepository: UserDetailsRepository
+
+    abstract val toolbarTitle: Int
+    abstract val showBackArrow: Boolean
+    abstract val buttonTitle: Int
+    abstract fun onFinishedSaving()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,17 +30,29 @@ class ProfileActivity : AppCompatActivity() {
         userDetailsRepository = UserDetailsRepository(this)
         configureToolbar()
         configureClickListener()
+        setButtonTitle()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     private fun configureToolbar() {
         supportActionBar?.apply {
-            setTitle(getString(R.string.create_profile))
+            setTitle(toolbarTitle)
             setBackgroundDrawable(ColorDrawable(getColor(R.color.charcoal_blue)))
+            setDisplayHomeAsUpEnabled(showBackArrow)
+            setHomeAsUpIndicator(R.drawable.back_arrow_icon)
         }
     }
 
+    private fun setButtonTitle() {
+        binding.buttonProfile.setText(buttonTitle)
+    }
+
     private fun configureClickListener() {
-        binding.buttonCreateProfile.setOnClickListener {
+        binding.buttonProfile.setOnClickListener {
             validateCredentials()
         }
     }
@@ -71,13 +85,12 @@ class ProfileActivity : AppCompatActivity() {
             val saveResult = userDetailsRepository.put(
                 userDetails = UserDetails(
                     binding.editTextName.text.toString(),
-                    binding.editTextName.text.toString(),
+                    binding.editTextEmail.text.toString(),
                     binding.editTextUsername.text.toString(),
                 )
             )
             if (saveResult) {
-                startActivity(HomeActivity.intent(this@ProfileActivity))
-                finish()
+                onFinishedSaving()
             } else {
                 Toast.makeText(
                     this@ProfileActivity,
@@ -85,12 +98,6 @@ class ProfileActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
-        }
-    }
-
-    companion object {
-        fun intent(context: Context): Intent {
-            return Intent(context, ProfileActivity::class.java)
         }
     }
 }
