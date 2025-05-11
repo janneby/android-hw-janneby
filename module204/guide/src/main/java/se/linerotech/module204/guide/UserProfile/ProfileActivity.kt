@@ -1,13 +1,13 @@
 package se.linerotech.module204.guide.userProfile
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityProfileBinding
@@ -68,21 +68,29 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun saveUserDetails() {
         lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.CREATED) {
-                val saveResult = userDetailsRepository.put(
-                    userDetails = UserDetails(
-                        binding.editTextName.text.toString(),
-                        binding.editTextName.text.toString(),
-                        binding.editTextUsername.text.toString(),
-                    )
+            val saveResult = userDetailsRepository.put(
+                userDetails = UserDetails(
+                    binding.editTextName.text.toString(),
+                    binding.editTextName.text.toString(),
+                    binding.editTextUsername.text.toString(),
                 )
-                if (saveResult) {
-                    startActivity(HomeActivity.intent(this@ProfileActivity))
-                    finish()
-                } else {
-                    Toast.makeText(this@ProfileActivity, R.string.unable_to_save_data, Toast.LENGTH_SHORT).show()
-                }
+            )
+            if (saveResult) {
+                startActivity(HomeActivity.intent(this@ProfileActivity))
+                finish()
+            } else {
+                Toast.makeText(
+                    this@ProfileActivity,
+                    R.string.unable_to_save_data,
+                    Toast.LENGTH_SHORT
+                ).show()
             }
+        }
+    }
+
+    companion object {
+        fun intent(context: Context): Intent {
+            return Intent(context, ProfileActivity::class.java)
         }
     }
 }
