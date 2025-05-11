@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
     tools:context=".UserProfile.ProfileActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/sloth_avatar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/moonson"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/porcelain"
+        android:textColorHint="@color/moonson"
+        android:textSize="16dp"
+        tools:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/moonson"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@color/porcelain"
+        android:textColorHint="@color/moonson"
+        android:textSize="16dp"
+        tools:text="@string/email" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/moonson"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/porcelain"
+        android:textColorHint="@color/moonson"
+        android:textSize="16dp"
+        tools:text="@string/username" />
+
+    <Button
+        android:id="@+id/buttonCreateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@color/licorice"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/create_profile"
+        android:textColor="@color/porcelain"
+        android:textSize="16dp" />
+
+</LinearLayout>
