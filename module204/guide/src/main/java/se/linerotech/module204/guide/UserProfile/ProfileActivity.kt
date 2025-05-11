@@ -1,4 +1,4 @@
-package se.linerotech.module204.guide.userProfile
+package se.linerotech.module204.guide.userprofile
 
 import android.content.Context
 import android.content.Intent

@@ -8,7 +8,7 @@ import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.home.HomeActivity
 import se.linerotech.module204.guide.repository.UserDetailsRepository
-import se.linerotech.module204.guide.userProfile.ProfileActivity
+import se.linerotech.module204.guide.userprofile.ProfileActivity
 
 class RoutingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
