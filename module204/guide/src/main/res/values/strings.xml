@@ -9,4 +9,6 @@
     <string name="invalid_email_format">Invalid Email format</string>
     <string name="sucessful_login">Sucessful login</string>
     <string name="unable_to_save_data">Unable to save data</string>
+    <string name="tasks">Tasks</string>
+    <string name="update_profile">Update Profile</string>
 </resources>
