@@ -8,4 +8,5 @@
     <string name="username_cannot_be_empty">Username cannot be empty</string>
     <string name="invalid_email_format">Invalid Email format</string>
     <string name="sucessful_login">Sucessful login</string>
+    <string name="unable_to_save_data">Unable to save data</string>
 </resources>
