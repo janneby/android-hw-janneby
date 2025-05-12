@@ -6,8 +6,14 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import android.view.View
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityHomeBinding
 import se.linerotech.module204.guide.userprofile.UpdateProfileActivity
@@ -15,6 +21,8 @@ import se.linerotech.module204.guide.userprofile.UpdateProfileActivity
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private val addTaskSheet = AddTaskBottomSheet(::addTask)
+    private val viewModel: HomeViewModel by viewModels { HomeViewModel.factory() }
+    private lateinit var adapter: TaskRecyclerViewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +30,65 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         configureToolbar()
+        configureRecyclerView()
         configureClickListeners()
+        observerViewModel()
+    }
+
+    private fun configureToolbar() {
+        supportActionBar?.apply {
+            setTitle(R.string.tasks)
+            setBackgroundDrawable(ColorDrawable(getColor(R.color.charcoal_blue)))
+        }
+    }
+
+    private fun configureRecyclerView() {
+        adapter = TaskRecyclerViewAdapter(onTaskCheckedListener = { task ->
+            viewModel.onCheckChanged(task)
+        })
+        binding.recyclerView.apply {
+            adapter = this@HomeActivity.adapter
+            layoutManager = LinearLayoutManager(this@HomeActivity)
+            setHasFixedSize(false)
+        }
+    }
+
+    private fun configureClickListeners() {
+        binding.buttonAddTask.setOnClickListener {
+            addTaskSheet.show(supportFragmentManager, AddTaskBottomSheet.TAG)
+        }
+    }
+
+    private fun observerViewModel() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
+                viewModel.state.collect { state ->
+                    when (state) {
+                        HomeState.Loading -> showProgressbar()
+                        is HomeState.TaskList -> showTaskList(tasks = state.tasks)
+                    }
+                }
+            }
+        }
+    }
+
+    private fun showProgressbar() {
+        binding.progressBar.visibility = View.VISIBLE
+    }
+
+    private fun showTaskList(tasks: List<Task>) {
+        binding.progressBar.visibility = View.GONE
+        binding.toggleGroup.visibility = View.VISIBLE
+        binding.buttonAddTask.visibility = View.VISIBLE
+
+        if (tasks.isEmpty()) {
+            binding.layoutEmptyList.root.visibility = View.VISIBLE
+        } else {
+            binding.layoutEmptyList.root.visibility = View.GONE
+            binding.recyclerView.visibility = View.VISIBLE
+        }
+
+        adapter.differ.submitList(tasks)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -39,25 +105,12 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun configureToolbar() {
-        supportActionBar?.apply {
-            setTitle(R.string.tasks)
-            setBackgroundDrawable(ColorDrawable(getColor(R.color.charcoal_blue)))
-        }
-    }
-
     private fun openUpdateProfile() {
         startActivity(UpdateProfileActivity.intent(this))
     }
 
-    private fun configureClickListeners() {
-        binding.buttonAddTask.setOnClickListener {
-            addTaskSheet.show(supportFragmentManager, AddTaskBottomSheet.TAG)
-        }
-    }
-
-    private fun addTask(task: String) {
-        Toast.makeText(this, task, Toast.LENGTH_LONG).show()
+    private fun addTask(taskName: String) {
+        viewModel.onTaskCreated(taskName)
     }
 
     companion object {
