@@ -11,4 +11,8 @@
     <string name="unable_to_save_data">Unable to save data</string>
     <string name="tasks">Tasks</string>
     <string name="update_profile">Update Profile</string>
+    <string name="empty_list">Empty List</string>
+    <string name="not_done">Not Done</string>
+    <string name="done">Done</string>
+    <string name="add_task">Add Task</string>
 </resources>
