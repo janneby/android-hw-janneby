@@ -15,4 +15,5 @@
     <string name="not_done">Not Done</string>
     <string name="done">Done</string>
     <string name="add_task">Add Task</string>
+    <string name="task_name">Task Name</string>
 </resources>
