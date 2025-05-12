@@ -22,4 +22,6 @@
         <item name="postSplashScreenTheme">@style/Theme.AndroidHomework</item>
     </style>
 
+    <style name="CheckboxStyle" parent="Theme.Material3.Dark"/>
+
 </resources>
