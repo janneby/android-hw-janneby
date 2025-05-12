@@ -2,10 +2,12 @@ package se.linerotech.module204.guide.userprofile
 
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.util.Patterns
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityProfileBinding
@@ -15,6 +17,9 @@ import se.linerotech.module204.guide.repository.UserDetailsRepository
 abstract class ProfileActivity : AppCompatActivity() {
     protected lateinit var binding: ActivityProfileBinding
     protected lateinit var userDetailsRepository: UserDetailsRepository
+    private val viewModel: ProfileViewModel by viewModels {
+        ProfileViewModel.factory(userDetailsRepository)
+    }
 
     abstract val toolbarTitle: Int
     abstract val showBackArrow: Boolean
@@ -23,19 +28,15 @@ abstract class ProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityProfileBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
+        setContentView(binding.root)
         userDetailsRepository = UserDetailsRepository(this)
+
         configureToolbar()
         configureClickListener()
         setButtonTitle()
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        finish()
-        return true
+        observeViewModel()
     }
 
     private fun configureToolbar() {
@@ -47,57 +48,57 @@ abstract class ProfileActivity : AppCompatActivity() {
         }
     }
 
+    private fun configureClickListener() {
+        binding.buttonProfile.setOnClickListener {
+            val name = binding.editTextName.text.toString()
+            val email = binding.editTextEmail.text.toString()
+            val username = binding.editTextUsername.text.toString()
+
+            val userDetails = UserDetails(name = name, email = email, username = username)
+
+            viewModel.save(userDetails)
+        }
+    }
+
     private fun setButtonTitle() {
         binding.buttonProfile.setText(buttonTitle)
     }
 
-    private fun configureClickListener() {
-        binding.buttonProfile.setOnClickListener {
-            validateCredentials()
-        }
-    }
-
-    private fun validateCredentials() {
-        var isValid = true
-
-        if (!binding.editTextName.text.trim().isNotEmpty()) {
-            binding.editTextName.error = getString(R.string.name_cannot_be_empty)
-            isValid = false
-        }
-
-        if (!binding.editTextUsername.text.trim().isNotEmpty()) {
-            binding.editTextUsername.error = getString(R.string.username_cannot_be_empty)
-            isValid = false
-        }
-
-        if (!Patterns.EMAIL_ADDRESS.matcher(binding.editTextEmail.text).matches()) {
-            binding.editTextEmail.error = getString(R.string.invalid_email_format)
-            isValid = false
-        }
-
-        if (isValid) {
-            saveUserDetails()
-        }
-    }
-
-    private fun saveUserDetails() {
+    private fun observeViewModel() {
         lifecycleScope.launch {
-            val saveResult = userDetailsRepository.put(
-                userDetails = UserDetails(
-                    binding.editTextName.text.toString(),
-                    binding.editTextEmail.text.toString(),
-                    binding.editTextUsername.text.toString(),
-                )
-            )
-            if (saveResult) {
-                onFinishedSaving()
-            } else {
-                Toast.makeText(
-                    this@ProfileActivity,
-                    R.string.unable_to_save_data,
-                    Toast.LENGTH_SHORT
-                ).show()
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
+                viewModel.state.collect { state ->
+                    when (state) {
+                        ProfileState.Idle -> {}
+                        ProfileState.SuccessSaving -> onFinishedSaving()
+                        ProfileState.ErrorSaving -> showSavingError()
+                        is ProfileState.InvalidUserDetails -> notifyInvalidUserDetails(state)
+                    }
+                }
             }
         }
+    }
+
+    private fun showSavingError() {
+        Toast.makeText(this@ProfileActivity, R.string.unable_to_save_data, Toast.LENGTH_LONG).show()
+    }
+
+    private fun notifyInvalidUserDetails(state: ProfileState.InvalidUserDetails) {
+        if (!state.isNameValid) {
+            binding.editTextName.error = getString(R.string.name_cannot_be_empty)
+        }
+
+        if (!state.isEmailValid) {
+            binding.editTextEmail.error = getString(R.string.invalid_email_format)
+        }
+
+        if (!state.isUsernameValid) {
+            binding.editTextUsername.error = getString(R.string.username_cannot_be_empty)
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }
