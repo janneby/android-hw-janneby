@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_toEndOf="@id/checkBoxTask"
+        android:hint="@string/task_name"
         android:inputType="textCapSentences"
         android:maxLength="30"
         android:maxLines="1" />
