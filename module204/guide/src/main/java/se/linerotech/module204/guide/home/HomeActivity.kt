@@ -16,12 +16,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityHomeBinding
+import se.linerotech.module204.guide.repository.database.DatabaseInstance
 import se.linerotech.module204.guide.userprofile.UpdateProfileActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private val addTaskSheet = AddTaskBottomSheet(::addTask)
-    private val viewModel: HomeViewModel by viewModels { HomeViewModel.factory() }
+    private val viewModel: HomeViewModel by viewModels {
+        HomeViewModel.factory(dao = DatabaseInstance.instance(this).taskDao())
+    }
     private lateinit var adapter: TaskRecyclerViewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
