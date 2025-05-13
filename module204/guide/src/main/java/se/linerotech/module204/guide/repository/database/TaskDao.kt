@@ -1,6 +1,7 @@
 package se.linerotech.module204.guide.repository.database
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
@@ -27,4 +28,8 @@ interface TaskDao {
     // Updating existing tasks
     @Update
     suspend fun update(task: TaskEntity)
+
+    // Deleting task
+    @Delete
+    suspend fun delete(task: TaskEntity)
 }

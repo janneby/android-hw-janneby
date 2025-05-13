@@ -46,9 +46,15 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun configureRecyclerView() {
-        adapter = TaskRecyclerViewAdapter(onTaskCheckedListener = { task ->
-            viewModel.onCheckChanged(task, toggleButtonCurrentState())
-        })
+        adapter = TaskRecyclerViewAdapter(
+            onTaskCheckedListener = { task ->
+                viewModel.onCheckChanged(task, toggleButtonCurrentState())
+            },
+            onTaskDeletedListener = { task ->
+                viewModel.onTaskDeleted(task, toggleButtonCurrentState())
+            }
+
+        )
         binding.recyclerView.apply {
             adapter = this@HomeActivity.adapter
             layoutManager = LinearLayoutManager(this@HomeActivity)

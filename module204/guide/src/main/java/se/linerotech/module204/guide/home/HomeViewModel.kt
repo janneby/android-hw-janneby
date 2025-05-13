@@ -60,6 +60,20 @@ class HomeViewModel(private val dao: TaskDao) : ViewModel() {
         }
     }
 
+    fun onTaskDeleted(task: Task, toggleButtonCurrentState: ToggleButtonState) {
+        viewModelScope.launch {
+            dao.delete(TaskEntity(task))
+
+            val newList = if (toggleButtonCurrentState == ToggleButtonState.Done) {
+                dao.completedTasks()
+            } else {
+                dao.notCompletedTasks()
+            }.map(::Task)
+
+            _state.value = HomeState.TaskList(newList)
+        }
+    }
+
     fun onDoneClicked() {
         viewModelScope.launch {
             val newList = completedTasks()
