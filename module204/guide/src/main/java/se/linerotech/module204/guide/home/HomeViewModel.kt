@@ -27,7 +27,7 @@ class HomeViewModel : ViewModel() {
         }
     }
 
-    fun onTaskCreated(taskName: String) {
+    fun onTaskCreated(taskName: String, toggleButtonCurrentState: ToggleButtonState) {
         val task = Task(
             id = UUID.randomUUID().toString(),
             name = taskName,
@@ -35,19 +35,39 @@ class HomeViewModel : ViewModel() {
         )
 
         fakeDB.add(0, task)
-        val newList = fakeDB.filter { !it.isCompleted }
+
+        val newList = if (toggleButtonCurrentState == ToggleButtonState.Done) {
+            fakeDB.filter { it.isCompleted }
+        } else {
+            fakeDB.filter { !it.isCompleted }
+        }
+
         _state.value = HomeState.TaskList(newList)
     }
 
-    fun onCheckChanged(task: Task) {
+    fun onCheckChanged(task: Task, toggleButtonCurrentState: ToggleButtonState) {
         val indexOfItem = fakeDB.indexOfFirst { it.id == task.id }
 
         fakeDB.removeAt(indexOfItem)
         val updatedTask = task.copy(isCompleted = !task.isCompleted)
         fakeDB.add(indexOfItem, updatedTask)
 
-        val newList = fakeDB.filter { !it.isCompleted }
+        val newList = if (toggleButtonCurrentState == ToggleButtonState.Done) {
+            fakeDB.filter { it.isCompleted }
+        } else {
+            fakeDB.filter { !it.isCompleted }
+        }
 
+        _state.value = HomeState.TaskList(newList)
+    }
+
+    fun onDoneClicked() {
+        val newList = fakeDB.filter { it.isCompleted }
+        _state.value = HomeState.TaskList(newList)
+    }
+
+    fun onNotDoneClicked() {
+        val newList = fakeDB.filter { !it.isCompleted }
         _state.value = HomeState.TaskList(newList)
     }
 

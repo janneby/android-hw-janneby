@@ -44,7 +44,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun configureRecyclerView() {
         adapter = TaskRecyclerViewAdapter(onTaskCheckedListener = { task ->
-            viewModel.onCheckChanged(task)
+            viewModel.onCheckChanged(task, toggleButtonCurrentState())
         })
         binding.recyclerView.apply {
             adapter = this@HomeActivity.adapter
@@ -56,6 +56,12 @@ class HomeActivity : AppCompatActivity() {
     private fun configureClickListeners() {
         binding.buttonAddTask.setOnClickListener {
             addTaskSheet.show(supportFragmentManager, AddTaskBottomSheet.TAG)
+        }
+        binding.buttonNotDone.setOnClickListener {
+            viewModel.onNotDoneClicked()
+        }
+        binding.buttonDone.setOnClickListener {
+            viewModel.onDoneClicked()
         }
     }
 
@@ -78,7 +84,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun showTaskList(tasks: List<Task>) {
         binding.progressBar.visibility = View.GONE
-        binding.toggleGroup.visibility = View.VISIBLE
+        binding.toggleButtonGroup.visibility = View.VISIBLE
         binding.buttonAddTask.visibility = View.VISIBLE
 
         if (tasks.isEmpty()) {
@@ -110,7 +116,15 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun addTask(taskName: String) {
-        viewModel.onTaskCreated(taskName)
+        viewModel.onTaskCreated(taskName, toggleButtonCurrentState())
+    }
+
+    private fun toggleButtonCurrentState(): ToggleButtonState {
+        return if (binding.toggleButtonGroup.checkedButtonId == R.id.buttonDone) {
+            ToggleButtonState.Done
+        } else {
+            ToggleButtonState.NotDone
+        }
     }
 
     companion object {
