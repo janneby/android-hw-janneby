@@ -20,7 +20,7 @@ class HomeViewModel(private val dao: TaskDao) : ViewModel() {
 
     private fun retrieveNotDoneTasks() {
         viewModelScope.launch {
-            val tasks = dao.notCompletedTasks().map(::Task)
+            val tasks = notCompletedTasks()
             _state.value = HomeState.TaskList(tasks)
         }
     }
@@ -62,17 +62,21 @@ class HomeViewModel(private val dao: TaskDao) : ViewModel() {
 
     fun onDoneClicked() {
         viewModelScope.launch {
-            val newList = dao.completedTasks().map(::Task)
+            val newList = completedTasks()
             _state.value = HomeState.TaskList(newList)
         }
     }
 
     fun onNotDoneClicked() {
         viewModelScope.launch {
-            val newList = dao.notCompletedTasks().map(::Task)
+            val newList = notCompletedTasks()
             _state.value = HomeState.TaskList(newList)
         }
     }
+
+    private suspend fun completedTasks(): List<Task> = dao.completedTasks().map(::Task)
+
+    private suspend fun notCompletedTasks(): List<Task> = dao.notCompletedTasks().map(::Task)
 
     companion object {
         fun factory(dao: TaskDao): ViewModelProvider.Factory {
