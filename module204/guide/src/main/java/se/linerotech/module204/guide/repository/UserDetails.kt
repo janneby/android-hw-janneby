@@ -1,4 +1,4 @@
-package se.linerotech.module204.guide.repository.datastore
+package se.linerotech.module204.guide.repository
 
 import android.util.Patterns
 

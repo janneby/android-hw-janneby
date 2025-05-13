@@ -7,7 +7,7 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.home.HomeActivity
-import se.linerotech.module204.guide.repository.datastore.UserDetailsRepository
+import se.linerotech.module204.guide.repository.UserDetailsRepository
 import se.linerotech.module204.guide.userprofile.CreateProfileActivity
 
 class RoutingActivity : AppCompatActivity() {

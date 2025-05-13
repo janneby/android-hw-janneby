@@ -6,8 +6,8 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import se.linerotech.module204.guide.repository.datastore.UserDetails
-import se.linerotech.module204.guide.repository.datastore.UserDetailsRepository
+import se.linerotech.module204.guide.repository.UserDetails
+import se.linerotech.module204.guide.repository.UserDetailsRepository
 
 class ProfileViewModel(private val userDetailsRepository: UserDetailsRepository) : ViewModel() {
     private val _state = MutableStateFlow<ProfileState>(ProfileState.Idle)
