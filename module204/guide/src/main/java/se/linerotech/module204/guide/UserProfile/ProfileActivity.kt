@@ -11,8 +11,8 @@ import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
 import se.linerotech.module204.guide.databinding.ActivityProfileBinding
-import se.linerotech.module204.guide.repository.UserDetails
-import se.linerotech.module204.guide.repository.UserDetailsRepository
+import se.linerotech.module204.guide.repository.datastore.UserDetails
+import se.linerotech.module204.guide.repository.datastore.UserDetailsRepository
 
 abstract class ProfileActivity : AppCompatActivity() {
     protected lateinit var binding: ActivityProfileBinding

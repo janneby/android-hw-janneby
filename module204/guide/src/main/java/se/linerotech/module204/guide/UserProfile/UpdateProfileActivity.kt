@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import se.linerotech.module204.guide.R
-import se.linerotech.module204.guide.repository.UserDetails
+import se.linerotech.module204.guide.repository.datastore.UserDetails
 
 class UpdateProfileActivity : ProfileActivity() {
     override val toolbarTitle: Int = R.string.update_profile
